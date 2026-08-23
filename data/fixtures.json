@@ -1,0 +1,298 @@
+{
+  "_note": "Phase 1 data source. Same normalized shape as the Phase 3 Sheet parser output (lib/types.ts). Image and video URLs are placeholders. Ratings are deliberately absent everywhere per PLAN.md §4.1 — the card must look correct without them. Includes the edge cases the acceptance criteria in PLAN.md §12 need in order to be verifiable: HB-003 has a single image, HB-004 has a deliberately long name and description, HB-006 has no price, HB-013 is hidden, HB-002/HB-005 carry sale prices, HB-001 has a video.",
+
+  "products": [
+    {
+      "code": "HB-001",
+      "name": "Bó Hoa Waxflower Úc Soft Girl",
+      "price": 950000,
+      "occasions": ["tinh-yeu", "sinh-nhat"],
+      "flowerType": "waxflower",
+      "subtitle": "Waxflower Úc Import",
+      "badge": "HOT TREND",
+      "badgeStyle": "hot",
+      "shortDesc": "Tone pastel nhẹ nhàng, cánh hoa wax bóng mịn cho buổi hẹn hò ngọt ngào.",
+      "size": "Vừa",
+      "description": "Bó hoa Waxflower Úc sắc hồng kem dịu ngọt, phối cùng cành hồng mẫu đơn và lá măng tơ. Hoa wax có lớp cánh mịn như sáp, cực kỳ bền và lưu giữ hương thơm tự nhiên trong nhiều ngày.",
+      "images": [
+        "https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=800&h=1000&q=80",
+        "https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=800&h=1000&q=80",
+        "https://images.unsplash.com/photo-1591886960571-74d43a9d4166?auto=format&fit=crop&w=800&h=1000&q=80"
+      ],
+      "video": "https://mdn.github.io/shared-assets/videos/flower.mp4",
+      "status": "active",
+      "featured": true,
+      "sort": 1
+    },
+    {
+      "code": "HB-002",
+      "name": "Bó Hoa Sáp Thơm Y2K Purple",
+      "price": 750000,
+      "salePrice": 620000,
+      "saleNote": "Giá cuối tuần",
+      "occasions": ["sinh-nhat"],
+      "flowerType": "hoa sáp",
+      "subtitle": "Hoa Sáp Thơm Premium",
+      "badge": "GIỮ LÂU 3 NĂM",
+      "badgeStyle": "info",
+      "shortDesc": "Tone tím lavender hot trend, hương thơm tự nhiên lưu lại rất lâu.",
+      "size": "Vừa",
+      "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt lụa mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
+      "images": [
+        "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=800&h=1000&q=80",
+        "https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=800&h=1000&q=80"
+      ],
+      "status": "active",
+      "featured": true,
+      "sort": 2
+    },
+    {
+      "code": "HB-003",
+      "name": "Wax White Minimalist",
+      "price": 880000,
+      "occasions": ["tinh-yeu"],
+      "flowerType": "waxflower",
+      "subtitle": "Waxflower & Tuyết Mai",
+      "shortDesc": "Phong cách tối giản tinh tế, hoa wax trắng phối cành lá xanh thanh mát.",
+      "size": "Nhỏ",
+      "description": "Cặp đôi thanh lịch gồm hoa wax trắng tinh khôi nhập khẩu phối cùng những nhành tuyết mai mềm mại, tạo nét chấm phá tinh tế cho không gian.",
+      "images": [
+        "https://images.unsplash.com/photo-1591886960571-74d43a9d4166?auto=format&fit=crop&w=800&h=1000&q=80"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 3
+    },
+    {
+      "code": "HB-004",
+      "name": "Giỏ Hoa Lan Hồ Điệp & Waxflower Trắng Nhập Khẩu Cao Cấp Dành Tặng Đối Tác Ngày Khai Trương",
+      "price": 2600000,
+      "occasions": ["khai-truong"],
+      "flowerType": "lan hồ điệp",
+      "subtitle": "Hộp Quà Lan & Wax Import",
+      "badge": "SANG CHẢNH",
+      "badgeStyle": "luxe",
+      "shortDesc": "Chậu hoa cao cấp kết hợp lan hồ điệp trắng và nhành wax Úc, thích hợp làm quà tặng đối tác trong những dịp trọng đại cần sự sang trọng và trang nhã.",
+      "size": "Lớn",
+      "description": "Chậu lan hồ điệp 5 cành trắng muốt điểm xuyết dải hoa Waxflower Úc xòe rộng. Đại diện cho phú quý và nét đẹp sang trọng bền vững, kèm bảng chữ mạ vàng theo yêu cầu.",
+      "images": [
+        "https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=800&h=1000&q=80",
+        "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=800&h=1000&q=80"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 4
+    },
+    {
+      "code": "HB-005",
+      "name": "Bó Hồng Đỏ Ecuador",
+      "price": 1250000,
+      "salePrice": 990000,
+      "saleNote": "Giá cuối tuần",
+      "occasions": ["tinh-yeu"],
+      "flowerType": "hồng",
+      "subtitle": "Hồng Ecuador Nhập Khẩu",
+      "shortDesc": "50 bông hồng đỏ Ecuador thân dài, bó tròn cổ điển gói giấy lụa mờ.",
+      "size": "Lớn",
+      "description": "Hồng đỏ Ecuador thân dài 60cm, bông to đều, độ bền vượt trội so với hồng nội địa. Bó tròn cổ điển, gói giấy lụa mờ và ruy băng satin cùng tông.",
+      "images": [
+        "https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=800&h=1000&q=80",
+        "https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=800&h=1000&q=80"
+      ],
+      "status": "active",
+      "featured": true,
+      "sort": 5
+    },
+    {
+      "code": "HB-006",
+      "name": "Kệ Hoa Khai Trương Hướng Dương",
+      "occasions": ["khai-truong"],
+      "flowerType": "hướng dương",
+      "subtitle": "Kệ Đứng 1.6m",
+      "shortDesc": "Kệ hoa hướng dương rực rỡ, kèm bảng chữ theo yêu cầu. Báo giá theo kích cỡ.",
+      "size": "Lớn",
+      "description": "Kệ hoa khai trương hai tầng với hướng dương làm điểm nhấn trung tâm, phối lan vũ nữ và lá phụ. Kích cỡ và bảng chữ tùy chỉnh, vui lòng liên hệ để được báo giá chính xác.",
+      "images": [
+        "https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=800&h=1000&q=80"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 6
+    },
+    {
+      "code": "HB-007",
+      "name": "Bó Tulip Hà Lan Pastel",
+      "price": 1150000,
+      "priceNote": "từ",
+      "occasions": ["sinh-nhat", "tinh-yeu"],
+      "flowerType": "tulip",
+      "subtitle": "Tulip Hà Lan Nhập Khẩu",
+      "shortDesc": "Tulip nhập khẩu tone pastel, bó 20 cành gói giấy kraft Hàn Quốc.",
+      "size": "Vừa",
+      "description": "Tulip Hà Lan nhập khẩu theo tuần, tone pastel hồng kem xen trắng. Giá thay đổi theo mùa và tỷ giá nhập, vui lòng nhắn Zalo để xác nhận giá trong ngày.",
+      "images": [
+        "https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=800&h=1000&q=80",
+        "https://images.unsplash.com/photo-1591886960571-74d43a9d4166?auto=format&fit=crop&w=800&h=1000&q=80"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 7
+    },
+    {
+      "code": "HB-008",
+      "name": "Vòng Hoa Chia Buồn Trang Nghiêm",
+      "price": 1450000,
+      "occasions": ["chia-buon"],
+      "flowerType": "cúc",
+      "subtitle": "Vòng Hoa Kính Điếu",
+      "shortDesc": "Cúc trắng và lan trắng, thiết kế trang nghiêm, giao nhanh trong 2 giờ.",
+      "size": "Lớn",
+      "description": "Vòng hoa kính điếu tông trắng trang nghiêm gồm cúc trắng, lan trắng và lá phụ xanh đậm. Bảng chữ kính điếu được in theo yêu cầu, giao nhanh trong 2 giờ nội thành.",
+      "images": [
+        "https://images.unsplash.com/photo-1591886960571-74d43a9d4166?auto=format&fit=crop&w=800&h=1000&q=80"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 8
+    },
+    {
+      "code": "HB-009",
+      "name": "Giỏ Cẩm Chướng Hồng Phấn",
+      "price": 650000,
+      "occasions": ["sinh-nhat"],
+      "flowerType": "cẩm chướng",
+      "subtitle": "Giỏ Mây Đan Thủ Công",
+      "shortDesc": "Cẩm chướng hồng phấn trong giỏ mây đan, món quà nhẹ nhàng và bền.",
+      "size": "Nhỏ",
+      "description": "Cẩm chướng hồng phấn xếp tầng trong giỏ mây đan thủ công, kèm mút giữ nước nên bền hơn bó hoa thường. Phù hợp tặng sinh nhật hoặc thăm hỏi.",
+      "images": [
+        "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=800&h=1000&q=80",
+        "https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=800&h=1000&q=80"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 9
+    },
+    {
+      "code": "HB-010",
+      "name": "Hộp Hoa Sáp Thơm Mini Gift",
+      "price": 420000,
+      "occasions": ["sinh-nhat", "tinh-yeu"],
+      "flowerType": "hoa sáp",
+      "subtitle": "Hộp Quà Mini 12cm",
+      "badge": "HOT TREND",
+      "badgeStyle": "hot",
+      "shortDesc": "Hộp mini vừa lòng bàn tay, giữ hương 2–3 năm, kèm thiệp viết tay.",
+      "size": "Nhỏ",
+      "description": "Hộp hoa sáp thơm mini 12cm, giữ hương và hình dáng từ 2 đến 3 năm. Kèm thiệp viết tay miễn phí, đóng gói sẵn để tặng ngay.",
+      "images": [
+        "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=800&h=1000&q=80"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 10
+    },
+    {
+      "code": "HB-011",
+      "name": "Bó Cúc Họa Mi Trắng",
+      "price": 520000,
+      "occasions": ["tinh-yeu", "sinh-nhat"],
+      "flowerType": "cúc họa mi",
+      "subtitle": "Hoa Mùa — Tháng 10 đến 12",
+      "shortDesc": "Cúc họa mi trắng bó mộc, gói giấy kraft. Chỉ có theo mùa.",
+      "size": "Nhỏ",
+      "description": "Cúc họa mi trắng bó mộc kiểu Hà Nội, gói giấy kraft đơn giản để giữ nét tự nhiên. Hoa chỉ có trong mùa từ tháng 10 đến tháng 12.",
+      "images": [
+        "https://images.unsplash.com/photo-1591886960571-74d43a9d4166?auto=format&fit=crop&w=800&h=1000&q=80",
+        "https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=800&h=1000&q=80"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 11
+    },
+    {
+      "code": "HB-012",
+      "name": "Kệ Hoa Chúc Mừng Hồng Vàng",
+      "price": 1850000,
+      "occasions": ["khai-truong"],
+      "flowerType": "hồng",
+      "subtitle": "Kệ Đứng 1.8m",
+      "shortDesc": "Kệ hoa hai tầng tông hồng vàng, bảng chữ mạ vàng theo yêu cầu.",
+      "size": "Lớn",
+      "description": "Kệ hoa chúc mừng hai tầng cao 1.8m, tông hồng vàng ấm, phối hồng Ecuador và lan vũ nữ. Bảng chữ mạ vàng in theo yêu cầu, dựng tại địa điểm.",
+      "images": [
+        "https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=800&h=1000&q=80"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 12
+    },
+    {
+      "code": "HB-013",
+      "name": "Bó Hoa Baby Trắng (đang cập nhật ảnh)",
+      "price": 480000,
+      "occasions": ["tinh-yeu"],
+      "flowerType": "baby",
+      "shortDesc": "Sản phẩm này phải không xuất hiện trên site — dùng để kiểm tra status=hidden.",
+      "images": [
+        "https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=800&h=1000&q=80"
+      ],
+      "status": "hidden",
+      "featured": false,
+      "sort": 13
+    }
+  ],
+
+  "occasions": [
+    { "slug": "sinh-nhat", "label": "Sinh nhật" },
+    { "slug": "tinh-yeu", "label": "Tình yêu & Kỷ niệm" },
+    { "slug": "khai-truong", "label": "Khai trương" },
+    { "slug": "chia-buon", "label": "Chia buồn" }
+  ],
+
+  "campaigns": [
+    {
+      "slug": "sale-cuoi-tuan",
+      "title": "Sale Cuối Tuần — Giảm đến 25%",
+      "subtitle": "Áp dụng cho các mẫu hoa sáp và hồng nhập khẩu",
+      "bannerDesktop": "https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=1920&h=600&q=80",
+      "bannerMobile": "https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=800&h=1000&q=80",
+      "bannerAlt": "Bó hoa hồng đỏ Ecuador trong chương trình Sale Cuối Tuần giảm đến 25%",
+      "ctaText": "Xem mẫu đang giảm giá",
+      "startDate": "2026-08-01",
+      "endDate": "2026-09-30",
+      "orderCutoff": "2026-09-28",
+      "productCodes": [],
+      "intro": "Cuối tuần này Blossom & Vine giảm đến 25% cho các mẫu hoa sáp thơm và hồng Ecuador nhập khẩu. Giá đã giảm được hiển thị trực tiếp trên từng mẫu — bạn chỉ cần nhắn mã sản phẩm qua Zalo, không cần mã giảm giá.",
+      "priority": 1,
+      "status": "active"
+    }
+  ],
+
+  "settings": {
+    "shopName": "Blossom & Vine",
+    "tagline": "Flower Studio",
+    "phone": "0901234567",
+    "zaloPhone": "0901234567",
+    "messengerUrl": "https://m.me/blossomvine",
+    "address": "128 Nguyễn Trãi, Phường Bến Thành, Quận 1, TP. Hồ Chí Minh",
+    "hours": "7:00 – 21:00, tất cả các ngày",
+    "sameDayCutoff": "Đặt trước 15:00 để giao trong ngày",
+    "deliveryFeeNote": "Miễn phí giao nội thành cho đơn từ 800.000₫",
+    "deliveryAreas": [
+      { "district": "Quận 1", "fee": 0, "eta": "2 giờ" },
+      { "district": "Quận 3", "fee": 0, "eta": "2 giờ" },
+      { "district": "Bình Thạnh", "fee": 30000, "eta": "2 giờ" },
+      { "district": "Phú Nhuận", "fee": 30000, "eta": "2 giờ" },
+      { "district": "Quận 7", "fee": 50000, "eta": "3 giờ" },
+      { "district": "Gò Vấp", "fee": 50000, "eta": "3 giờ" },
+      { "district": "Thủ Đức", "fee": 70000, "eta": "4 giờ" }
+    ],
+    "announcementText": "Hoa tươi cắm trong ngày — giao hỏa tốc 2 giờ nội thành",
+    "heroEyebrow": "Waxflower Úc & Hoa Sáp Thơm nhập khẩu",
+    "heroTitle": "Bó hoa cắm tay,",
+    "heroTitleAccent": "giao trong 2 giờ",
+    "heroText": "Hoa nhập khẩu và hoa Đà Lạt chọn từng cành, cắm trong ngày. Chúng tôi chụp ảnh bó hoa thật và gửi Zalo để bạn duyệt trước khi giao.",
+    "aboutText": "Blossom & Vine là tiệm hoa thiết kế tại TP. Hồ Chí Minh. Mỗi bó hoa được cắm thủ công trong ngày giao, không dùng hoa tồn. Bạn nhắn mã sản phẩm qua Zalo, chúng tôi xác nhận giá và thời gian giao ngay trong vài phút."
+  }
+}

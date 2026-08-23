@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossom & Vine — Tiệm Hoa Waxflower & Hoa Sáp Thơm Gen Z Style</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        /* DESIGN TOKENS DEFINITION (GEN Z & YOUTH AESTHETIC EDITION) */
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Electric Rose & Y2K Bloom Pink
+                        brand: {
+                            50: '#fff0f3',
+                            100: '#ffccd5',
+                            200: '#ffb3c1',
+                            300: '#ff85a1',
+                            400: '#f72585', // Electric Neon Pink
+                            500: '#ff0054', // Vibrant Primary Bloom
+                            600: '#e0115f', // Primary CTA
+                            700: '#b50e4c',
+                            800: '#8f0b3c',
+                            900: '#5c0023',
+                        },
+                        // Fresh Matcha & Pistachio Leaf
+                        matcha: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e', // Fresh Matcha Accent
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        },
+                        // Trendy Aesthetic Lavender
+                        lavender: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            200: '#ddd6fe',
+                            300: '#c4b5fd',
+                            400: '#a78bfa', // Gen Z Soft Lavender
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                        },
+                        // Ambient Soft Shades
+                        butter: '#fffbeb',
+                        cream: '#fffaf5',
+                        porcelain: '#ffffff',
+                        zalo: '#0068FF',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'sans-serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        '3xl': '1.75rem',
+                        '4xl': '2.5rem',
+                        'pill': '9999px',
+                    },
+                    boxShadow: {
+                        'neon': '0 12px 30px -5px rgba(247, 37, 133, 0.3)',
+                        'matcha-glow': '0 12px 30px -5px rgba(34, 197, 94, 0.25)',
+                        'soft-card': '0 10px 35px -8px rgba(0, 0, 0, 0.05)',
+                        'glass': '0 8px 32px 0 rgba(247, 37, 133, 0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts: Outfit (Display Sans) & Plus Jakarta Sans (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        :root {
+            --color-primary: #f72585;
+            --color-secondary: #22c55e;
+            --color-accent-lavender: #a78bfa;
+            --color-bg-light: #fffaf5;
+            --font-family-display: 'Outfit', sans-serif;
+            --font-family-sans: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family-sans);
+            background-color: var(--color-bg-light);
+            color: #1e1b18;
+        }
+
+        .font-serif-display, .font-display {
+            font-family: var(--font-family-display);
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+        }
+
+        .hero-bg {
+            background-image: radial-gradient(circle at 90% 10%, rgba(247, 37, 133, 0.15) 0%, transparent 45%),
+                              radial-gradient(circle at 10% 80%, rgba(167, 139, 250, 0.18) 0%, transparent 50%),
+                              radial-gradient(circle at 50% 50%, rgba(254, 240, 138, 0.25) 0%, transparent 70%);
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #ff85a1;
+            border-radius: 9999px;
+        }
+
+        .flower-float {
+            animation: float 5s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-12px) rotate(4deg); }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-brand-100 selection:text-brand-900 overflow-x-hidden">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-brand-600 via-rose-500 to-lavender-500 text-white text-xs py-2.5 px-4 text-center font-bold tracking-wide flex justify-center items-center gap-2 shadow-sm">
+        <span class="inline-block w-2 h-2 rounded-full bg-yellow-300 animate-ping"></span>
+        <span>✨ Bó Hoa Waxflower Import Korean Style & Hoa Sáp Thơm Sống Ảo — Giao Hỏa Tốc 2H 🚀</span>
+        <a href="tel:0901234567" class="underline underline-offset-2 ml-2 hover:text-yellow-200 transition-colors">Hotline: 0901 234 567</a>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-40 glass-panel border-b border-stone-200/50 transition-all duration-300" id="mainHeader">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-xl text-stone-700 hover:bg-stone-100/80 focus:outline-none" aria-label="Mở Menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-brand-400 via-brand-500 to-lavender-500 text-white flex items-center justify-center shadow-neon group-hover:rotate-6 transition-transform">
+                        <i data-lucide="sparkles" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <span class="font-display text-2xl font-black tracking-tight text-stone-900 block leading-none">BLOSSOM & VINE</span>
+                        <span class="text-[10px] tracking-[0.2em] text-brand-600 font-extrabold uppercase block mt-1">Flower Studio • Gen Z Vibe</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center space-x-8 text-sm font-bold text-stone-700">
+                    <a href="#featured" class="hover:text-brand-500 transition-colors py-1">🔥 Hot Trend</a>
+                    <a href="#featured" class="hover:text-brand-500 transition-colors py-1">Hoa Wax & Sáp Thơm</a>
+                    <a href="#builder" class="hover:text-brand-500 transition-colors py-1 flex items-center gap-1.5">
+                        <span>Self-Mix Studio</span>
+                        <span class="bg-gradient-to-r from-brand-500 to-lavender-500 text-white text-[9px] px-2 py-0.5 rounded-full font-black uppercase tracking-wider shadow-sm animate-bounce">Mix & Match</span>
+                    </a>
+                    <a href="#guarantee" class="hover:text-brand-500 transition-colors py-1">Cam Kết Fresh 100%</a>
+                    <a href="#reviews" class="hover:text-brand-500 transition-colors py-1">Feedback 🌟</a>
+                </nav>
+
+                <!-- Header Direct Actions -->
+                <div class="flex items-center space-x-3 sm:space-x-4">
+                    <button onclick="openTokenModal()" class="hidden md:flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-bold bg-lavender-100 hover:bg-lavender-200 text-lavender-700 border border-lavender-200 transition-all shadow-sm" title="Xem Design Tokens Gen Z">
+                        <i data-lucide="palette" class="w-3.5 h-3.5 text-lavender-500"></i>
+                        <span>Gen Z Tokens UI</span>
+                    </button>
+
+                    <a href="https://zalo.me" target="_blank" class="hidden sm:flex items-center gap-2 bg-zalo/10 text-zalo border border-zalo/20 px-4 py-2.5 rounded-full hover:bg-zalo hover:text-white transition-all shadow-sm font-bold text-xs">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                        <span>Chat Zalo</span>
+                    </a>
+
+                    <a href="tel:0901234567" class="flex items-center gap-2 bg-gradient-to-r from-brand-500 to-brand-600 text-white px-4 py-2.5 rounded-full hover:shadow-neon transition-all shadow-md group text-xs font-bold">
+                        <i data-lucide="phone-call" class="w-4 h-4 text-brand-100 group-hover:scale-110 transition-transform"></i>
+                        <span>0901 234 567</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-stone-200 bg-cream/98 px-4 pt-4 pb-6 space-y-3 shadow-lg">
+            <a href="#featured" class="block py-2 text-base font-medium text-stone-800 hover:text-brand-600">Danh Mục Hoa Tươi</a>
+            <a href="#builder" class="block py-2 text-base font-medium text-brand-600 font-semibold">Tự Phối Bó Hoa Trực Tiếp ✨</a>
+            <a href="#guarantee" class="block py-2 text-base font-medium text-stone-800 hover:text-brand-600">Cam Kết Tươi 7 Ngày</a>
+            <a href="#reviews" class="block py-2 text-base font-medium text-stone-800 hover:text-brand-600">Phản Hồi Khách Hàng</a>
+            <div class="pt-2 border-t border-stone-200 flex flex-col gap-2">
+                <a href="https://zalo.me" target="_blank" class="w-full bg-zalo text-white text-center py-2.5 rounded-xl text-sm font-semibold flex items-center justify-center gap-2">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    <span>Tư Vấn Trực Tiếp Qua Zalo</span>
+                </a>
+                <button onclick="openConsultationModal('Liên hệ tư vấn chung')" class="w-full bg-brand-600 text-white text-center py-2.5 rounded-xl text-sm font-semibold">
+                    Yêu Cầu Gọi Lại
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[85vh] flex items-center hero-bg overflow-hidden py-12 lg:py-20">
+        <!-- Floating emojis and icons -->
+        <div class="absolute top-12 left-[6%] text-brand-400 opacity-80 flower-float pointer-events-none hidden md:block">
+            <span class="text-4xl">🌸</span>
+        </div>
+        <div class="absolute bottom-16 right-[6%] text-lavender-500 opacity-80 flower-float pointer-events-none hidden md:block" style="animation-delay: -2.5s;">
+            <span class="text-5xl">✨</span>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Text Content -->
+                <div class="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left z-10">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 border border-brand-200 text-brand-600 text-xs font-extrabold tracking-wide shadow-sm backdrop-blur-md">
+                        <span class="animate-pulse">🔥</span>
+                        <span>Hot Trend TikTok 2026 • Waxflower Import & Hoa Sáp Korean</span>
+                    </div>
+
+                    <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-black text-stone-900 tracking-tight leading-[1.08]">
+                        Bó Hoa Wax <br/>
+                        <span class="italic font-bold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-brand-500 via-rose-500 to-lavender-500">
+                            Xịn Xò & Sống Ảo 📸
+                        </span>
+                    </h1>
+
+                    <p class="text-stone-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-medium leading-relaxed">
+                        Tone màu Pastel cực chill cho Gen Z! Chọn ngay mẫu Bó Hoa Waxflower Úc xinh xắn hoặc Hoa Sáp Thơm tỏa hương ngạt ngào, bền lâu giữ trọn kỷ niệm đẹp.
+                    </p>
+
+                    <!-- Hero Actions & Delivery Checker Form -->
+                    <div class="space-y-4 pt-2">
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3">
+                            <a href="https://zalo.me" target="_blank" class="w-full sm:w-auto bg-gradient-to-r from-brand-500 via-rose-500 to-brand-600 hover:scale-105 text-white font-extrabold px-8 py-4 rounded-full transition-all shadow-neon flex items-center justify-center gap-2 group text-sm">
+                                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                                <span>Đặt Hoa Qua Zalo Tức Thì</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                            </a>
+                            <a href="#builder" class="w-full sm:w-auto bg-white hover:bg-stone-50 text-stone-900 font-extrabold px-7 py-4 rounded-full border-2 border-stone-200 transition-all shadow-sm hover:border-brand-300 flex items-center justify-center gap-2 text-sm">
+                                <i data-lucide="wand-2" class="w-4 h-4 text-matcha-600"></i>
+                                <span>Self-Mix Bó Hoa Trực Tiếp</span>
+                            </a>
+                        </div>
+
+                        <!-- Area / Delivery Checker Form -->
+                        <div class="pt-3 max-w-md mx-auto lg:mx-0">
+                            <form id="deliveryCheckForm" class="glass-panel p-2 rounded-2xl sm:rounded-full flex flex-col sm:flex-row items-center gap-2 shadow-sm border border-brand-100">
+                                <div class="flex items-center gap-2 px-3 text-stone-400 w-full">
+                                    <i data-lucide="map-pin" class="w-4 h-4 text-brand-500 flex-shrink-0"></i>
+                                    <input type="text" placeholder="Nhập Quận/Huyện (Ví dụ: Q.1, Bình Thạnh, Cầu Giấy)..." class="bg-transparent text-xs sm:text-sm text-stone-800 font-semibold placeholder-stone-400 focus:outline-none w-full py-1">
+                                </div>
+                                <button type="submit" class="w-full sm:w-auto bg-matcha-600 text-white text-xs font-extrabold px-5 py-2.5 rounded-xl sm:rounded-full hover:bg-matcha-700 transition-colors flex-shrink-0 whitespace-nowrap shadow-sm">
+                                    Check Phí Ship 🚀
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Gen Z Trust Badges -->
+                    <div class="pt-4 grid grid-cols-3 gap-4 border-t border-stone-200/80 max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
+                        <div>
+                            <span class="font-display text-2xl font-black text-brand-600 block">100%</span>
+                            <span class="text-xs text-stone-500 font-bold">Hình Ảnh Thực Tế</span>
+                        </div>
+                        <div>
+                            <span class="font-display text-2xl font-black text-matcha-600 block">2 GIỜ</span>
+                            <span class="text-xs text-stone-500 font-bold">Giao Hỏa Tốc Tận Tay</span>
+                        </div>
+                        <div>
+                            <span class="font-display text-2xl font-black text-lavender-600 block">4.9 ★</span>
+                            <span class="text-xs text-stone-500 font-bold">+12.000 Đơn Gen Z</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual Card -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="relative rounded-4xl overflow-hidden shadow-neon border-4 border-white aspect-[4/5] group">
+                            <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Bó hoa Waxflower Úc Soft Pink" 
+                                 class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700">
+                            
+                            <div class="absolute inset-0 bg-gradient-to-t from-stone-900/70 via-transparent to-transparent"></div>
+
+                            <div class="absolute bottom-6 left-6 right-6 text-white">
+                                <span class="bg-gradient-to-r from-brand-500 to-rose-500 text-white text-[10px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full mb-2 inline-block shadow-sm">🔥 Top Bán Chạy</span>
+                                <h3 class="font-display text-2xl font-black">Waxflower Úc Soft Girl 💖</h3>
+                                <p class="text-xs text-stone-200 mt-1">Tone Pastel Hồng Nhạt, Wax Import Úc & Giấy Gói Hàn Quốc</p>
+                                <p class="text-xl font-display font-black text-brand-200 mt-2">950.000 ₫</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Youth Badge 1 -->
+                        <div class="absolute -top-5 -left-5 glass-panel p-3.5 rounded-2xl shadow-lg hidden sm:flex items-center gap-3 border border-white/80">
+                            <div class="w-10 h-10 rounded-2xl bg-brand-100 text-brand-600 flex items-center justify-center flex-shrink-0 text-xl font-black">
+                                📸
+                            </div>
+                            <div>
+                                <p class="text-xs font-extrabold text-stone-800">Chụp Hình Duyệt Trước</p>
+                                <p class="text-[10px] text-stone-500 font-bold">Gửi ảnh Zalo trong 15p</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Youth Badge 2 -->
+                        <div class="absolute -bottom-5 -right-5 glass-panel p-3.5 rounded-2xl shadow-lg hidden sm:flex items-center gap-3 border border-white/80">
+                            <div class="w-10 h-10 rounded-2xl bg-matcha-100 text-matcha-700 flex items-center justify-center flex-shrink-0 text-xl font-black">
+                                🎀
+                            </div>
+                            <div>
+                                <p class="text-xs font-extrabold text-stone-800">Free Thiệp Design Xịn</p>
+                                <p class="text-[10px] text-stone-500 font-bold">In Lời Chúc Kèm Icon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section class="py-12 bg-white border-y border-stone-200/60" id="guarantee">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="flex items-start gap-4 p-4 rounded-2xl hover:bg-cream/60 transition-colors">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-600 flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="sprout" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif-display font-semibold text-stone-900 text-base">Hoa Tươi Từ Vườn</h4>
+                        <p class="text-xs text-stone-500 mt-1 leading-relaxed">Tuyển chọn từng bông hoa tươi nhất từ Đà Lạt & nông trại đạt chuẩn xuất khẩu.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4 p-4 rounded-2xl hover:bg-cream/60 transition-colors">
+                    <div class="w-12 h-12 rounded-2xl bg-sage-100 text-sage-700 flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="clock" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif-display font-semibold text-stone-900 text-base">Giao Hoa Hỏa Tốc</h4>
+                        <p class="text-xs text-stone-500 mt-1 leading-relaxed">Đội ngũ shipper chuyên nghiệp, giao tận tay trong 2 giờ bảo toàn độ tươi.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4 p-4 rounded-2xl hover:bg-cream/60 transition-colors">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="camera" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif-display font-semibold text-stone-900 text-base">Chụp Ảnh Trước Khi Giao</h4>
+                        <p class="text-xs text-stone-500 mt-1 leading-relaxed">Gửi hình hoa thực tế qua Zalo cho khách hàng duyệt trước khi giao.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4 p-4 rounded-2xl hover:bg-cream/60 transition-colors">
+                    <div class="w-12 h-12 rounded-2xl bg-rose-100 text-rose-700 flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif-display font-semibold text-stone-900 text-base">Cam Kết Đổi Trả</h4>
+                        <p class="text-xs text-stone-500 mt-1 leading-relaxed">Hoàn tiền 100% hoặc đổi mới nếu sản phẩm không đúng chất lượng cam kết.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Catalog Section -->
+    <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="featured">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+            <div>
+                <span class="text-xs font-black uppercase tracking-widest text-brand-500 block mb-2">✨ Trending Bouquet Collection</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-black text-stone-900">Mẫu Hoa Wax & Sáp "Sống Ảo"</h2>
+            </div>
+            
+            <!-- Category Filter Buttons -->
+            <div class="flex items-center gap-2 overflow-x-auto pb-2 custom-scrollbar" id="categoryFilterContainer">
+                <button data-category="all" class="category-btn active px-5 py-2.5 rounded-full text-xs font-extrabold whitespace-nowrap bg-stone-900 text-white shadow-sm transition-all">
+                    Tất Cả Mẫu ✨
+                </button>
+                <button data-category="wax" class="category-btn px-5 py-2.5 rounded-full text-xs font-extrabold whitespace-nowrap bg-white text-stone-600 border border-stone-200 hover:border-brand-400 transition-all">
+                    🌸 Waxflower Pastel
+                </button>
+                <button data-category="romance" class="category-btn px-5 py-2.5 rounded-full text-xs font-extrabold whitespace-nowrap bg-white text-stone-600 border border-stone-200 hover:border-brand-400 transition-all">
+                    💜 Sáp Thơm Y2K
+                </button>
+                <button data-category="birthday" class="category-btn px-5 py-2.5 rounded-full text-xs font-extrabold whitespace-nowrap bg-white text-stone-600 border border-stone-200 hover:border-brand-400 transition-all">
+                    🎂 Sinh Nhật BFF
+                </button>
+                <button data-category="luxury" class="category-btn px-5 py-2.5 rounded-full text-xs font-extrabold whitespace-nowrap bg-white text-stone-600 border border-stone-200 hover:border-brand-400 transition-all">
+                    👑 Giftbox Sang Chảnh
+                </button>
+            </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" id="productsGrid">
+            
+            <!-- Item 1 -->
+            <div class="product-card group bg-white rounded-3xl overflow-hidden border border-stone-200/80 hover:border-brand-300 hover:shadow-neon transition-all duration-300 flex flex-col" data-category="wax romance">
+                <div class="relative overflow-hidden aspect-[4/5]">
+                    <img src="https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=800&q=80" alt="Bó Waxflower Úc Pastel" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 bg-gradient-to-r from-brand-500 to-rose-500 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">Hot Trend 🔥</span>
+                    <div class="absolute inset-x-4 bottom-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <button onclick="quickViewProduct(1)" class="w-full bg-white/95 text-stone-900 py-2.5 rounded-xl text-xs font-extrabold shadow-md hover:bg-stone-900 hover:text-white transition-colors">
+                            Xem Chi Tiết Mẫu
+                        </button>
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                        <div class="flex items-center justify-between text-xs text-stone-500 mb-1 font-semibold">
+                            <span>Waxflower Úc Import</span>
+                            <span class="text-amber-500 font-extrabold flex items-center gap-1">★ 5.0 (210)</span>
+                        </div>
+                        <h3 class="font-display font-black text-lg text-stone-900 group-hover:text-brand-500 transition-colors">Waxflower Úc Soft Girl 💖</h3>
+                        <p class="text-xs text-stone-500 line-clamp-2 mt-1">Tone màu pastel nhẹ nhàng, cánh hoa Wax bóng mịn quyến rũ cho buổi hẹn hò ngọt ngào.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-2 border-t border-stone-100">
+                        <span class="font-display text-lg font-black text-brand-600">950.000 ₫</span>
+                        <button onclick="openConsultationModal('Waxflower Úc Soft Girl - 950.000₫')" class="bg-brand-500 hover:bg-brand-600 text-white text-xs font-extrabold px-4 py-2 rounded-full transition-all flex items-center gap-1 shadow-sm">
+                            <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                            <span>Inbox Zalo</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="product-card group bg-white rounded-3xl overflow-hidden border border-stone-200/80 hover:border-lavender-400 hover:shadow-neon transition-all duration-300 flex flex-col" data-category="wax romance birthday">
+                <div class="relative overflow-hidden aspect-[4/5]">
+                    <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=800&q=80" alt="Bó Hoa Sáp Thơm Y2K Purple" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 bg-lavender-600 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">Giữ Lâu 3 Năm 💜</span>
+                    <div class="absolute inset-x-4 bottom-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <button onclick="quickViewProduct(2)" class="w-full bg-white/95 text-stone-900 py-2.5 rounded-xl text-xs font-extrabold shadow-md hover:bg-stone-900 hover:text-white transition-colors">
+                            Xem Chi Tiết Mẫu
+                        </button>
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                        <div class="flex items-center justify-between text-xs text-stone-500 mb-1 font-semibold">
+                            <span>Hoa Sáp Thơm Premium</span>
+                            <span class="text-amber-500 font-extrabold flex items-center gap-1">★ 4.9 (185)</span>
+                        </div>
+                        <h3 class="font-display font-black text-lg text-stone-900 group-hover:text-lavender-600 transition-colors">Bó Sáp Thơm Y2K Purple 💜</h3>
+                        <p class="text-xs text-stone-500 line-clamp-2 mt-1">Tone tím lavender hot trend năm nay, ngào ngạt hương thơm tự nhiên lưu lại cực lâu.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-2 border-t border-stone-100">
+                        <span class="font-display text-lg font-black text-stone-900">750.000 ₫</span>
+                        <button onclick="openConsultationModal('Bó Sáp Thơm Y2K Purple - 750.000₫')" class="bg-brand-500 hover:bg-brand-600 text-white text-xs font-extrabold px-4 py-2 rounded-full transition-all flex items-center gap-1 shadow-sm">
+                            <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                            <span>Inbox Zalo</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="product-card group bg-white rounded-3xl overflow-hidden border border-stone-200/80 hover:border-matcha-400 hover:shadow-matcha-glow transition-all duration-300 flex flex-col" data-category="wax birthday">
+                <div class="relative overflow-hidden aspect-[4/5]">
+                    <img src="https://images.unsplash.com/photo-1591886960571-74d43a9d4166?auto=format&fit=crop&w=800&q=80" alt="Wax White Minimalist" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
+                    <div class="absolute inset-x-4 bottom-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <button onclick="quickViewProduct(3)" class="w-full bg-white/95 text-stone-900 py-2.5 rounded-xl text-xs font-extrabold shadow-md hover:bg-stone-900 hover:text-white transition-colors">
+                            Xem Chi Tiết Mẫu
+                        </button>
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                        <div class="flex items-center justify-between text-xs text-stone-500 mb-1 font-semibold">
+                            <span>Waxflower & Tuyết Mai</span>
+                            <span class="text-amber-500 font-extrabold flex items-center gap-1">★ 5.0 (98)</span>
+                        </div>
+                        <h3 class="font-display font-black text-lg text-stone-900 group-hover:text-matcha-600 transition-colors">Wax White Minimalist 🌿</h3>
+                        <p class="text-xs text-stone-500 line-clamp-2 mt-1">Phong cách tối giản tinh tế, hoa Wax trắng tinh khôi phối cùng cành lá tươi thanh mát.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-2 border-t border-stone-100">
+                        <span class="font-display text-lg font-black text-stone-900">880.000 ₫</span>
+                        <button onclick="openConsultationModal('Wax White Minimalist - 880.000₫')" class="bg-brand-500 hover:bg-brand-600 text-white text-xs font-extrabold px-4 py-2 rounded-full transition-all flex items-center gap-1 shadow-sm">
+                            <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                            <span>Inbox Zalo</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="product-card group bg-white rounded-3xl overflow-hidden border border-stone-200/80 hover:border-brand-400 hover:shadow-neon transition-all duration-300 flex flex-col" data-category="luxury">
+                <div class="relative overflow-hidden aspect-[4/5]">
+                    <img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=800&q=80" alt="Waxflower Orchid Giftbox" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 bg-stone-900 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">Sang Chảnh ✨</span>
+                    <div class="absolute inset-x-4 bottom-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <button onclick="quickViewProduct(4)" class="w-full bg-white/95 text-stone-900 py-2.5 rounded-xl text-xs font-extrabold shadow-md hover:bg-stone-900 hover:text-white transition-colors">
+                            Xem Chi Tiết Mẫu
+                        </button>
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                        <div class="flex items-center justify-between text-xs text-stone-500 mb-1 font-semibold">
+                            <span>Hộp Quà Lan & Wax Import</span>
+                            <span class="text-amber-500 font-extrabold flex items-center gap-1">★ 4.9 (142)</span>
+                        </div>
+                        <h3 class="font-display font-black text-lg text-stone-900 group-hover:text-brand-500 transition-colors">Wax & Orchid Giftbox ✨</h3>
+                        <p class="text-xs text-stone-500 line-clamp-2 mt-1">Chậu hoa cao cấp kết hợp Lan Hồ Điệp trắng và nhành Wax Úc thích hợp làm quà tặng đặc biệt.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-2 border-t border-stone-100">
+                        <span class="font-display text-lg font-black text-stone-900">2.600.000 ₫</span>
+                        <button onclick="openConsultationModal('Wax & Orchid Giftbox - 2.600.000₫')" class="bg-brand-500 hover:bg-brand-600 text-white text-xs font-extrabold px-4 py-2 rounded-full transition-all flex items-center gap-1 shadow-sm">
+                            <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                            <span>Inbox Zalo</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Custom Bouquet Interactive Studio Section -->
+    <section class="py-20 bg-gradient-to-b from-sage-900 via-sage-800 to-emerald-950 text-white relative overflow-hidden" id="builder">
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <i data-lucide="flower-2" class="w-[600px] h-[600px] absolute -right-20 -bottom-20 text-emerald-400"></i>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-300 bg-emerald-900/60 px-4 py-1 rounded-full border border-emerald-700/50 inline-block">Góc Sáng Tạo Waxflower</span>
+                <h2 class="font-serif-display text-3xl sm:text-5xl font-bold">Tự Phối Bó Hoa Trực Tiếp</h2>
+                <p class="text-stone-300 text-sm sm:text-base">
+                    Tự tay kết hợp hoa Waxflower Úc, hoa sáp thơm và lá điểm tươi xanh. Florist của Blossom & Vine sẽ cắm tỉ mỉ đúng phối màu bạn yêu thích.
+                </p>
+            </div>
+
+            <!-- Builder Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-sage-800/80 p-6 sm:p-10 rounded-3xl border border-emerald-500/30 backdrop-blur-xl shadow-2xl">
+                
+                <!-- Controls Column -->
+                <div class="lg:col-span-7 space-y-8">
+                    
+                    <!-- Step 1: Base Blooms -->
+                    <div>
+                        <label class="text-xs font-bold uppercase tracking-wider text-brand-300 block mb-3 flex items-center gap-2">
+                            <span class="w-5 h-5 rounded-full bg-brand-500 text-white text-[10px] flex items-center justify-center font-extrabold">1</span>
+                            <span>Chọn Loại Hoa Chính</span>
+                        </label>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3" id="stemOptions">
+                            <button data-price="550000" data-name="Hoa Waxflower Úc Import" class="stem-opt border-2 border-brand-500 bg-sage-950/90 p-3 rounded-2xl text-left transition-all shadow-md">
+                                <span class="block text-sm font-bold text-white">Hoa Wax Úc</span>
+                                <span class="text-xs text-brand-300 font-semibold">550.000 ₫</span>
+                            </button>
+                            <button data-price="400000" data-name="Hoa Sáp Thơm Luxury" class="stem-opt border-2 border-emerald-800/80 hover:border-brand-400 bg-sage-900/40 p-3 rounded-2xl text-left transition-all">
+                                <span class="block text-sm font-semibold">Hoa Sáp Thơm</span>
+                                <span class="text-xs text-stone-300">400.000 ₫</span>
+                            </button>
+                            <button data-price="450000" data-name="Hoa Hồng Mẫu Đơn" class="stem-opt border-2 border-emerald-800/80 hover:border-brand-400 bg-sage-900/40 p-3 rounded-2xl text-left transition-all">
+                                <span class="block text-sm font-semibold">Hồng Mẫu Đơn</span>
+                                <span class="text-xs text-stone-300">450.000 ₫</span>
+                            </button>
+                            <button data-price="500000" data-name="Tulip Hà Lan" class="stem-opt border-2 border-emerald-800/80 hover:border-brand-400 bg-sage-900/40 p-3 rounded-2xl text-left transition-all">
+                                <span class="block text-sm font-semibold">Tulip Hà Lan</span>
+                                <span class="text-xs text-stone-300">500.000 ₫</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Foliage Additions -->
+                    <div>
+                        <label class="text-xs font-bold uppercase tracking-wider text-brand-200 block mb-3">2. Lá Điểm & Hoa Phụ</label>
+                        <div class="flex flex-wrap gap-3" id="foliageOptions">
+                            <label class="cursor-pointer inline-flex items-center gap-2 bg-sage-900/50 border border-sage-600 px-4 py-2 rounded-xl text-xs hover:border-brand-400">
+                                <input type="checkbox" data-price="120000" data-name="Hoa Wax Phụ Điểm Xuyết" class="accent-brand-500 foliage-chk" checked>
+                                <span>Hoa Wax Phụ (+ 120.000 ₫)</span>
+                            </label>
+                            <label class="cursor-pointer inline-flex items-center gap-2 bg-sage-900/50 border border-sage-600 px-4 py-2 rounded-xl text-xs hover:border-brand-400">
+                                <input type="checkbox" data-price="100000" data-name="Lá Bạch Đàn Vòng" class="accent-brand-500 foliage-chk">
+                                <span>Lá Bạch Đàn (+ 100.000 ₫)</span>
+                            </label>
+                            <label class="cursor-pointer inline-flex items-center gap-2 bg-sage-900/50 border border-sage-600 px-4 py-2 rounded-xl text-xs hover:border-brand-400">
+                                <input type="checkbox" data-price="80000" data-name="Hoa Baby Trắng" class="accent-brand-500 foliage-chk">
+                                <span>Hoa Baby Trắng (+ 80.000 ₫)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Luxe Wrapping Style -->
+                    <div>
+                        <label class="text-xs font-bold uppercase tracking-wider text-brand-200 block mb-3">3. Phong Cách Giấy Gói Hoa</label>
+                        <div class="grid grid-cols-3 gap-3" id="wrapOptions">
+                            <button data-price="50000" data-name="Giấy Kraft Giản Dị" class="wrap-opt border-2 border-brand-500 bg-sage-900/80 p-3 rounded-2xl text-center text-xs font-semibold">
+                                Giấy Kraft Hàn Quốc (50k)
+                            </button>
+                            <button data-price="100000" data-name="Vải Lụa Mờ Cao Cấp" class="wrap-opt border-2 border-sage-600 hover:border-brand-400 bg-sage-900/40 p-3 rounded-2xl text-center text-xs font-semibold">
+                                Vải Lụa Mờ (100k)
+                            </button>
+                            <button data-price="180000" data-name="Hộp Tròn Nhung Cao Cấp" class="wrap-opt border-2 border-sage-600 hover:border-brand-400 bg-sage-900/40 p-3 rounded-2xl text-center text-xs font-semibold">
+                                Hộp Nhung Cao Cấp (180k)
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Live Preview Card Column -->
+                <div class="lg:col-span-5 bg-white text-stone-900 p-6 sm:p-8 rounded-3xl shadow-2xl space-y-6">
+                    <div class="flex items-center justify-between border-b border-stone-100 pb-4">
+                        <h3 class="font-serif-display font-bold text-xl text-stone-900">Tóm Tắt Bó Hoa Tự Phối</h3>
+                        <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold uppercase px-2.5 py-1 rounded-full">Trực Tiếp</span>
+                    </div>
+
+                    <div class="space-y-3 text-xs text-stone-600">
+                        <div class="flex justify-between">
+                            <span>Hoa chính:</span>
+                            <span class="font-semibold text-stone-900" id="summaryStem">Hoa Hồng Mẫu Đơn</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Lá phụ chọn thêm:</span>
+                            <span class="text-stone-900" id="summaryFoliage">Lá Bạch Đàn Vòng</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Giấy gói & Phụ kiện:</span>
+                            <span class="text-stone-900" id="summaryWrap">Giấy Kraft Giản Dị</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Thiệp chúc mừng hand-written:</span>
+                            <span class="text-emerald-600 font-semibold">Miễn Phí Tặng Kèm</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-cream p-4 rounded-2xl flex items-center justify-between border border-stone-200">
+                        <div>
+                            <span class="text-[10px] uppercase font-bold text-stone-500 block">Ước Tính Giá</span>
+                            <span class="font-serif-display text-2xl font-bold text-brand-700" id="customTotalPrice">600.000 ₫</span>
+                        </div>
+                        <button id="addCustomBouquetBtn" class="bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold px-5 py-3 rounded-xl transition-all shadow-md flex items-center gap-2">
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                            <span>Gửi Mẫu Qua Zalo</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer Banner Section -->
+    <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-r from-brand-600 via-brand-500 to-sage-800 rounded-3xl p-8 sm:p-12 text-white relative overflow-hidden shadow-xl">
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-8 space-y-4">
+                    <span class="bg-white/20 backdrop-blur-md text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full inline-block">
+                        Ưu Đãi Đặc Biệt Tháng
+                    </span>
+                    <h2 class="font-serif-display text-3xl sm:text-4xl font-bold">Giảm 15% Cho Đơn Hàng Đặt Trước Ngày Lễ</h2>
+                    <p class="text-brand-100 text-sm max-w-xl">
+                        Đặt hoa sinh nhật, chúc mừng hoặc hoa sự kiện trước ít nhất 3 ngày để nhận voucher giảm trực tiếp 15% và miễn phí giao hoa toàn thành phố.
+                    </p>
+                    
+                    <!-- Countdown Timer -->
+                    <div class="flex items-center gap-4 pt-2" id="countdownTimer">
+                        <div class="bg-white/10 backdrop-blur-md rounded-xl p-3 text-center min-w-[60px]">
+                            <span class="font-serif-display text-2xl font-bold block" id="timerHours">18</span>
+                            <span class="text-[10px] uppercase tracking-wider text-brand-200">Giờ</span>
+                        </div>
+                        <span class="text-xl font-bold">:</span>
+                        <div class="bg-white/10 backdrop-blur-md rounded-xl p-3 text-center min-w-[60px]">
+                            <span class="font-serif-display text-2xl font-bold block" id="timerMins">45</span>
+                            <span class="text-[10px] uppercase tracking-wider text-brand-200">Phút</span>
+                        </div>
+                        <span class="text-xl font-bold">:</span>
+                        <div class="bg-white/10 backdrop-blur-md rounded-xl p-3 text-center min-w-[60px]">
+                            <span class="font-serif-display text-2xl font-bold block" id="timerSecs">20</span>
+                            <span class="text-[10px] uppercase tracking-wider text-brand-200">Giây</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-4 flex justify-start lg:justify-end">
+                    <button onclick="openConsultationModal('Đăng ký nhận ưu đãi 15%')" class="bg-white text-stone-900 font-bold px-8 py-4 rounded-full shadow-lg hover:bg-cream hover:scale-105 transition-all text-sm flex items-center gap-2">
+                        <span>Nhận Mã Giảm Giá</span>
+                        <i data-lucide="sparkles" class="w-4 h-4 text-brand-600"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="py-20 bg-white border-t border-stone-200/60" id="reviews">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-600 block mb-2">Cảm Nhận Khách Hàng</span>
+                <h2 class="font-serif-display text-3xl sm:text-5xl font-bold text-stone-900">Khách Hàng Nói Gì Về Blossom & Vine</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-cream/50 p-8 rounded-3xl border border-stone-200/80 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="text-amber-400 flex text-sm">★★★★★</div>
+                        <p class="text-stone-700 text-sm italic leading-relaxed">
+                            "Bó hoa giao đến tận tay người yêu mình đúng giờ kỷ niệm. Hoa tươi tắn, cắm cực kỳ nghệ thuật và tinh tế. Shop chụp hình gửi Zalo duyệt trước làm mình rất yên tâm!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-stone-200/60">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80" alt="Khách hàng" class="w-10 h-10 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-serif-display font-bold text-stone-900 text-sm">Nguyễn Phương Thảo</h4>
+                            <p class="text-[10px] text-stone-500">Quận 1, TP. Hồ Chí Minh</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-cream/50 p-8 rounded-3xl border border-stone-200/80 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="text-amber-400 flex text-sm">★★★★★</div>
+                        <p class="text-stone-700 text-sm italic leading-relaxed">
+                            "Đặt chậu Lan Hồ Điệp tặng đối tác nhân dịp khai trương, màu hoa sáng đẹp lung linh. Dịch vụ tư vấn nhiệt tình, hỗ trợ in băng rôn chữ vàng vô cùng sang trọng."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-stone-200/60">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&q=80" alt="Khách hàng" class="w-10 h-10 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-serif-display font-bold text-stone-900 text-sm">Trần Hoàng Minh</h4>
+                            <p class="text-[10px] text-stone-500">Cầu Giấy, Hà Nội</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-cream/50 p-8 rounded-3xl border border-stone-200/80 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="text-amber-400 flex text-sm">★★★★★</div>
+                        <p class="text-stone-700 text-sm italic leading-relaxed">
+                            "Tính năng phối hoa trực tiếp trên website siêu xịn! Mình chọn mẫu hồng kem phối lá bạch đàn và giấy lụa mờ, ra sản phẩm thực tế y hệt bản thiết kế."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-stone-200/60">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Khách hàng" class="w-10 h-10 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-serif-display font-bold text-stone-900 text-sm">Lê Ngọc Mai</h4>
+                            <p class="text-[10px] text-stone-500">Hải Châu, Đà Nẵng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-stone-900 text-stone-300 pt-16 pb-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-12 border-b border-stone-800">
+                <!-- Brand Column -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-brand-500 text-white flex items-center justify-center">
+                            <i data-lucide="flower-2" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-serif-display text-xl font-bold tracking-tight text-white">BLOSSOM & VINE</span>
+                    </div>
+                    <p class="text-xs text-stone-400 max-w-sm leading-relaxed">
+                        Tiệm hoa tươi thiết kế cao cấp, mang lại những khoảnh khắc trọn vẹn xúc cảm bằng nghệ thuật hoa tươi sang trọng.
+                    </p>
+                    
+                    <div class="pt-2">
+                        <p class="text-xs font-semibold text-white mb-2">Đăng ký nhận thông tin khuyến mãi</p>
+                        <form id="newsletterForm" class="flex items-center gap-2 max-w-md">
+                            <input type="text" required placeholder="Nhập số điện thoại hoặc email..." class="bg-stone-800 text-xs text-white placeholder-stone-500 px-4 py-2.5 rounded-full border border-stone-700 focus:outline-none focus:border-brand-500 w-full">
+                            <button type="submit" class="bg-brand-500 hover:bg-brand-600 text-white text-xs font-bold px-5 py-2.5 rounded-full transition-colors flex-shrink-0">
+                                Đăng Ký
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Footer Column 2 -->
+                <div>
+                    <h5 class="font-serif-display font-semibold text-white text-sm mb-4">Danh Mục Hoa</h5>
+                    <ul class="space-y-2 text-xs text-stone-400">
+                        <li><a href="#featured" class="hover:text-brand-300 transition-colors">Hoa Sinh Nhật</a></li>
+                        <li><a href="#featured" class="hover:text-brand-300 transition-colors">Hoa Tình Yêu & Kỷ Niệm</a></li>
+                        <li><a href="#featured" class="hover:text-brand-300 transition-colors">Kệ Hoa Khai Trương</a></li>
+                        <li><a href="#featured" class="hover:text-brand-300 transition-colors">Lan Hồ Điệp Cao Cấp</a></li>
+                        <li><a href="#featured" class="hover:text-brand-300 transition-colors">Hoa Chia Buồn Tinh Tế</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Column 3 -->
+                <div>
+                    <h5 class="font-serif-display font-semibold text-white text-sm mb-4">Hỗ Trợ Khách Hàng</h5>
+                    <ul class="space-y-2 text-xs text-stone-400">
+                        <li><a href="tel:0901234567" class="hover:text-brand-300 transition-colors">Hotline: 0901 234 567</a></li>
+                        <li><a href="https://zalo.me" target="_blank" class="hover:text-brand-300 transition-colors">Tư Vấn Trực Tiếp Zalo</a></li>
+                        <li><a href="#" class="hover:text-brand-300 transition-colors">Chính Sách Bán Hàng</a></li>
+                        <li><a href="#" class="hover:text-brand-300 transition-colors">Hướng Dẫn Chăm Sóc Hoa</a></li>
+                        <li><a href="#" class="hover:text-brand-300 transition-colors">Chính Sách Đổi Trả</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Column 4 -->
+                <div>
+                    <h5 class="font-serif-display font-semibold text-white text-sm mb-4">Hệ Thống Cửa Hàng</h5>
+                    <p class="text-xs text-stone-400 leading-relaxed">
+                        <strong class="text-stone-300 block mb-1">Chi nhánh TP. Hồ Chí Minh:</strong>
+                        128 Nguyễn Trãi, Phường Bến Thành, Quận 1<br><br>
+                        <strong class="text-stone-300 block mb-1">Chi nhánh Hà Nội:</strong>
+                        45 Lý Thường Kiệt, Quận Hoàn Kiếm<br><br>
+                        Mở cửa: 7:00 - 21:00 (Tất cả các ngày)
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+                <p>© 2026 Blossom & Vine Việt Nam. Tất cả quyền được bảo lưu.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-stone-300">Bảo Mật Thông Tin</a>
+                    <a href="#" class="hover:text-stone-300">Điều Khoản Dịch Vụ</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Floating Quick Contact Buttons (Vietnam Region Focus) -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
+        <!-- Zalo Button -->
+        <a href="https://zalo.me" target="_blank" class="w-13 h-13 bg-zalo text-white p-3.5 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center group relative" title="Chat Zalo ngay">
+            <i data-lucide="message-circle" class="w-6 h-6"></i>
+            <span class="absolute right-full mr-3 bg-stone-900 text-white text-[11px] font-semibold px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-md">
+                Chat Zalo Với Florist
+            </span>
+        </a>
+        
+        <!-- Phone Button -->
+        <a href="tel:0901234567" class="w-13 h-13 bg-emerald-600 text-white p-3.5 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center group relative" title="Gọi Điện Đặt Hoa">
+            <i data-lucide="phone" class="w-6 h-6"></i>
+            <span class="absolute right-full mr-3 bg-stone-900 text-white text-[11px] font-semibold px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-md">
+                Gọi Hotline: 0901 234 567
+            </span>
+        </a>
+    </div>
+
+    <!-- Direct Consultation Request Modal -->
+    <div id="consultationModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-stone-900/60 backdrop-blur-sm">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 relative shadow-2xl border border-stone-200">
+            <button onclick="closeConsultationModal()" class="absolute top-4 right-4 p-2 text-stone-400 hover:text-stone-800 rounded-full">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <div class="space-y-4 text-center">
+                <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center mx-auto">
+                    <i data-lucide="flower" class="w-6 h-6"></i>
+                </div>
+                <h3 class="font-serif-display font-bold text-2xl text-stone-900">Đặt Hoa / Tư Vấn Tận Tình</h3>
+                <p class="text-xs text-stone-500 leading-relaxed" id="modalProductNote">
+                    Vui lòng để lại số điện thoại, Florist của Blossom & Vine sẽ gọi lại tư vấn và gửi hình hoa mẫu qua Zalo cho bạn ngay!
+                </p>
+
+                <form id="consultationForm" class="space-y-3 pt-2 text-left">
+                    <div>
+                        <label class="text-[11px] font-bold uppercase text-stone-600 block mb-1">Họ và tên của bạn</label>
+                        <input type="text" required placeholder="Ví dụ: Nguyễn Văn A" class="w-full text-xs p-3 rounded-xl border border-stone-300 focus:outline-none focus:border-brand-500">
+                    </div>
+                    <div>
+                        <label class="text-[11px] font-bold uppercase text-stone-600 block mb-1">Số điện thoại / Zalo</label>
+                        <input type="tel" required placeholder="Ví dụ: 0912 345 678" class="w-full text-xs p-3 rounded-xl border border-stone-300 focus:outline-none focus:border-brand-500">
+                    </div>
+                    <div>
+                        <label class="text-[11px] font-bold uppercase text-stone-600 block mb-1">Ghi chú thêm (Ngày giao, Lời chúc...)</label>
+                        <textarea rows="2" placeholder="Ví dụ: Cần giao lúc 10h sáng ngày mai..." class="w-full text-xs p-3 rounded-xl border border-stone-300 focus:outline-none focus:border-brand-500"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-3.5 rounded-xl text-xs transition-all shadow-md mt-2 flex items-center justify-center gap-2">
+                        <i data-lucide="send" class="w-4 h-4"></i>
+                        <span>Gửi Yêu Cầu Tư Vấn</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Product Detail Modal -->
+    <div id="quickViewModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-stone-900/60 backdrop-blur-sm">
+        <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl border border-stone-200 max-h-[90vh] overflow-y-auto custom-scrollbar">
+            <button onclick="closeQuickView()" class="absolute top-4 right-4 p-2 text-stone-400 hover:text-stone-800 rounded-full">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center" id="modalContent">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Design System Tokens Modal Showcase -->
+    <div id="tokenModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-stone-900/60 backdrop-blur-sm">
+        <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl border border-stone-200 max-h-[85vh] overflow-y-auto custom-scrollbar">
+            <button onclick="closeTokenModal()" class="absolute top-4 right-4 p-2 text-stone-400 hover:text-stone-800 rounded-full">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <div class="space-y-6">
+                <div>
+                    <span class="text-xs font-black uppercase text-brand-500 tracking-wider">UI Design System Spec</span>
+                    <h3 class="font-display font-black text-2xl text-stone-900 mt-1">Gen Z & Youth Tokens Overview 🎨</h3>
+                </div>
+
+                <!-- Token Color Swatches -->
+                <div class="space-y-3">
+                    <h4 class="text-xs font-black text-stone-800 uppercase tracking-wider">1. Gen Z Color Tokens</h4>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                        <div class="p-3 bg-brand-400 rounded-2xl text-white text-xs shadow-sm">
+                            <span class="font-extrabold block">Electric Neon Pink</span>
+                            <span class="opacity-90 text-[10px]">#F72585</span>
+                        </div>
+                        <div class="p-3 bg-brand-500 rounded-2xl text-white text-xs shadow-sm">
+                            <span class="font-extrabold block">Primary Bloom</span>
+                            <span class="opacity-90 text-[10px]">#FF0054</span>
+                        </div>
+                        <div class="p-3 bg-matcha-500 rounded-2xl text-white text-xs shadow-sm">
+                            <span class="font-extrabold block">Matcha Green</span>
+                            <span class="opacity-90 text-[10px]">#22C55E</span>
+                        </div>
+                        <div class="p-3 bg-lavender-400 rounded-2xl text-white text-xs shadow-sm">
+                            <span class="font-extrabold block">Aesthetic Lavender</span>
+                            <span class="opacity-90 text-[10px]">#A78BFA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Typography Tokens -->
+                <div class="space-y-3 pt-2">
+                    <h4 class="text-xs font-black text-stone-800 uppercase tracking-wider">2. Modern Typography Tokens</h4>
+                    <div class="bg-brand-50/60 p-4 rounded-2xl border border-brand-200 space-y-2 text-xs">
+                        <p class="font-display text-lg font-black text-stone-900">Display Headings: Outfit (Geometric Modern Sans)</p>
+                        <p class="font-sans text-stone-700 font-semibold">Body Text: Plus Jakarta Sans (Clean Legible Sans)</p>
+                    </div>
+                </div>
+
+                <!-- Radius & Shadow Tokens -->
+                <div class="space-y-3 pt-2">
+                    <h4 class="text-xs font-black text-stone-800 uppercase tracking-wider">3. Elevation & Corner Tokens</h4>
+                    <div class="grid grid-cols-2 gap-3 text-xs">
+                        <div class="p-3 rounded-2xl border border-stone-200 shadow-neon bg-white">
+                            <span class="font-extrabold block">Neon Pink Glow Shadow</span>
+                            <span class="text-stone-500 text-[10px]">0 12px 30px -5px #F72585</span>
+                        </div>
+                        <div class="p-3 rounded-3xl border border-stone-200 shadow-sm bg-butter/60">
+                            <span class="font-extrabold block">Extra Rounded Cards</span>
+                            <span class="text-stone-500 text-[10px]">Rounded-3xl (1.75rem) & Rounded-4xl</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-6 left-6 z-50 bg-stone-900 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+        <div class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+            <i data-lucide="check" class="w-4 h-4"></i>
+        </div>
+        <span class="text-xs font-semibold" id="toastMsg">Thao tác thành công</span>
+    </div>
+
+    <script>
+        // Sample Product Dataset (In VND)
+        const productsData = {
+            1: {
+                id: 1,
+                name: "Nàng Thơ Waxflower Úc",
+                price: "950.000 ₫",
+                category: "Hoa Wax Nhập Khẩu",
+                image: "https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=800&q=80",
+                desc: "Bó hoa Waxflower Úc (Hoa Wax) sắc hồng kem dịu ngọt, phối cùng cành hồng mẫu đơn và lá măng tơ nhẹ nhàng. Hoa Wax có lớp cánh mịn bóng như sáp, cực kỳ bền và lưu giữ hương thơm tự nhiên."
+            },
+            2: {
+                id: 2,
+                name: "Bó Hoa Sáp Thơm Luxury",
+                price: "750.000 ₫",
+                category: "Hoa Sáp Thơm Cao Cấp",
+                image: "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=800&q=80",
+                desc: "Mẫu hoa sáp thơm nghệ thuật cao cấp được tạo hình xắt nét tỉ mỉ, bề mặt lụa mịn quyến rũ với độ bền giữ đến 3-5 năm."
+            },
+            3: {
+                id: 3,
+                name: "Tuyết Mai & Wax White",
+                price: "880.000 ₫",
+                category: "Hoa Wax & Tuyết Mai",
+                image: "https://images.unsplash.com/photo-1591886960571-74d43a9d4166?auto=format&fit=crop&w=800&q=80",
+                desc: "Cặp đôi thanh lịch gồm hoa Wax trắng tinh khôi nhập khẩu phối cùng những nhành Tuyết Mai mềm mại, tạo nên nét chấm phá tinh tế cho không gian."
+            },
+            4: {
+                id: 4,
+                name: "Bạch Lan & Wax Flower",
+                price: "2.600.000 ₫",
+                category: "Lan Hồ Điệp & Wax",
+                image: "https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=800&q=80",
+                desc: "Chậu Lan Hồ Điệp 5 cành trắng muốt điểm xuyết dải hoa Waxflower Úc xòe rộng, đại diện cho phú quý và nét đẹp sang trọng bền vững."
+            }
+        };
+
+        // Initialize Lucide Icons
+        window.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+            initCategoryFilters();
+            initCustomBuilder();
+            initCountdown();
+        });
+
+        // Toast Feedback Function
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toastMsg');
+            toastMsg.innerText = message;
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3500);
+        }
+
+        // Category Filtering Logic
+        function initCategoryFilters() {
+            const filterBtns = document.querySelectorAll('.category-btn');
+            const productCards = document.querySelectorAll('.product-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => {
+                        b.classList.remove('bg-stone-900', 'text-white');
+                        b.classList.add('bg-white', 'text-stone-600');
+                    });
+                    btn.classList.remove('bg-white', 'text-stone-600');
+                    btn.classList.add('bg-stone-900', 'text-white');
+
+                    const category = btn.getAttribute('data-category');
+
+                    productCards.forEach(card => {
+                        const cardCats = card.getAttribute('data-category');
+                        if (category === 'all' || cardCats.includes(category)) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        }
+
+        // Custom Bouquet Studio Logic (Live Price Calculation)
+        function initCustomBuilder() {
+            let selectedStem = { name: 'Hoa Waxflower Úc Import', price: 550000 };
+            let selectedWrap = { name: 'Giấy Kraft Giản Dị', price: 50000 };
+
+            const stemBtns = document.querySelectorAll('.stem-opt');
+            stemBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    stemBtns.forEach(b => {
+                        b.classList.remove('border-brand-500', 'bg-sage-900/80');
+                        b.classList.add('border-sage-600', 'bg-sage-900/40');
+                    });
+                    btn.classList.remove('border-sage-600', 'bg-sage-900/40');
+                    btn.classList.add('border-brand-500', 'bg-sage-900/80');
+
+                    selectedStem = {
+                        name: btn.getAttribute('data-name'),
+                        price: parseFloat(btn.getAttribute('data-price'))
+                    };
+                    calculateCustomTotal();
+                });
+            });
+
+            const wrapBtns = document.querySelectorAll('.wrap-opt');
+            wrapBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    wrapBtns.forEach(b => {
+                        b.classList.remove('border-brand-500', 'bg-sage-900/80');
+                        b.classList.add('border-sage-600', 'bg-sage-900/40');
+                    });
+                    btn.classList.remove('border-sage-600', 'bg-sage-900/40');
+                    btn.classList.add('border-brand-500', 'bg-sage-900/80');
+
+                    selectedWrap = {
+                        name: btn.getAttribute('data-name'),
+                        price: parseFloat(btn.getAttribute('data-price'))
+                    };
+                    calculateCustomTotal();
+                });
+            });
+
+            const foliageChks = document.querySelectorAll('.foliage-chk');
+            foliageChks.forEach(chk => {
+                chk.addEventListener('change', calculateCustomTotal);
+            });
+
+            function calculateCustomTotal() {
+                let foliageTotal = 0;
+                let foliageNames = [];
+
+                foliageChks.forEach(chk => {
+                    if (chk.checked) {
+                        foliageTotal += parseFloat(chk.getAttribute('data-price'));
+                        foliageNames.push(chk.getAttribute('data-name'));
+                    }
+                });
+
+                const grandTotal = selectedStem.price + selectedWrap.price + foliageTotal;
+
+                document.getElementById('summaryStem').innerText = selectedStem.name;
+                document.getElementById('summaryWrap').innerText = selectedWrap.name;
+                document.getElementById('summaryFoliage').innerText = foliageNames.length ? foliageNames.join(', ') : 'Không chọn';
+                
+                // Format VND currency
+                document.getElementById('customTotalPrice').innerText = grandTotal.toLocaleString('vi-VN') + ' ₫';
+            }
+
+            document.getElementById('addCustomBouquetBtn').addEventListener('click', () => {
+                const stemName = document.getElementById('summaryStem').innerText;
+                const priceText = document.getElementById('customTotalPrice').innerText;
+                openConsultationModal(`Tự thiết kế: Bó ${stemName} (${priceText})`);
+            });
+        }
+
+        // Modals & Consultations
+        function openConsultationModal(productInfo) {
+            const modal = document.getElementById('consultationModal');
+            const note = document.getElementById('modalProductNote');
+            if (productInfo) {
+                note.innerText = `Sản phẩm quan tâm: "${productInfo}". Nhập SĐT để Florist gọi lại gửi mẫu ảnh Zalo cho bạn!`;
+            }
+            modal.classList.remove('hidden');
+        }
+
+        function closeConsultationModal() {
+            document.getElementById('consultationModal').classList.add('hidden');
+        }
+
+        function openTokenModal() {
+            document.getElementById('tokenModal').classList.remove('hidden');
+        }
+
+        function closeTokenModal() {
+            document.getElementById('tokenModal').classList.add('hidden');
+        }
+
+        function quickViewProduct(id) {
+            const p = productsData[id];
+            if (!p) return;
+
+            const modal = document.getElementById('quickViewModal');
+            const content = document.getElementById('modalContent');
+
+            content.innerHTML = `
+                <div class="aspect-square rounded-2xl overflow-hidden">
+                    <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover">
+                </div>
+                <div class="space-y-4">
+                    <span class="bg-brand-100 text-brand-700 text-xs font-bold px-2.5 py-1 rounded-full uppercase">${p.category}</span>
+                    <h3 class="font-serif-display font-bold text-2xl text-stone-900">${p.name}</h3>
+                    <p class="text-xs text-stone-600 leading-relaxed">${p.desc}</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-stone-200">
+                        <span class="font-serif-display text-xl font-bold text-stone-900">${p.price}</span>
+                        <button onclick="openConsultationModal('${p.name} - ${p.price}'); closeQuickView();" class="bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold px-6 py-3 rounded-full transition-all flex items-center gap-1.5">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i>
+                            <span>Đặt Ngay Qua Zalo</span>
+                        </button>
+                    </div>
+                </div>
+            `;
+            modal.classList.remove('hidden');
+            lucide.createIcons();
+        }
+
+        function closeQuickView() {
+            document.getElementById('quickViewModal').classList.add('hidden');
+        }
+
+        // Countdown Timer Logic
+        function initCountdown() {
+            let hours = 18, mins = 45, secs = 20;
+            setInterval(() => {
+                if (secs > 0) secs--;
+                else {
+                    secs = 59;
+                    if (mins > 0) mins--;
+                    else {
+                        mins = 59;
+                        if (hours > 0) hours--;
+                    }
+                }
+                document.getElementById('timerHours').innerText = String(hours).padStart(2, '0');
+                document.getElementById('timerMins').innerText = String(mins).padStart(2, '0');
+                document.getElementById('timerSecs').innerText = String(secs).padStart(2, '0');
+            }, 1000);
+        }
+
+        // Forms Handlers
+        document.getElementById('consultationForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            closeConsultationModal();
+            showToast("✨ Đã gửi yêu cầu! Florist sẽ liên hệ Zalo của bạn trong 5 phút.");
+            e.target.reset();
+        });
+
+        document.getElementById('deliveryCheckForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            showToast("🚗 Khu vực này có dịch vụ Giao Hoa Hỏa Tốc 2 Giờ!");
+        });
+
+        document.getElementById('newsletterForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            showToast("🎁 Cảm ơn bạn đã đăng ký! Mã giảm giá đã được ghi nhận.");
+            e.target.reset();
+        });
+
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
