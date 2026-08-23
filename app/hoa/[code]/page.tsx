@@ -196,7 +196,7 @@ export default async function ProductPage({
       {related.length > 0 && (
         <section className="mt-14 space-y-6 border-t border-line pt-10">
           <h2 className="font-display text-2xl font-black text-ink">Sản phẩm tương tự</h2>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+          <div className="grid grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-4 lg:gap-8">
             {related.map((p) => (
               <ProductCard
                 key={p.code}

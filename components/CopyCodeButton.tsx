@@ -82,7 +82,7 @@ export default function CopyCodeButton({
   const sizing =
     variant === 'detail'
       ? 'w-full justify-center px-6 py-4 text-sm'
-      : 'px-4 py-2 text-xs'
+      : 'px-3 py-1.5 text-2xs sm:px-4 sm:py-2 sm:text-xs'
 
   return (
     <>
@@ -93,7 +93,7 @@ export default function CopyCodeButton({
         onClick={copy}
         className={`inline-flex flex-shrink-0 items-center gap-1.5 rounded-pill bg-primary font-extrabold text-white shadow-sm transition-colors hover:bg-primary-hover ${sizing}`}
       >
-        <MessageCircle className="h-4 w-4" aria-hidden="true" />
+        <MessageCircle className="h-3.5 w-3.5 sm:h-4 sm:w-4" aria-hidden="true" />
         {variant === 'detail' ? 'Nhắn Zalo đặt hàng' : 'Inbox Zalo'}
       </a>
       <span aria-live="polite" className="sr-only">

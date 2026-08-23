@@ -33,7 +33,7 @@ export default function ProductCard({
   const href = `/hoa/${product.code}/`
 
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-line bg-porcelain shadow-card transition-all duration-300 hover:border-brand-300 hover:shadow-card-hover">
+    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border sm:rounded-3xl border-line bg-porcelain shadow-card transition-all duration-300 hover:border-brand-300 hover:shadow-card-hover">
       <Link href={href} className="relative block aspect-card overflow-hidden">
         <img
           src={product.images[0]}
@@ -45,38 +45,38 @@ export default function ProductCard({
           className="h-full w-full object-cover transition-transform duration-image group-hover:scale-105"
         />
         {product.badge && (
-          <span className="absolute left-4 top-4">
+          <span className="absolute left-2 top-2 sm:left-4 sm:top-4">
             <Badge label={product.badge} style={product.badgeStyle} />
           </span>
         )}
         {price.onSale && (
-          <span className="absolute right-4 top-4">
+          <span className="absolute right-2 top-2 sm:right-4 sm:top-4">
             <Badge label="Giảm giá" style="hot" />
           </span>
         )}
       </Link>
 
-      <div className="flex flex-1 flex-col p-5">
+      <div className="flex flex-1 flex-col p-3 sm:p-5">
         <div className="flex items-baseline justify-between gap-2 text-2xs font-semibold text-ink-subtle">
-          <span className="truncate">{product.subtitle}</span>
+          <span className="hidden truncate sm:inline">{product.subtitle}</span>
           <span className="flex-shrink-0 font-mono font-bold tracking-wider text-ink-muted">
             {product.code}
           </span>
         </div>
 
-        <h3 className="mt-1.5 font-display text-lg font-black leading-snug text-ink">
+        <h3 className="mt-1.5 font-display text-sm font-black leading-snug text-ink sm:text-lg">
           <Link href={href} className="line-clamp-2 hover:text-primary">
             {product.name}
           </Link>
         </h3>
 
         {product.shortDesc && (
-          <p className="mt-1.5 line-clamp-2 text-xs leading-relaxed text-ink-subtle">
+          <p className="mt-1.5 hidden line-clamp-2 text-xs leading-relaxed text-ink-subtle sm:block">
             {product.shortDesc}
           </p>
         )}
 
-        <div className="mt-auto flex flex-wrap items-center justify-between gap-3 border-t border-line/70 pt-3">
+        <div className="mt-auto flex flex-wrap items-center justify-between gap-2 border-t border-line/70 pt-3 sm:gap-3">
           <PriceDisplay price={price} />
           <CopyCodeButton code={product.code} zaloUrl={zaloUrl} />
         </div>

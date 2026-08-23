@@ -19,7 +19,7 @@ export default function PriceDisplay({
   tone?: 'default' | 'on-dark'
 }) {
   const onDark = tone === 'on-dark'
-  const amountClass = size === 'detail' ? 'text-3xl' : 'text-lg'
+  const amountClass = size === 'detail' ? 'text-3xl' : 'text-base sm:text-lg'
   const wasClass = size === 'detail' ? 'text-base' : 'text-xs'
 
   if (price.amount === undefined) {
