@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-05T07:36:44.076Z",
+  "takenAt": "2026-09-05T07:41:11.580Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a135",
@@ -345,22 +345,22 @@
   "settings": [
     {
       "_id": "site",
-      "aboutText": "Blossom & Vine là tiệm hoa thiết kế tại TP. Hồ Chí Minh. Mỗi bó hoa được cắm thủ công trong ngày giao, không dùng hoa tồn. Bạn nhắn mã sản phẩm qua Zalo, chúng tôi xác nhận giá và thời gian giao ngay trong vài phút.",
-      "address": "128 Nguyễn Trãi, Phường Bến Thành, Quận 1, TP. Hồ Chí Minh",
-      "announcementText": "Hoa tươi cắm trong ngày — giao hỏa tốc 2 giờ nội thành",
-      "heroEyebrow": "Waxflower Úc & Hoa Sáp Thơm nhập khẩu",
-      "heroText": "Hoa nhập khẩu và hoa Đà Lạt chọn từng cành, cắm trong ngày. Chúng tôi chụp ảnh bó hoa thật và gửi Zalo để bạn duyệt trước khi giao.",
-      "heroTitle": "Bó hoa cắm tay,",
-      "heroTitleAccent": "giao trong 2 giờ",
-      "hours": "7:00 – 21:00, tất cả các ngày",
+      "aboutText": "Katty Flower chuyên hoa sáp, hoa lụa thiết kế tại Krông Năng - Đăk Lăk. Mỗi bó hoa được cắm thủ công trong ngày giao. Bạn nhắn mã sản phẩm qua Zalo, chúng tôi xác nhận giá và thời gian giao ngay trong vài phút.",
+      "address": "20 Nguyễn Tất Thành, Krông Năng, Đăk Lăk",
+      "announcementText": "Hoa sáp, hoa lụa cắm trong ngày — freeship bán kính 3km",
+      "heroEyebrow": "Hoa Sáp Thơm nhập khẩu",
+      "heroText": "Hoa sáp, hoa lụa nhập khẩu cắm trong ngày. Chúng tôi chụp ảnh bó hoa thật và gửi để bạn duyệt trước khi giao.",
+      "heroTitle": "Bó hoa cắm tay",
+      "heroTitleAccent": "giao trong 2-4 giờ",
+      "hours": "8:00 – 20:00, tất cả các ngày",
       "messengerUrl": "https://m.me/blossomvine",
-      "phone": "0901234567",
-      "sameDayCutoff": "Đặt trước 15:00 để giao trong ngày",
-      "shopName": "Katty Shop",
-      "tagline": "Flower Studio",
-      "zaloPhone": "0901234567",
+      "phone": "0395448458",
+      "sameDayCutoff": "Đặt trước 14:00 để giao trong ngày",
+      "shopName": "Katty Flower",
+      "tagline": "Flower Flower",
+      "zaloPhone": "0395448458",
       "announcementLink": "",
-      "updatedAt": "2026-09-05T06:46:14.775Z",
+      "updatedAt": "2026-09-05T07:39:42.941Z",
       "zaloOaId": ""
     }
   ]
