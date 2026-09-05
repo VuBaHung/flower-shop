@@ -17,5 +17,12 @@
     "paths": { "@/*": ["./*"] }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules", "out"]
+  "exclude": [
+    "node_modules",
+    "out",
+    // The admin app is a SEPARATE deployment with its own tsconfig, deps and aliases
+    // (PLAN.md §3A). Compiling it here would resolve @/lib/* against the storefront and
+    // would risk pulling server-only admin code toward the public bundle.
+    "admin"
+  ]
 }

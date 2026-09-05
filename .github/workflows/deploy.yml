@@ -5,9 +5,19 @@ on:
     branches: [main]
   # Lets you re-deploy without a commit, from the Actions tab.
   workflow_dispatch:
+  # The admin app's "Đăng lên website" button (PLAN.md §3). Publishing content must not
+  # require a commit.
+  repository_dispatch:
+    types: [publish-storefront]
+  # Fallback + campaign scheduling (PLAN.md §3): campaigns activate and expire against the
+  # BUILD date, so the site has to rebuild on its own even if nobody touches it.
+  # 01:00 Asia/Ho_Chi_Minh = 18:00 UTC the previous day.
+  schedule:
+    - cron: '0 18 * * *'
 
 permissions:
-  contents: read
+  # contents: write so the daily snapshot (PLAN.md §3A.4) can be committed back.
+  contents: write
   pages: write
   id-token: write
 
@@ -39,9 +49,33 @@ jobs:
 
       - name: Build static export
         # Project site is served from /flower-shop — see next.config.mjs.
+        # DATA_SOURCE stays 'fixtures' until the MONGODB_* secrets are added in
+        # Settings -> Secrets; the build then switches to live data with no code change.
         env:
           NEXT_PUBLIC_BASE_PATH: /flower-shop
+          DATA_SOURCE: ${{ vars.DATA_SOURCE || 'fixtures' }}
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+          MONGODB_DB: ${{ secrets.MONGODB_DB }}
         run: npm run build
+
+      # PLAN.md §3A.4: MongoDB M0 has no automated backup, so every build commits a dated
+      # JSON snapshot. No-ops when the database isn't configured yet.
+      - name: Snapshot database
+        if: ${{ secrets.MONGODB_URI != '' }}
+        env:
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+          MONGODB_DB: ${{ secrets.MONGODB_DB }}
+        run: node scripts/snapshot.mjs
+
+      - name: Commit snapshot
+        if: ${{ secrets.MONGODB_URI != '' }}
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data/snapshots/
+          # Nothing to commit when the catalog is unchanged since the last run.
+          git diff --staged --quiet || git commit -m 'chore: daily catalog snapshot'
+          git push
 
       # Pages' branch-based serving runs Jekyll, which drops _next/. Harmless
       # insurance for the artifact path too.

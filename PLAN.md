@@ -1,8 +1,15 @@
 # Flower Shop Catalog — Project Plan & Implementation Brief
 
-> **Status:** Draft for review. §13 is the copy-paste script for a local coding agent.
-> **Assumptions to confirm:** single admin (one shop owner), non-technical, manages products via spreadsheet. Market: Vietnam / HCMC. Language: Vietnamese UI.
-> **Stack decision:** Next.js (static export) — chosen for developer familiarity.
+> **Status:** Revised 2026-09-05 — admin architecture changed. Phases 1–2 are built; §11 Phase 3 is superseded by §3A.
+> **Assumptions to confirm:** single admin (one shop owner), non-technical. Market: Vietnam / HCMC. Language: Vietnamese UI.
+> **Stack decision:** Next.js (static export) for the storefront — chosen for developer familiarity.
+>
+> **⚠️ 2026-09-05 architecture change — read §3A before any Phase 3 work.** The original plan
+> used Google Sheets as the admin interface and explicitly had *no admin page* (old §11). The
+> owner has since asked for a real admin UI with a login, backed by MongoDB Atlas and
+> Cloudinary. That decision is taken and this document now reflects it. It changes §2, §3,
+> §4, §9, §10, §11 and §12. The reasoning and the costs it accepts are recorded in §3A rather
+> than removed, so the trade is auditable later.
 
 ---
 
@@ -16,29 +23,195 @@ Success = a customer finds a bouquet on Google or a shared Zalo link, and messag
 
 | Constraint | Implication |
 |---|---|
-| Zero recurring cost | Cloudflare Pages + GitHub + Google Sheets. Domain (~$12/yr) is the only spend. |
+| Near-zero recurring cost | Storefront on GitHub/Cloudflare Pages; admin on a free-tier host; MongoDB Atlas free tier; Cloudinary free tier. Domain (~$12/yr) is the only guaranteed spend. **Weakened from "zero" on 2026-09-05 — see §3A.** |
 | Commercial use permitted | Rules out Vercel Hobby. Cloudflare Pages is fine. |
 | Must rank on Google | Static HTML per product with real meta tags. **Not** a client-rendered SPA. |
 | Must look good on a phone | ~85% of traffic. Mobile-first, desktop second. |
-| Admin must be non-technical | Google Sheets only. Never touches Git, terminal, or a CMS. |
+| Admin must be non-technical | A password-protected web form. Never touches Git, terminal, or a spreadsheet schema. |
+| Admin data must survive | MongoDB Atlas is now the system of record. Unlike a Sheet, it has no version history the owner can read — **backups are mandatory, not optional.** See §3A.4. |
 | Small image storage | WebP, ≤150KB per image. |
 
 ## 3. Architecture
 
 ```
-Google Sheet (admin edits)
-        │  published as CSV → fetched at build time
+   ADMIN APP (private, server-rendered, own deployment)
+   Next.js, auth + product form + Cloudinary upload widget
+        │  writes
         ▼
-  Next.js 15 App Router, output: 'export'
+   MongoDB Atlas (free tier M0) ── system of record
+        │  read ONCE at build time by the storefront
+        ▼
+   STOREFRONT (public, output: 'export')
         │  generateStaticParams → one HTML file per product
         ▼
-    GitHub repo ──► Cloudflare Pages ──► https://shop.vn
+    GitHub repo ──► Pages/Cloudflare ──► https://shop.vn
+        ▲
+        └── admin taps "Publish" in the admin UI → repository_dispatch → rebuild
 ```
 
-- **Build trigger:** Cloudflare Deploy Hook. Admin taps a bookmarked link after editing the Sheet. Live in 1–2 minutes.
-- **Fallback:** GitHub Actions daily cron build, so the site self-heals if the admin forgets.
+**The load-bearing decision: MongoDB is read at BUILD time, never at request time.**
+The storefront stays a static export with zero database calls from a customer's browser.
+If the storefront ever queries Mongo per-request, §1's entire SEO rationale and the free
+hosting both collapse. This is the single rule most likely to be broken by accident — see
+§3A.2.
+
+- **Two deployments, one repo.** The public site and the admin app are separate builds with separate hosting and separate env vars. The admin app is never part of the static export.
+- **Build trigger:** a "Publish" button in the admin UI calls a GitHub `repository_dispatch` webhook. Live in 1–2 minutes. Replaces the bookmarked Cloudflare deploy hook.
+- **Fallback:** GitHub Actions daily cron build, so the site self-heals if the admin forgets to publish and so campaigns activate on schedule.
 - **Campaign scheduling:** the same cron is what activates and expires campaigns — see §6.2. Raise it to hourly in the week before a major date.
-- **Build order:** the customer UI is built against local fixtures first; the Sheet is wired in later behind an env var. See §11.
+- **Build order:** the customer UI is built against local fixtures first; MongoDB is wired in later behind an env var. See §11.
+
+## 3A. Admin UI architecture (decided 2026-09-05)
+
+This section supersedes the old §11 "On 'the admin page'", which stated there was no admin
+page. The owner asked for one. It is being built.
+
+### 3A.1 What this trade actually costs
+
+Recorded plainly so nobody re-litigates it later, and so the risks get budgeted rather than
+discovered:
+
+| What we gain | What we give up |
+|---|---|
+| A real login + product form; no spreadsheet columns to respect | Auth, sessions, and a database now exist and must be kept patched and secured |
+| Image upload from the phone, no manual Cloudinary step | A second deployment, second set of env vars, second thing that can break |
+| Validation at entry — a bad `occasions` tag can be rejected with a message | Free tiers can sleep, throttle, or change terms; M0 has no SLA |
+| Data model can evolve without re-teaching a spreadsheet | **No Google-Sheets version history.** A mis-click can destroy data with no undo unless we build backups |
+
+The storefront's SEO, speed, and hosting cost are all **unchanged**, because of the
+build-time-read rule. That is the part worth protecting.
+
+### 3A.2 The invariant
+
+> The public storefront must contain **no** database credential, **no** runtime Mongo query,
+> and **no** admin code. `MONGODB_URI` belongs to the admin app and to the CI build job —
+> never to anything shipped to a browser, and never in a `NEXT_PUBLIC_*` variable.
+
+`lib/data.ts` keeps its current role as the single entry point. It gains a Mongo branch that
+runs at build time only. Every component keeps importing `getCatalog()` and still never
+learns where the data came from — the §11 "one-function swap" design survives this change
+intact, which is why the existing components need no rewrite.
+
+### 3A.3 Storage split
+
+| Data | Where | Why |
+|---|---|---|
+| Products, occasions, campaigns, settings | **MongoDB Atlas M0** (free, 512MB) | Structured, queryable, ~hundreds of documents. Far more than enough. |
+| Images and video | **Cloudinary** (free tier) | Purpose-built: upload widget, automatic WebP conversion, and the resize transforms §6.1 already assumes. Mongo stores only the resulting URL string. |
+
+Cloudinary is **not** an alternative to MongoDB here — it is the image half of the same
+system. Storing images in Mongo (GridFS or base64) would exhaust the 512MB tier quickly and
+lose the transform pipeline the plan already depends on.
+
+Use Cloudinary's **unsigned upload preset** from the admin browser, so image bytes never
+pass through the admin server and the API secret is never shipped to the client. Constrain
+the preset to WebP, max dimensions, and a single folder.
+
+### 3A.4 Backups are mandatory
+
+The old design got version history free — Google Sheets keeps every revision and the owner
+can restore one. **MongoDB M0 has no automated backup on the free tier.** Losing the
+database means re-entering every product by hand from photographs.
+
+Minimum acceptable: the daily cron build already reads the whole catalog. It commits a
+timestamped JSON snapshot to the repo on each run. That gives Git-backed history at no cost,
+and it doubles as the fixture file for local development. This is a required deliverable,
+not a nice-to-have.
+
+### 3A.5 Auth — deliberately minimal (confirmed 2026-09-05)
+
+**One static admin account. No user table, no registration, no password reset, no email
+flow, no OAuth, no third-party auth library.** The owner confirmed this scope; anything more
+is unjustified for a single person logging into their own shop tool.
+
+Concretely:
+
+- Username + password live in the admin app's env vars. There is no accounts collection in MongoDB.
+- Compare with a **constant-time** comparison, not `===`.
+- On success, set a signed HTTP-only `Secure` `SameSite=Lax` session cookie. No JWT in `localStorage`.
+- Every admin page and every write API route re-checks that cookie server-side. Hiding the UI is not access control — this is the one rule that cannot be skipped for being simple.
+- A basic attempt-delay on the login route. Cheap, and it is the entire attack surface.
+
+Two things stay non-negotiable even at this scope, because they cost nothing now and are
+expensive to retrofit:
+
+1. **Store the password as a hash** (`bcrypt`/`argon2`) in the env var, not plaintext. Same effort, and it means a leaked env file doesn't hand over the account.
+2. **Never commit the real values.** `.env` is git-ignored; `.env.example` holds empty placeholders and *is* committed.
+
+If this ever becomes multiple sellers, this design is intentionally throwaway — see §14 Q1.
+It would need real accounts, ownership on every product, and moderation.
+
+### 3A.7 Credentials are deferred
+
+No accounts need to exist to build Phases 3 and 3B. The repo carries a committed
+`.env.example` with every required key present and empty:
+
+```
+# Storefront (build time only — never NEXT_PUBLIC_*)
+DATA_SOURCE=fixtures          # 'fixtures' | 'mongo'
+MONGODB_URI=
+MONGODB_DB=
+
+# Admin app
+ADMIN_USERNAME=
+ADMIN_PASSWORD_HASH=
+SESSION_SECRET=
+
+# Cloudinary (unsigned preset — see §3A.3)
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
+NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET=
+
+# Publish button (§3) — GitHub repository_dispatch
+GITHUB_DISPATCH_TOKEN=
+GITHUB_REPO=
+```
+
+`DATA_SOURCE` defaults to `fixtures`, so **the storefront keeps building with an entirely
+empty `.env`.** Missing values must fail with a clear message naming the key, at startup —
+never with a silent empty catalog, and never by publishing a site with no products. The
+owner fills these in at Phase 3.5.
+
+### 3A.6 Where the admin app runs
+
+It needs a Node server, so it cannot live on the static host. It also should **not** be
+publicly indexable — `noindex` is set in `admin/app/layout.tsx` and it is absent from the
+sitemap.
+
+**Decided 2026-09-05: the admin app is HOSTED, not local-only.** The owner adds products
+from a phone, at the shop — §9's photograph-and-upload-on-the-spot workflow. Running the
+admin only on a laptop (`npm run dev`) would be free, expose no login page at all, and
+remove this whole attack surface, but it cannot serve a phone. That option was considered
+and rejected for that reason; revisit only if the workflow changes.
+
+Consequences accepted by hosting it:
+
+- A public login page exists. That is why §3A.5's throttle and server-side checks on every route are not optional.
+- Free instances sleep on idle — expect a **30–60s cold start** on the first open of the day. Annoying, not blocking, for a tool opened a few times daily.
+- A second deployment to keep alive. It deploys once and is then untouched; adding a product does not redeploy it.
+
+**Host chosen 2026-09-05: Render free tier.** Vercel Hobby is ruled out by §2's
+commercial-use constraint (the same reason it was rejected for the storefront). Render won
+on: free with no card, no adapter needed for a Next server app, and a 15-minute setup.
+Accepted cost: free instances sleep after ~15 minutes idle, so the first login of the day
+waits 30–60s. Railway (~$5/mo) removes that but breaks §2's zero-recurring-cost rule.
+
+Nothing in the code is Render-specific — it is a stock Next server app, so moving hosts is
+a matter of re-entering env vars. See `docs/DEPLOY-ADMIN.md`.
+
+**Verify current free-tier terms before committing** — §2's cost constraint depends on
+them, and they move.
+
+**On the two URLs.** The admin having its own address is a consequence of the storefront
+being a static export (`output: 'export'`): a folder of HTML files cannot run a login or an
+API route. Three options were weighed:
+
+| | Approach | Verdict |
+|---|---|---|
+| A | Two deployments, two URLs | **Chosen.** Storefront stays static, free, fast. |
+| B | One app, admin at `/admin`, drop `output: 'export'` | **Rejected.** Every product page becomes server-rendered for customers, forfeiting §1's SEO rationale and §2's free hosting — to tidy a URL only the owner ever sees. |
+| C | Keep both, map `shop.vn/admin` to the admin deployment via a CDN proxy rule | **Deferred to Phase 4.** Gives the single-domain URL while keeping the static storefront. A routing rule, not a rewrite — nothing built now blocks it. |
+
+---
 
 ### Next.js specifics — read these before coding
 
@@ -47,15 +220,26 @@ Google Sheet (admin edits)
 | `next.config.js` | `output: 'export'` — produces a static `out/` folder, no Node server |
 | Rendering | **Server Components only.** No `getServerSideProps`, no route handlers, no ISR, no middleware — none survive static export |
 | `next/image` | Requires `images: { unoptimized: true }` under static export. So **pre-optimize images yourself** (Cloudinary transforms or the resize script) |
-| Data fetching | Plain `async` fetch of the Sheet CSV inside a cached `lib/sheet.ts`. Runs at build only |
+| Data fetching | Mongo read inside a cached `lib/db.ts`, called from Server Components. **Build time only** — see §3A.2 |
 | Trailing slashes | `trailingSlash: true` — matches Cloudflare Pages' static serving cleanly |
 | Client JS | Only filters, gallery, copy-to-clipboard. Mark those `'use client'`; keep everything else server-rendered |
 
 > The single biggest risk with Next.js here is accidentally client-rendering the product list. If products come from `useEffect`, the SEO goal is lost. Products must be resolved at build time in a Server Component.
 
-## 4. Data model — Google Sheet
+## 4. Data model — MongoDB collections
 
-### Sheet 1: `Products`
+> **2026-09-05:** this was a Google Sheet; it is now four MongoDB collections —
+> `products`, `occasions`, `campaigns`, `settings`. **The fields below are unchanged**, and
+> `lib/types.ts` remains the contract. Read the "Column" tables as documents, `snake_case`
+> column names as the `camelCase` fields already defined in `lib/types.ts`.
+>
+> Two things the admin form must now enforce, which the Sheet could not:
+> - `code` is unique and immutable once created — it is the public URL and the string the customer quotes in Zalo. Changing it breaks a live link. The form should make it read-only after creation.
+> - `occasions` values must exist in the `occasions` collection. This is now a multi-select, not free text, so the old "must match Sheet 2" failure mode disappears.
+>
+> Index `code` (unique) and `status`. The dataset is small enough that nothing else needs one.
+
+### Collection 1: `products`
 
 | Column | Type | Required | Notes |
 |---|---|---|---|
@@ -92,7 +276,7 @@ The reference design shows star ratings and review counts on every card. They te
 
 **Recommended:** ship the card component with rating fields optional. Leave them blank until real reviews exist; the card layout should look correct either way. Add the JSON-LD only when the numbers are genuine.
 
-### Sheet 2: `Occasions`
+### Collection 2: `occasions`
 
 Still needed — these drive the homepage filter chips even without dedicated category pages. `seo_title` / `seo_description` / `intro` go unused unless category pages are added later; keep the columns.
 
@@ -104,7 +288,7 @@ Still needed — these drive the homepage filter chips even without dedicated ca
 | `seo_description` | Per-category meta description |
 | `intro` | 1–2 paragraphs at the top of the category page (SEO weight) |
 
-### Sheet 3: `Campaigns`
+### Collection 3: `campaigns`
 
 One row per promotion or seasonal event. The admin creates and edits these directly.
 
@@ -126,11 +310,14 @@ One row per promotion or seasonal event. The admin creates and edits these direc
 | `priority` | number | — | If campaigns overlap, lowest wins the homepage hero |
 | `status` | text | ✅ | `active` / `hidden` — manual override on top of the dates |
 
-### Sheet 4: `Settings`
+### Collection 4: `settings`
 
-Key/value: shop name, phone, Zalo number, **Zalo OA ID**, Messenger URL, address, hours, delivery areas, delivery fee note, same-day cutoff time, hero text, about text.
+A single document. Shop name, phone, Zalo number, **Zalo OA ID**, Messenger URL, address,
+hours, delivery areas, delivery fee note, same-day cutoff time, hero text, about text — plus
+the §13.1 additions (`tagline`, `announcementText`, `announcementLink`, `heroEyebrow`,
+`heroTitle`, `heroTitleAccent`, `deliveryAreas`).
 
-> Everything editable lives in the Sheet. No content should require a code change.
+> Everything editable lives in the database. No content should require a code change.
 
 ## 5. Site map
 
@@ -377,14 +564,26 @@ Zalo offers official social plugins (chat widget, share button, follow widget). 
 
 ## 9. Admin workflow
 
-1. Photograph the arrangement
-2. Resize + convert to WebP (helper script, or Squoosh on phone)
-3. Upload to Cloudinary → copy URL
-4. Add a row in the Sheet
-5. Tap the bookmarked "Publish" link
-6. Live in ~2 minutes
+**Revised 2026-09-05 for the admin UI.** Six manual steps become three, and the two most
+error-prone (resize/convert, and copy-pasting a URL into the right column) disappear:
 
-**Deliverables for the admin:** a one-page Vietnamese instruction sheet, the Sheet pre-formatted with data validation on `occasions` and `status`, and the publish link saved as a phone bookmark.
+1. Photograph the arrangement
+2. Open the admin site on the phone → log in → "Thêm sản phẩm" → fill the form, upload photos directly from the camera roll
+3. Tap **"Đăng lên website"** → live in ~2 minutes
+
+Cloudinary's upload widget does the resize and WebP conversion on upload, so the ≤150KB
+constraint in §2 is enforced by the preset rather than by the admin remembering to run a
+script.
+
+**Deliverables for the admin:** a one-page Vietnamese instruction sheet, the admin URL saved
+as a phone bookmark, and credentials handed over in person or via a password manager — not
+in a chat message.
+
+**The form must be forgiving.** This is a phone, in a shop, probably one-handed:
+- Save a draft (`status: hidden`) without every required field, so a half-entered product isn't lost
+- Confirm before delete, and prefer `hidden` over destructive delete in the UI
+- Show upload progress; a slow mobile connection uploading five photos looks frozen otherwise
+- Make clear that saving ≠ publishing. Changes sit in the database until "Đăng lên website" is tapped — that separation is useful (batch several edits, publish once) but only if the UI states it.
 
 ## 10. Repo structure
 
@@ -414,50 +613,89 @@ Zalo offers official social plugins (chat widget, share button, follow widget). 
   ZaloWidget.tsx             ← 'use client', next/script lazyOnload, desktop only
   JsonLd.tsx
 /lib
-  types.ts                   ← WRITE THIS FIRST; the contract both sources satisfy
-  data.ts                    ← single entry point; picks fixtures or Sheet by env var
-  sheet.ts                   ← Phase 3: fetch + parse + normalize, cached
+  types.ts                   ← the contract every source satisfies. UNCHANGED by the admin rewrite
+  data.ts                    ← single entry point; picks fixtures or Mongo by env var
+  db.ts                      ← Phase 3: Mongo client + BUILD-TIME catalog read, normalized to types.ts
   campaigns.ts               ← active-window resolution against build date
   format.ts                  ← VND formatting, slugify
 /design
   reference-homepage.html    ← committed copy of the provided mockup
   DESIGN-TOKENS.md           ← extracted token list
 /data
-  fixtures.json              ← Phase 1 data source; same shape as the Sheet output
-/scripts
-  resize-images.mjs
-next.config.js
+  fixtures.json              ← Phase 1 data source; same shape as the DB output
+  snapshots/                 ← §3A.4 dated JSON backups, committed by the cron build
+next.config.js               ← storefront only: output:'export'
+
+--- separate deployment, NOT part of the static export ---
+/admin
+  app/
+    login/page.tsx           ← the entire attack surface; rate-limit it
+    (dashboard)/
+      products/page.tsx      ← list, search, toggle active/hidden
+      products/[id]/page.tsx ← create + edit form, Cloudinary upload widget
+      campaigns/page.tsx
+      occasions/page.tsx
+      settings/page.tsx
+      publish/               ← 'Đăng lên website' → repository_dispatch
+    api/                     ← server-side writes; every route re-checks the session
+  lib/
+    auth.ts                  ← session cookie, password hash verify
+    db.ts                    ← shares the types.ts contract with the storefront
+  next.config.js             ← NO output:'export' here — this one needs a server
 ```
 
 ## 11. Build phases
 
-**Sequencing principle: build the customer UI first, against local fixture data. No Google Sheet, no accounts, no credentials until the site already looks and works the way you want.**
+**Sequencing principle: build the customer UI first, against local fixture data. No database, no accounts, no credentials until the site already looks and works the way you want.**
 
-This is deliberate. Wiring live data early means every UI iteration is gated on a network fetch and a spreadsheet being correct. Fixtures make Phase 1 fully offline and instant to iterate on.
+This is deliberate. Wiring live data early means every UI iteration is gated on a network fetch. Fixtures make Phase 1 fully offline and instant to iterate on.
 
-**The design decision that makes this work:** define `lib/types.ts` first, and have both the fixture loader and the eventual Sheet parser return the identical normalized shape. Then Phase 3 is a one-function swap, not a refactor. Every component imports from `lib/data.ts`, which internally chooses fixtures or Sheet based on an env var — components never know which.
+**The design decision that makes this work:** define `lib/types.ts` first, and have both the fixture loader and the eventual database reader return the identical normalized shape. Then Phase 3 is a one-function swap, not a refactor. Every component imports from `lib/data.ts`, which internally chooses fixtures or MongoDB based on an env var — components never know which.
+
+**This survived the 2026-09-05 admin change intact.** Phases 1 and 2 are built and need no
+rework; `lib/types.ts` did not change. That is the payoff for having defined the contract
+first.
+
+**Credentials are deferred by design.** Phase 3 is written against an `.env.example` with
+empty placeholders. The code is built, typechecked, and reviewable before a single account
+exists — every accounts step is Phase 3.5. Nothing in Phase 3 requires the owner to have
+signed up for anything.
 
 | Phase | Scope | Needs credentials? | Output |
 |---|---|---|---|
 | **1. Customer UI** | Design token extraction (§6.0), Next.js scaffold, `lib/types.ts`, `data/fixtures.json` (~12 realistic products, 4 occasions, 1 campaign), all customer routes, full mobile-first styling, gallery, video player, filters, contact bar, campaign banner + sale pricing | ❌ None | A complete, browsable site running on `localhost` |
 | **2. SEO layer** | `generateMetadata`, OG tags, JSON-LD, `sitemap.ts`, `robots.ts`, image sizing, `next build` static export verified | ❌ None | Lighthouse targets met locally |
-| **3. Data layer ("admin")** | Google Sheet created and structured, `lib/sheet.ts` CSV fetch + parse, swap fixtures → live Sheet behind an env var, admin instruction doc in Vietnamese, data validation on the Sheet | ⚠️ Sheet publish URL only (no login, no API key) | Admin can add a product and see it after a local rebuild |
-| **4. Deploy** | GitHub repo, Cloudflare Pages project, domain + DNS, deploy hook, GitHub Actions cron, Zalo OA + widget, real product photos and copy | ✅ All of them | Live site |
+| **3. Data layer** ✅ **Built 2026-09-05** | `lib/db.ts` build-time Mongo read, normalized to `types.ts`; swap fixtures → DB behind `DATA_SOURCE`; `.env.example` with empty placeholders; snapshot/backup script (§3A.4) | ❌ **None** — placeholders only | Storefront builds from either source; fixtures still work |
+| **3B. Admin UI** ✅ **Built 2026-09-05** | `/admin` app: static single-account login (§3A.5), product list + create/edit form, campaigns/occasions/settings editors, Cloudinary upload widget, Publish button → `repository_dispatch`, Vietnamese instruction doc | ❌ **None** — placeholders only | Admin app runs locally against a local Mongo or a stub |
+| **3.5 Accounts** | Owner creates: MongoDB Atlas M0, Cloudinary, admin host. Fill in the `.env` values. Seed the DB from `fixtures.json`. | ✅ All of them | Real data flowing end to end |
+| **4. Deploy** | Storefront host + domain + DNS, admin app deployed with `noindex`, GitHub Actions cron + dispatch hook, Zalo OA + widget, real photos and copy | ✅ All of them | Live site |
 | **5. Optional** | Search, Google Business Profile, analytics, 360 spin viewer | — | — |
 
-**Phases 1 and 2 need nothing but a code editor.** That's most of the work, and it's the part worth iterating on hardest — the site is fully reviewable on your phone via `next dev` on your local network before a single account exists.
+**Phases 1, 2, 3 and 3B need nothing but a code editor.** That is now most of the work, and
+it's the part worth iterating on hardest — both apps are fully reviewable on your phone via
+`next dev` on your local network before a single account exists.
 
-### On "the admin page"
+### On "the admin page" — reversed 2026-09-05
 
-Worth being explicit, since it shapes Phase 3: **there is no admin page in this plan.** Google Sheets *is* the admin interface. That's the entire reason this stack costs nothing and stays maintainable — no auth, no server, no database, nothing to secure or keep patched.
+This section previously read: *"there is no admin page in this plan. Google Sheets is the
+admin interface."* The owner has asked for a real admin UI, and that decision is taken.
 
-If you actually want a custom admin UI with a login and an upload form, that's a materially different project: it needs a server, a session store, file upload handling, and somewhere to run — and it stops being free. Flag it now if that's what you meant, because it changes the architecture rather than just adding a phase.
+The original warning was that this needs a server, a session store, file upload handling,
+and somewhere to run — and stops being free. That remains true, and §3A.1 records exactly
+which of those costs are being accepted. What §3A buys back is the storefront: by reading
+MongoDB at **build** time only, the public site stays a static export with the same SEO,
+speed, and hosting cost it has today. The admin app is the only new thing that needs a
+server.
+
+The rejected alternative was hosting the storefront itself on a server and querying the
+database per request. That would have been simpler to write and would have cost the project
+its reason for existing (§1) — it is not on the table.
 
 ## 12. Acceptance criteria
 
 - [ ] `next build` produces a static `out/` folder with one HTML file per product
 - [ ] Viewing page source on a product page shows the product name and price in the HTML (not injected by JS)
-- [ ] Adding a Sheet row publishes a live page within 2 minutes
+- [ ] Creating a product in the admin UI and tapping Publish makes a live page within 2 minutes
 - [ ] `status=hidden` removes it from the site and the sitemap
 - [ ] Every product has a unique URL, title, meta description, and OG image
 - [ ] Sharing a product link to Zalo shows the photo, name, and price
@@ -481,9 +719,29 @@ If you actually want a custom admin UI with a login and an upload form, that's a
 - [ ] Cards are uniform height regardless of name or description length
 - [ ] Card "Inbox Zalo" copies the product code and shows a toast
 - [ ] No JSON-LD review markup unless the ratings are real (§4.1)
-- [ ] Zero recurring cost besides the domain
+- [ ] No recurring cost besides the domain, on current free-tier terms (§3A.6)
+
+**Admin UI (added 2026-09-05):**
+
+- [ ] The public `out/` bundle contains no database credential, no Mongo query, and no admin code (§3A.2)
+- [ ] `grep -r "MONGODB_URI" out/` returns nothing
+- [ ] The storefront still builds and renders with `DATA_SOURCE=fixtures` and a completely empty `.env`
+- [ ] A missing required env var fails the build with a message naming the key — never a silent empty catalog
+- [ ] Visiting any admin route logged-out redirects to login
+- [ ] Calling a write API route directly with no session cookie returns 401 — verified with `curl`, not just in the browser
+- [ ] The admin app is `noindex` and absent from the sitemap
+- [ ] `.env` is git-ignored; `.env.example` is committed with empty values; no real secret is in git history
+- [ ] Product `code` is not editable after creation
+- [ ] A product can be saved as a draft with required fields still blank, without data loss
+- [ ] Uploading a photo produces a WebP under 150KB without the admin resizing anything
+- [ ] The daily cron commits a dated JSON snapshot to `/data/snapshots` (§3A.4)
+- [ ] Restoring from a snapshot has been tested at least once, before launch
 
 ## 13. Implementation script
+
+> **Historical — Phases 1–2, completed.** Kept as a record of how the current code was
+> produced. Its "do not integrate Google Sheets yet" instructions refer to an architecture
+> replaced on 2026-09-05; for new work follow §3A and §11 Phases 3 / 3B instead.
 
 > Copy this to your local coding agent. Phase 1 only — later phases get their own prompt.
 
@@ -570,9 +828,42 @@ New `Settings` keys added so the mockup's chrome is admin-editable rather than h
 `tagline`, `announcementText`, `announcementLink`, `heroEyebrow`, `heroTitle`,
 `heroTitleAccent`, `deliveryAreas`.
 
+## 13.2 Phase 3 / 3B implementation notes (2026-09-05)
+
+Built and verified. Both apps typecheck and build; the storefront still exports statically
+from fixtures with a completely empty `.env`.
+
+**Verified against §12 with curl, not just the browser:**
+all 8 API routes return 401 unauthenticated; all 4 dashboard routes 307 to `/login`;
+forged, unsigned, malformed and correctly-signed-but-expired session cookies are all
+rejected; the login throttle trips on the 9th attempt; `out/` contains no credential and
+no Mongo driver; the admin serves `noindex, nofollow`.
+
+**Two bugs found by testing, both fixed:**
+
+1. **dotenv corrupts every bcrypt hash.** `$` is a variable reference to dotenv — quoted
+   or not — so `ADMIN_PASSWORD_HASH` silently truncated from 60 chars to 33 and login
+   failed for everyone. Only backslash-escaping survives (verified across bare, single-
+   and double-quoted forms). `scripts/hash-password.mjs` now emits the escaped form, and
+   `lib/auth.ts` detects a corrupted hash and says so instead of reporting a wrong
+   password. This would have locked the owner out on day one.
+2. **The storefront build compiled `admin/`.** The root `tsconfig.json` globbed
+   `**/*.tsx`, so admin server code was being typechecked into the public build — exactly
+   what §3A.2 forbids. `admin` is now excluded.
+
+**Deviation from §10:** the plan sketched `/admin/lib/db.ts` as sharing the storefront's
+db module. It is a separate file: the storefront's is a read-only build-time loader, the
+admin's writes. They share `lib/types.ts` through a `@shared/*` alias, which is what
+actually keeps the two in step.
+
+**Not built (needs accounts — Phase 3.5, see `docs/SETUP-PHASE-3.5.md`):** nothing is
+wired to a real MongoDB, Cloudinary, or GitHub token yet. Untested until then: an
+end-to-end save→publish→live cycle, a real image upload, and — most important — a restore
+from `scripts/snapshot.mjs`, which §12 requires before launch.
+
 ## 14. Open questions
 
-1. **Single admin, or multiple sellers?** Multiple sellers invalidates the Sheet approach entirely — needs accounts, permissions, moderation, and stops being free.
+1. ~~**Single admin, or multiple sellers?**~~ **Resolved 2026-09-05: single admin.** The auth in §3A.5 is a single static account with no user table. Multiple sellers would require replacing it outright — accounts, permissions, moderation.
 2. Domain name chosen?
 3. Zalo OA created? Required for the chat widget; also looks more professional than a personal number.
 4. Existing Facebook page to link, and existing product photos to migrate?

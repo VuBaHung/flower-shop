@@ -73,8 +73,6 @@ export default function SiteFooter({ settings }: { settings: Settings }) {
               </li>
             </ul>
             <p className="text-2xs leading-relaxed text-stone-500">
-              {settings.deliveryFeeNote}
-              <br />
               {settings.sameDayCutoff}
             </p>
           </div>

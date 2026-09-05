@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   description: 'Tiệm hoa tươi thiết kế, giao hỏa tốc 2 giờ nội thành TP. Hồ Chí Minh.',
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const settings = getSettings()
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const settings = await getSettings()
 
   return (
     <html lang="vi" className={`${display.variable} ${sans.variable} scroll-smooth`}>

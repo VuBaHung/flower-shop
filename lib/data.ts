@@ -1,55 +1,83 @@
 import fixtures from '@/data/fixtures.json'
 import type { CatalogData, Occasion, Product, Campaign, Settings } from './types'
+import { dataSource } from './env'
 
 /**
  * The single entry point every component imports from. Runs at BUILD time only.
  *
- * Phase 3 adds a Sheet branch here, behind DATA_SOURCE=sheet, returning the identical
- * CatalogData shape. Components never learn which source they got.
+ * PLAN.md §3A.2: components never learn where the data came from. DATA_SOURCE picks
+ * fixtures or MongoDB and both return an identical CatalogData, so the storefront still
+ * builds with a completely empty .env.
+ *
+ * These are async as of Phase 3 (Mongo is async). Every caller is a Server Component, so
+ * awaiting costs nothing at runtime — it all resolves during the static export.
  */
 
 function loadFixtures(): CatalogData {
-  const products = (fixtures.products as Product[])
-    // status=hidden rows are dropped here, so they can never reach a page or the sitemap.
-    .filter((p) => p.status === 'active')
-    .sort((a, b) => a.sort - b.sort)
-
   return {
-    products,
+    products: (fixtures.products as Product[]).slice(),
     occasions: fixtures.occasions as Occasion[],
     campaigns: fixtures.campaigns as Campaign[],
     settings: fixtures.settings as Settings,
   }
 }
 
-export function getCatalog(): CatalogData {
-  // Phase 3: if (process.env.DATA_SOURCE === 'sheet') return loadSheet()
-  return loadFixtures()
+/**
+ * Memoized for the lifetime of the build. generateStaticParams plus one call per product
+ * page would otherwise re-query Mongo for every product in the catalog.
+ */
+let cached: Promise<CatalogData> | undefined
+
+async function load(): Promise<CatalogData> {
+  const raw =
+    dataSource() === 'mongo'
+      ? // Imported lazily so the mongodb driver is never pulled into a build that
+        // doesn't use it — and never near a client bundle.
+        await (await import('./db')).loadFromMongo()
+      : loadFixtures()
+
+  return {
+    ...raw,
+    // status=hidden is dropped HERE, once, so a hidden product can never reach a page,
+    // a related list, or the sitemap regardless of source.
+    products: raw.products
+      .filter((p) => p.status === 'active')
+      .sort((a, b) => a.sort - b.sort),
+  }
 }
 
-export function getProducts(): Product[] {
-  return getCatalog().products
+export function getCatalog(): Promise<CatalogData> {
+  if (!cached) cached = load()
+  return cached
 }
 
-export function getProduct(code: string): Product | undefined {
-  return getCatalog().products.find((p) => p.code === code)
+export async function getProducts(): Promise<Product[]> {
+  return (await getCatalog()).products
 }
 
-export function getSettings(): Settings {
-  return getCatalog().settings
+export async function getProduct(code: string): Promise<Product | undefined> {
+  return (await getCatalog()).products.find((p) => p.code === code)
+}
+
+export async function getSettings(): Promise<Settings> {
+  return (await getCatalog()).settings
 }
 
 /** Only occasions that actually have at least one active product get a filter chip. */
-export function getUsedOccasions(): Occasion[] {
-  const { products, occasions } = getCatalog()
+export async function getUsedOccasions(): Promise<Occasion[]> {
+  const { products, occasions } = await getCatalog()
   const used = new Set(products.flatMap((p) => p.occasions))
   return occasions.filter((o) => used.has(o.slug))
 }
 
 /** Up to `limit` other products sharing an occasion tag. */
-export function getRelatedProducts(product: Product, limit = 4): Product[] {
-  return getCatalog()
-    .products.filter(
+export async function getRelatedProducts(
+  product: Product,
+  limit = 4
+): Promise<Product[]> {
+  const { products } = await getCatalog()
+  return products
+    .filter(
       (p) =>
         p.code !== product.code &&
         p.occasions.some((o) => product.occasions.includes(o))

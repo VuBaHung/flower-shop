@@ -34,7 +34,7 @@ export default function ProductCard({
 
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border sm:rounded-3xl border-line bg-porcelain shadow-card transition-all duration-300 hover:border-brand-300 hover:shadow-card-hover">
-      <Link href={href} className="relative block aspect-card overflow-hidden">
+      <Link href={href} className="relative block aspect-card-sm overflow-hidden sm:aspect-card">
         <img
           src={product.images[0]}
           alt={`${product.name} — ${product.subtitle ?? 'hoa tươi thiết kế'}`}
@@ -56,16 +56,16 @@ export default function ProductCard({
         )}
       </Link>
 
-      <div className="flex flex-1 flex-col p-3 sm:p-5">
-        <div className="flex items-baseline justify-between gap-2 text-2xs font-semibold text-ink-subtle">
-          <span className="hidden truncate sm:inline">{product.subtitle}</span>
+      <div className="flex flex-1 flex-col p-2.5 sm:p-5">
+        <div className="hidden items-baseline justify-between gap-2 text-2xs font-semibold text-ink-subtle sm:flex">
+          <span className="truncate">{product.subtitle}</span>
           <span className="flex-shrink-0 font-mono font-bold tracking-wider text-ink-muted">
             {product.code}
           </span>
         </div>
 
-        <h3 className="mt-1.5 font-display text-sm font-black leading-snug text-ink sm:text-lg">
-          <Link href={href} className="line-clamp-2 hover:text-primary">
+        <h3 className="font-display text-sm font-black leading-snug text-ink sm:mt-1.5 sm:text-lg">
+          <Link href={href} className="line-clamp-1 hover:text-primary sm:line-clamp-2">
             {product.name}
           </Link>
         </h3>
@@ -76,7 +76,7 @@ export default function ProductCard({
           </p>
         )}
 
-        <div className="mt-auto flex flex-wrap items-center justify-between gap-2 border-t border-line/70 pt-3 sm:gap-3">
+        <div className="mt-auto flex flex-wrap items-center justify-between gap-1.5 pt-2 sm:gap-3 sm:border-t sm:border-line/70 sm:pt-3">
           <PriceDisplay price={price} />
           <CopyCodeButton code={product.code} zaloUrl={zaloUrl} />
         </div>

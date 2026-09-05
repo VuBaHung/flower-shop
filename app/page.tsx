@@ -11,7 +11,6 @@ import { zaloHref } from '@/lib/format'
 import ProductCard from '@/components/ProductCard'
 import FilterableGrid, { type Chip, type GridItem } from '@/components/FilterableGrid'
 import CampaignBanner from '@/components/CampaignBanner'
-import DeliveryChecker from '@/components/DeliveryChecker'
 import PriceDisplay from '@/components/PriceDisplay'
 
 const COMMITMENTS = [
@@ -41,9 +40,9 @@ const COMMITMENTS = [
   },
 ]
 
-export default function HomePage() {
-  const { products, settings, campaigns } = getCatalog()
-  const occasions = getUsedOccasions()
+export default async function HomePage() {
+  const { products, settings, campaigns } = await getCatalog()
+  const occasions = await getUsedOccasions()
   const zalo = zaloHref(settings.zaloPhone)
 
   // Campaign activation and every price are resolved HERE, at build time.
@@ -121,8 +120,6 @@ export default function HomePage() {
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
             </div>
-
-            <DeliveryChecker areas={settings.deliveryAreas} />
 
             <dl className="grid max-w-lg grid-cols-3 gap-4 border-t border-line pt-5">
               <div>

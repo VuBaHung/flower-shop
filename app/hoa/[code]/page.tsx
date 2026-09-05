@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { ArrowLeft, Flower2, PhoneCall, Ruler, Send, Truck } from 'lucide-react'
+import { ArrowLeft, Flower2, PhoneCall, Ruler, Send } from 'lucide-react'
 import { getCatalog, getProduct, getProducts, getRelatedProducts } from '@/lib/data'
 import {
   activeCampaign,
@@ -22,8 +22,8 @@ import ProductCard from '@/components/ProductCard'
  * Phase 2 adds generateMetadata, OG tags and Product JSON-LD to this file. Note that no
  * AggregateRating may be emitted while ratings are blank or invented (PLAN.md §4.1).
  */
-export function generateStaticParams() {
-  return getProducts().map((p) => ({ code: p.code }))
+export async function generateStaticParams() {
+  return (await getProducts()).map((p) => ({ code: p.code }))
 }
 
 export default async function ProductPage({
@@ -32,10 +32,10 @@ export default async function ProductPage({
   params: Promise<{ code: string }>
 }) {
   const { code } = await params
-  const product = getProduct(code)
+  const product = await getProduct(code)
   if (!product) notFound()
 
-  const { settings, campaigns, products } = getCatalog()
+  const { settings, campaigns, products, occasions } = await getCatalog()
   const campaign = activeCampaign(campaigns)
   const saleCodes = campaign
     ? campaignProductCodes(campaign, products)
@@ -44,7 +44,7 @@ export default async function ProductPage({
   const onSale = price.onSale
 
   const zalo = zaloHref(settings.zaloPhone)
-  const related = getRelatedProducts(product)
+  const related = await getRelatedProducts(product)
 
   return (
     <div className="mx-auto max-w-container px-4 py-6 sm:px-6 lg:px-8 lg:py-10">
@@ -160,13 +160,6 @@ export default async function ProductPage({
                 <dd className="font-semibold text-ink-muted">Size {product.size}</dd>
               </div>
             )}
-            <div className="flex items-start gap-2 sm:col-span-2">
-              <Truck className="mt-0.5 h-4 w-4 flex-shrink-0 text-matcha-700" aria-hidden="true" />
-              <dt className="sr-only">Giao hàng</dt>
-              <dd className="leading-relaxed text-ink-muted">
-                {settings.deliveryFeeNote}. {settings.sameDayCutoff}.
-              </dd>
-            </div>
           </dl>
 
           {/* Occasion chips link back to the filtered homepage grid. */}
@@ -177,7 +170,7 @@ export default async function ProductPage({
               </span>
               {product.occasions.map((slug) => {
                 const label =
-                  getCatalog().occasions.find((o) => o.slug === slug)?.label ?? slug
+                  occasions.find((o) => o.slug === slug)?.label ?? slug
                 return (
                   <Link
                     key={slug}

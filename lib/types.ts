@@ -55,6 +55,11 @@ export interface Product {
 export interface Occasion {
   slug: string
   label: string
+  /**
+   * Optional banner/thumbnail for the occasion. Added 2026-09-05 so the admin can
+   * illustrate a filter chip or an occasion banner without a code change.
+   */
+  image?: string
   /** Unused until category pages exist; kept so the Sheet shape never changes. */
   seoTitle?: string
   seoDescription?: string
@@ -87,15 +92,6 @@ export interface Campaign {
   status: Status
 }
 
-export interface DeliveryArea {
-  /** e.g. "Quận 1" */
-  district: string
-  /** VND. 0 => free. */
-  fee: number
-  /** e.g. "2 giờ" */
-  eta: string
-}
-
 export interface Settings {
   shopName: string
   tagline: string
@@ -109,8 +105,6 @@ export interface Settings {
   hours: string
   /** "Đặt trước 15:00 để giao trong ngày" */
   sameDayCutoff: string
-  deliveryFeeNote: string
-  deliveryAreas: DeliveryArea[]
   announcementText: string
   announcementLink?: string
   heroEyebrow: string

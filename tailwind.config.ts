@@ -100,6 +100,10 @@ const config: Config = {
       },
 
       aspectRatio: {
+        // Mobile shows two cards per row, so a 4/5 portrait image made each card ~330px
+        // tall and barely one row fit on screen. 1/1 on mobile, 4/5 from `sm` up where
+        // the extra height costs nothing. The gallery keeps 4/5 everywhere.
+        'card-sm': '1 / 1',
         card: '4 / 5', // every product image, in the grid and the gallery
       },
 
