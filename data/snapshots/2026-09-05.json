@@ -1,34 +1,20 @@
 {
-  "takenAt": "2026-09-05T07:20:47.870Z",
+  "takenAt": "2026-09-05T07:36:44.076Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a135",
       "code": "HB-001",
-      "badge": null,
-      "badgeStyle": null,
-      "description": null,
       "featured": false,
-      "flowerType": null,
       "images": [
-        "https://x/a.webp"
+        "https://images.unsplash.com/photo-1520763185298-1b434c919102?w=800&q=80&fm=webp"
       ],
       "name": "Bó Hoa Waxflower Úc Soft Girl",
       "occasions": [
         "sinh-nhat"
       ],
       "price": 650000,
-      "shortDesc": null,
-      "size": null,
       "sort": 999,
       "status": "active",
-      "subtitle": null,
-      "video": null,
-      "priceNote": null,
-      "rating": null,
-      "reviewCount": null,
-      "saleNote": null,
-      "salePrice": null,
-      "spinFolder": null,
       "updatedAt": "2026-09-05T06:51:29.169Z"
     },
     {
@@ -292,7 +278,6 @@
       "code": "HB-0012",
       "name": "Hoa Cua Hung Test",
       "price": 650000,
-      "priceNote": null,
       "salePrice": 600000,
       "saleNote": "20/11",
       "occasions": [
@@ -301,19 +286,14 @@
       ],
       "flowerType": "hoa sáp",
       "subtitle": "Hoa Sap",
-      "badge": null,
       "badgeStyle": "info",
       "shortDesc": "Day la hoa xinh nhat",
-      "rating": null,
-      "reviewCount": null,
       "size": "Vừa",
       "description": "Day la hoa xinh nhat Day la hoa xinh nhat Day la hoa xinh nhat Day la hoa xinh nhat",
       "images": [
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788587109/flower-shop/exrwrt4rdxenmrqb9wop.webp",
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788587121/flower-shop/akg0quqyxnw8gm6p5lo8.jpg"
       ],
-      "video": null,
-      "spinFolder": null,
       "status": "active",
       "featured": false,
       "sort": 999,
