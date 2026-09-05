@@ -44,7 +44,11 @@ export async function POST(req: Request) {
 
   await ensureIndexes()
   const col = await collection('occasions')
-  await col.updateOne({ slug: input.slug }, { $set: input }, { upsert: true })
+  await col.updateOne(
+    { slug: input.slug },
+    { $set: { ...input, updatedAt: new Date() } },
+    { upsert: true }
+  )
   return NextResponse.json({ ok: true })
 }
 

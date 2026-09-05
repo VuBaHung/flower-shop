@@ -4,7 +4,6 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { LoaderCircle } from 'lucide-react'
 import type { Settings } from '@shared/types'
-import PublishButton from './PublishButton'
 
 const inputClass =
   'mt-1 w-full rounded-lg border border-stone-300 px-3 py-2 text-sm focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900'
@@ -103,10 +102,6 @@ export default function SettingsForm({ initial }: { initial: Partial<Settings> }
         </div>
       </section>
 
-
-      {/* Publish from here rather than scrolling back to the header. Note this is
-          outside the <form>'s submit path — it is a button, not a submit. */}
-      <PublishButton variant="section" />
 
       <div className="fixed inset-x-0 bottom-0 border-t border-stone-200 bg-white/95 p-3 backdrop-blur">
         <div className="mx-auto flex max-w-5xl items-center gap-3">

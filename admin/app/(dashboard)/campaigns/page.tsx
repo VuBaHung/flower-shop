@@ -2,7 +2,6 @@ import { collection } from '@/lib/db'
 import type { Campaign } from '@shared/types'
 import CampaignsEditor from '@/components/CampaignsEditor'
 import DbError from '@/components/DbError'
-import PublishButton from '@/components/PublishButton'
 
 export const dynamic = 'force-dynamic'
 
@@ -25,7 +24,6 @@ export default async function CampaignsPage() {
         Chương trình tự bật/tắt theo ngày khi website được build lại. Slug không được chứa năm.
       </p>
       <CampaignsEditor initial={campaigns} />
-      <PublishButton variant="section" />
     </>
   )
 }
