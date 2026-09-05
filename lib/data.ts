@@ -29,8 +29,18 @@ function loadFixtures(): CatalogData {
 let cached: Promise<CatalogData> | undefined
 
 async function load(): Promise<CatalogData> {
+  // Say which source built the site. A build that silently falls back to fixtures looks
+  // completely successful while publishing placeholder content — the failure mode is
+  // invisible without this line.
+  const source = dataSource()
+  console.log(
+    source === 'mongo'
+      ? '[data] building from MongoDB'
+      : '[data] building from data/fixtures.json — set DATA_SOURCE=mongo for live data'
+  )
+
   const raw =
-    dataSource() === 'mongo'
+    source === 'mongo'
       ? // Imported lazily so the mongodb driver is never pulled into a build that
         // doesn't use it — and never near a client bundle.
         await (await import('./db')).loadFromMongo()

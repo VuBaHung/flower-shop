@@ -30,6 +30,11 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # `secrets` cannot be referenced from a step-level `if:` — GitHub rejects the whole
+    # workflow file. Hoisting it here makes it readable as `env.HAS_DB` in those
+    # conditions, which is allowed.
+    env:
+      HAS_DB: ${{ secrets.MONGODB_URI != '' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -61,14 +66,14 @@ jobs:
       # PLAN.md §3A.4: MongoDB M0 has no automated backup, so every build commits a dated
       # JSON snapshot. No-ops when the database isn't configured yet.
       - name: Snapshot database
-        if: ${{ secrets.MONGODB_URI != '' }}
+        if: env.HAS_DB == 'true'
         env:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
           MONGODB_DB: ${{ secrets.MONGODB_DB }}
         run: node scripts/snapshot.mjs
 
       - name: Commit snapshot
-        if: ${{ secrets.MONGODB_URI != '' }}
+        if: env.HAS_DB == 'true'
         run: |
           git config user.name  'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'

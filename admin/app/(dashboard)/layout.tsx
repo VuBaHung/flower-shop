@@ -2,6 +2,7 @@ import { redirect } from 'next/navigation'
 import Link from 'next/link'
 import { isAuthenticated } from '@/lib/auth'
 import PublishButton from '@/components/PublishButton'
+import PublishSection from '@/components/PublishSection'
 import LogoutButton from '@/components/LogoutButton'
 
 /**
@@ -48,6 +49,7 @@ export default async function DashboardLayout({
       </header>
 
       <main className="mx-auto max-w-5xl px-4 py-6">{children}</main>
+      <PublishSection />
     </div>
   )
 }

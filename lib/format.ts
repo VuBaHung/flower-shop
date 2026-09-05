@@ -1,5 +1,8 @@
 /** VND: 850000 -> "850.000₫" */
-export function formatVnd(amount: number): string {
+export function formatVnd(amount: number | null | undefined): string {
+  // Defensive: a null in the database (from an older admin write) used to slip past
+  // resolvePrice's `!== undefined` checks and crash here on .toLocaleString().
+  if (typeof amount !== 'number' || !Number.isFinite(amount)) return 'Liên hệ'
   return `${amount.toLocaleString('vi-VN')}₫`
 }
 

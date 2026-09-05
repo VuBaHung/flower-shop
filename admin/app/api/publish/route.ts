@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { requireApiAuth } from '@/lib/auth'
+import { db } from '@/lib/db'
 
 /**
  * "Đăng lên website" — triggers a storefront rebuild via GitHub repository_dispatch
@@ -43,6 +44,22 @@ export async function POST() {
         { error: `GitHub trả về lỗi ${res.status}. Kiểm tra token và quyền repo.` },
         { status: 502 }
       )
+    }
+
+    // Stamp the publish so /api/pending can tell what has been published since.
+    // A failure here must not report the publish as failed — the rebuild is already
+    // running; the worst case is the pending count reads high until the next publish.
+    try {
+      const database = await db()
+      await database
+        .collection('meta')
+        .updateOne(
+          { _id: 'publish' as never },
+          { $set: { lastPublishedAt: new Date() } },
+          { upsert: true }
+        )
+    } catch (stampErr) {
+      console.error('[publish] could not record publish time:', stampErr)
     }
 
     return NextResponse.json({ ok: true })

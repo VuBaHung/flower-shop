@@ -35,6 +35,19 @@ function strArray(v: unknown): string[] {
   return []
 }
 
+/**
+ * Drops keys whose value is undefined so Mongo stores an ABSENT field rather than null.
+ *
+ * This matters: lib/campaigns.resolvePrice checks `!== undefined`, so a stored null slips
+ * past every guard and reaches formatVnd, which calls .toLocaleString() on it and crashes
+ * the page. Absent and undefined behave identically; null does not.
+ */
+function omitUndefined<T extends Record<string, unknown>>(obj: T): T {
+  return Object.fromEntries(
+    Object.entries(obj).filter(([, v]) => v !== undefined)
+  ) as T
+}
+
 export function normalizeProductInput(body: unknown): Partial<Product> & { code: string } {
   const b = (body ?? {}) as Record<string, unknown>
 
@@ -47,7 +60,7 @@ export function normalizeProductInput(body: unknown): Partial<Product> & { code:
 
   const status: Status = str(b.status) === 'active' ? 'active' : 'hidden'
 
-  return {
+  return omitUndefined({
     // Codes are upper-case by convention (HB-001) — normalize so "hb-001" isn't a
     // second, colliding product.
     code: (str(b.code) ?? '').toUpperCase(),
@@ -76,7 +89,7 @@ export function normalizeProductInput(body: unknown): Partial<Product> & { code:
     status,
     featured: b.featured === true,
     sort: num(b.sort) ?? 999,
-  }
+  })
 }
 
 /** The valid `occasions` values — validation rejects anything outside this set. */

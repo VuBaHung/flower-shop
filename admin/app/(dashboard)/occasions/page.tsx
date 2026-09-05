@@ -2,7 +2,6 @@ import { collection } from '@/lib/db'
 import type { Occasion } from '@shared/types'
 import OccasionsEditor from '@/components/OccasionsEditor'
 import DbError from '@/components/DbError'
-import PublishButton from '@/components/PublishButton'
 
 export const dynamic = 'force-dynamic'
 
@@ -25,7 +24,6 @@ export default async function OccasionsPage() {
         Đây là các nút lọc trên trang chủ. Sản phẩm chỉ chọn được dịp có trong danh sách này.
       </p>
       <OccasionsEditor initial={occasions} />
-      <PublishButton variant="section" />
     </>
   )
 }

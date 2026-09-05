@@ -44,7 +44,9 @@ export default function ProductPreview({
   )
 
   const image = draft.images?.[0]
-  const hasSale = price.onSale && price.wasAmount !== undefined
+  // `!= null` covers null as well as undefined — a product saved before the admin
+  // stopped writing nulls still has them.
+  const hasSale = price.onSale && price.wasAmount != null
 
   return (
     <div className="sticky top-32">
@@ -107,16 +109,16 @@ export default function ProductPreview({
               )}
               <span
                 className={`text-base font-black ${
-                  price.amount === undefined
+                  price.amount == null
                     ? 'text-stone-900'
                     : hasSale
                       ? 'text-rose-600'
                       : 'text-emerald-700'
                 }`}
               >
-                {price.amount === undefined ? 'Liên hệ' : formatVnd(price.amount)}
+                {price.amount == null ? 'Liên hệ' : formatVnd(price.amount)}
               </span>
-              {price.wasAmount !== undefined && (
+              {price.wasAmount != null && (
                 <span className="text-xs font-semibold text-stone-400 line-through">
                   {formatVnd(price.wasAmount)}
                 </span>
@@ -142,7 +144,7 @@ export default function ProductPreview({
             <dd>{draft.images!.length} ảnh trong thư viện</dd>
           </div>
         )}
-        {draft.salePrice !== undefined && draft.price !== undefined && !hasSale && (
+        {draft.salePrice != null && draft.price != null && !hasSale && (
           // Explains why a filled-in sale price isn't showing, rather than looking broken.
           <p className="text-amber-700">
             Giá khuyến mãi chỉ hiện khi có chương trình đang chạy áp dụng mã này.

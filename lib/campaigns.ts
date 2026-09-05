@@ -80,12 +80,15 @@ export function resolvePrice(
   saleCodes: Set<string>
 ): ResolvedPrice {
   // Blank price wins outright: "Liên hệ", and salePrice is ignored.
-  if (product.price === undefined) {
+  // `== null` deliberately matches BOTH null and undefined: documents written before
+  // the admin stopped storing nulls still carry them, and a null here would otherwise
+  // reach formatVnd and crash the page.
+  if (product.price == null) {
     return { onSale: false }
   }
 
   const onSale =
-    product.salePrice !== undefined &&
+    product.salePrice != null &&
     product.salePrice < product.price &&
     saleCodes.has(product.code)
 
