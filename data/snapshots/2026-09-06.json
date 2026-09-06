@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-06T04:05:33.473Z",
+  "takenAt": "2026-09-06T04:06:43.469Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a135",
@@ -53,7 +53,7 @@
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788667008/flower-shop/ck8izhylxcouta5kqz4w.jpg",
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788667009/flower-shop/zrnw1bt8vj9ucv8fsulb.jpg"
       ],
-      "name": "Bó hoa hồng mix tỉ muội",
+      "name": "Bó hoa hồng mix",
       "occasions": [
         "tinh-yeu"
       ],
@@ -64,7 +64,7 @@
       "status": "active",
       "subtitle": "Tone hồng hottrend phối vải ren tinh tế",
       "salePrice": 300000,
-      "updatedAt": "2026-09-06T04:00:38.313Z"
+      "updatedAt": "2026-09-06T04:06:12.235Z"
     },
     {
       "_id": "6a9ba761f7e4d9f334e1a138",
@@ -364,7 +364,7 @@
       "tagline": "Chuyên hoa sáp, hoa lụa cao cấp",
       "zaloPhone": "0395448458",
       "announcementLink": "",
-      "updatedAt": "2026-09-06T04:04:37.798Z",
+      "updatedAt": "2026-09-06T04:05:44.596Z",
       "zaloOaId": ""
     }
   ]
