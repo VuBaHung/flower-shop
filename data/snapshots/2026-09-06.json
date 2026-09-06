@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-05T20:12:21.157Z",
+  "takenAt": "2026-09-06T03:52:28.450Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a135",
@@ -26,21 +26,22 @@
       "featured": true,
       "flowerType": "hoa sáp",
       "images": [
-        "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=800&h=1000&q=80",
-        "https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=800&h=1000&q=80"
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788666548/flower-shop/qvg9akudwb995ysuqbf2.jpg"
       ],
-      "name": "Bó Hoa Sáp Thơm Y2K Purple",
+      "name": "Bó Hoa Sáp Hồng Tỉ Muội Thơm",
       "occasions": [
-        "sinh-nhat"
+        "sinh-nhat",
+        "tinh-yeu"
       ],
-      "price": 750000,
+      "price": 450000,
       "saleNote": "Giá cuối tuần",
       "salePrice": 620000,
-      "shortDesc": "Tone tím lavender hot trend, hương thơm tự nhiên lưu lại rất lâu.",
-      "size": "Vừa",
-      "sort": 2,
+      "shortDesc": "Hoa tỉ muội tone hồng hot trend, hương thơm tự nhiên lưu lại rất lâu.",
+      "size": "Vừa- 38cm",
+      "sort": 1,
       "status": "active",
-      "subtitle": "Hoa Sáp Thơm Premium"
+      "subtitle": "Hoa Sáp Thơm Premium",
+      "updatedAt": "2026-09-06T03:51:30.123Z"
     },
     {
       "_id": "6a9ba761f7e4d9f334e1a137",
