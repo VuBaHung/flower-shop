@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-06T03:55:12.426Z",
+  "takenAt": "2026-09-06T04:03:20.085Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a135",
@@ -46,22 +46,25 @@
     {
       "_id": "6a9ba761f7e4d9f334e1a137",
       "code": "HB-003",
-      "description": "Cặp đôi thanh lịch gồm hoa wax trắng tinh khôi nhập khẩu phối cùng những nhành tuyết mai mềm mại, tạo nét chấm phá tinh tế cho không gian.",
+      "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt lụa mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
       "featured": false,
-      "flowerType": "waxflower",
+      "flowerType": "Hoa sáp",
       "images": [
-        "https://images.unsplash.com/photo-1591886960571-74d43a9d4166?auto=format&fit=crop&w=800&h=1000&q=80"
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788667008/flower-shop/ck8izhylxcouta5kqz4w.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788667009/flower-shop/zrnw1bt8vj9ucv8fsulb.jpg"
       ],
-      "name": "Wax White Minimalist",
+      "name": "Bó hoa hồng mix tỉ muội",
       "occasions": [
         "tinh-yeu"
       ],
-      "price": 880000,
+      "price": 320000,
       "shortDesc": "Phong cách tối giản tinh tế, hoa wax trắng phối cành lá xanh thanh mát.",
       "size": "Nhỏ",
       "sort": 3,
       "status": "active",
-      "subtitle": "Waxflower & Tuyết Mai"
+      "subtitle": "Tone hồng hottrend phối vải ren tinh tế",
+      "salePrice": 300000,
+      "updatedAt": "2026-09-06T04:00:38.313Z"
     },
     {
       "_id": "6a9ba761f7e4d9f334e1a138",
