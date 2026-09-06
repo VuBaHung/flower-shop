@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-06T04:06:43.469Z",
+  "takenAt": "2026-09-06T04:13:39.520Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a135",
@@ -71,23 +71,26 @@
       "code": "HB-004",
       "badge": "SANG CHẢNH",
       "badgeStyle": "luxe",
-      "description": "Chậu lan hồ điệp 5 cành trắng muốt điểm xuyết dải hoa Waxflower Úc xòe rộng. Đại diện cho phú quý và nét đẹp sang trọng bền vững, kèm bảng chữ mạ vàng theo yêu cầu.",
+      "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt lụa mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc",
       "featured": false,
-      "flowerType": "lan hồ điệp",
+      "flowerType": "Hoa sáp",
       "images": [
-        "https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=800&h=1000&q=80",
-        "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=800&h=1000&q=80"
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788667701/flower-shop/tlbpbz5e3j3d9wbjkf2s.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788667704/flower-shop/n3r3cf1v0ftuqihis8xj.jpg"
       ],
-      "name": "Giỏ Hoa Lan Hồ Điệp & Waxflower Trắng Nhập Khẩu Cao Cấp Dành Tặng Đối Tác Ngày Khai Trương",
+      "name": "Bó hoa hồng mix",
       "occasions": [
-        "khai-truong"
+        "tinh-yeu",
+        "sinh-nhat"
       ],
-      "price": 2600000,
-      "shortDesc": "Chậu hoa cao cấp kết hợp lan hồ điệp trắng và nhành wax Úc, thích hợp làm quà tặng đối tác trong những dịp trọng đại cần sự sang trọng và trang nhã.",
-      "size": "Lớn",
+      "price": 390000,
+      "shortDesc": "Phối vải ren ẩn nhẹ nhàng, tinh tế",
+      "size": "Vừa",
       "sort": 4,
       "status": "active",
-      "subtitle": "Hộp Quà Lan & Wax Import"
+      "subtitle": "Hộp Quà Lan & Wax Import",
+      "salePrice": 370000,
+      "updatedAt": "2026-09-06T04:12:42.535Z"
     },
     {
       "_id": "6a9ba761f7e4d9f334e1a139",
@@ -327,25 +330,7 @@
       "label": "Chia buồn"
     }
   ],
-  "campaigns": [
-    {
-      "_id": "6a9ba762f7e4d9f334e1a146",
-      "slug": "sale-cuoi-tuan",
-      "bannerAlt": "Bó hoa hồng đỏ Ecuador trong chương trình Sale Cuối Tuần giảm đến 25%",
-      "bannerDesktop": "https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=1920&h=600&q=80",
-      "bannerMobile": "https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=800&h=1000&q=80",
-      "ctaText": "Xem mẫu đang giảm giá",
-      "endDate": "2026-09-30",
-      "intro": "Cuối tuần này Blossom & Vine giảm đến 25% cho các mẫu hoa sáp thơm và hồng Ecuador nhập khẩu. Giá đã giảm được hiển thị trực tiếp trên từng mẫu — bạn chỉ cần nhắn mã sản phẩm qua Zalo, không cần mã giảm giá.",
-      "orderCutoff": "2026-09-28",
-      "priority": 1,
-      "productCodes": [],
-      "startDate": "2026-08-01",
-      "status": "active",
-      "subtitle": "Áp dụng cho các mẫu hoa sáp và hồng nhập khẩu",
-      "title": "Sale Cuối Tuần — Giảm đến 25%"
-    }
-  ],
+  "campaigns": [],
   "settings": [
     {
       "_id": "site",
