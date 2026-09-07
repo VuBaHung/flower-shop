@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-06T20:16:36.495Z",
+  "takenAt": "2026-09-07T05:01:27.311Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a135",
@@ -64,7 +64,7 @@
       "status": "active",
       "subtitle": "Tone hồng hottrend phối vải ren tinh tế",
       "salePrice": 300000,
-      "updatedAt": "2026-09-06T04:23:14.006Z"
+      "updatedAt": "2026-09-07T05:00:26.473Z"
     },
     {
       "_id": "6a9ba761f7e4d9f334e1a138",
@@ -330,7 +330,30 @@
       "label": "Chia buồn"
     }
   ],
-  "campaigns": [],
+  "campaigns": [
+    {
+      "_id": "6a9e44daf7e4d9f334e1b0bf",
+      "slug": "siêu ưu đãi mở bán",
+      "bannerAlt": "",
+      "bannerDesktop": "",
+      "bannerMobile": "",
+      "ctaLink": null,
+      "ctaText": null,
+      "endDate": "2026-09-30",
+      "intro": null,
+      "occasionFilter": null,
+      "orderCutoff": null,
+      "priority": 99,
+      "productCodes": [],
+      "seoDescription": null,
+      "seoTitle": null,
+      "startDate": "2026-09-07",
+      "status": "active",
+      "subtitle": null,
+      "title": "Siêu ưu đãi mở bán",
+      "updatedAt": "2026-09-07T05:00:10.377Z"
+    }
+  ],
   "settings": [
     {
       "_id": "site",
