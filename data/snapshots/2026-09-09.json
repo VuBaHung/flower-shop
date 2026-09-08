@@ -1,11 +1,11 @@
 {
-  "takenAt": "2026-09-08T17:10:29.112Z",
+  "takenAt": "2026-09-08T17:15:19.006Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
       "code": "HB-002",
       "badge": "Hot",
-      "badgeStyle": "info",
+      "badgeStyle": "hot",
       "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mềm mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
       "featured": true,
       "flowerType": "hoa sáp",
@@ -27,7 +27,7 @@
       "sort": 1,
       "status": "active",
       "subtitle": "Hoa Sáp Thơm Premium",
-      "updatedAt": "2026-09-08T17:09:34.997Z"
+      "updatedAt": "2026-09-08T17:13:24.330Z"
     },
     {
       "_id": "6a9ba761f7e4d9f334e1a137",
@@ -50,7 +50,7 @@
       "status": "active",
       "subtitle": "Tone hồng hottrend phối vải ren tinh tế",
       "salePrice": 300000,
-      "updatedAt": "2026-09-07T05:02:10.959Z"
+      "updatedAt": "2026-09-08T17:14:10.919Z"
     },
     {
       "_id": "6a9ba761f7e4d9f334e1a138",
@@ -219,7 +219,8 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T16:38:59.604Z",
-      "updatedAt": "2026-09-08T16:38:59.604Z"
+      "updatedAt": "2026-09-08T17:12:58.093Z",
+      "salePrice": 430000
     },
     {
       "_id": "6aa03b7840da4ad4bcebd28b",
