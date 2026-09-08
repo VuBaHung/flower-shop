@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-08T15:49:34.675Z",
+  "takenAt": "2026-09-08T16:03:08.174Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -154,13 +154,13 @@
       "slug": "siêu ưu đãi mở bán",
       "bannerAlt": "",
       "bannerDesktop": "https://res.cloudinary.com/dan5lrpon/image/upload/v1788882487/flower-shop/ts1vhb4ymqpc3jsn0hpp.png",
-      "bannerMobile": "",
+      "bannerMobile": "https://res.cloudinary.com/dan5lrpon/image/upload/v1788883311/flower-shop/zkxzklvphj6arvtb9wuu.png",
       "ctaLink": null,
       "ctaText": null,
       "endDate": "2026-09-30",
       "intro": null,
       "occasionFilter": null,
-      "orderCutoff": null,
+      "orderCutoff": "Đặt trước 14h để giao trong ngày",
       "priority": 99,
       "productCodes": [],
       "seoDescription": null,
@@ -169,7 +169,7 @@
       "status": "active",
       "subtitle": null,
       "title": "Giá ưu đãi",
-      "updatedAt": "2026-09-08T15:48:23.546Z"
+      "updatedAt": "2026-09-08T16:02:10.683Z"
     }
   ],
   "settings": [
