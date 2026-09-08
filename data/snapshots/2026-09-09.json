@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-08T17:04:53.118Z",
+  "takenAt": "2026-09-08T17:07:46.408Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -267,7 +267,7 @@
       "_id": "6aa03d9340da4ad4bcebd28d",
       "code": "HB-0013",
       "name": "Hoa sáp mix hiện đại",
-      "price": 120000,
+      "price": 150000,
       "occasions": [
         "sinh-nhat"
       ],
@@ -280,13 +280,14 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T16:53:39.031Z",
-      "updatedAt": "2026-09-08T16:53:39.031Z"
+      "updatedAt": "2026-09-08T17:06:52.312Z",
+      "salePrice": 120000
     },
     {
       "_id": "6aa03e0240da4ad4bcebd28e",
       "code": "HB-0014",
       "name": "Hoa lụa mix",
-      "price": 170000,
+      "price": 190000,
       "occasions": [
         "sinh-nhat"
       ],
@@ -297,7 +298,8 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T16:55:30.807Z",
-      "updatedAt": "2026-09-08T16:55:30.807Z"
+      "updatedAt": "2026-09-08T17:06:31.513Z",
+      "salePrice": 170000
     }
   ],
   "occasions": [
