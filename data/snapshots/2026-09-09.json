@@ -1,31 +1,33 @@
 {
-  "takenAt": "2026-09-08T17:07:46.408Z",
+  "takenAt": "2026-09-08T17:10:29.112Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
       "code": "HB-002",
-      "badge": "GIỮ LÂU 3 NĂM",
+      "badge": "Hot",
       "badgeStyle": "info",
       "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mềm mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
       "featured": true,
       "flowerType": "hoa sáp",
       "images": [
-        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788666548/flower-shop/qvg9akudwb995ysuqbf2.jpg"
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788666548/flower-shop/qvg9akudwb995ysuqbf2.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788887341/flower-shop/ch3mi73xnzcaf0clcjun.jpg"
       ],
       "name": "Bó Hoa Sáp Hồng Tỉ Muội Thơm",
       "occasions": [
         "sinh-nhat",
-        "tinh-yeu"
+        "tinh-yeu",
+        "khai-truong"
       ],
       "price": 450000,
       "saleNote": "Giá cuối tuần",
       "salePrice": 620000,
       "shortDesc": "Hoa tỉ muội tone hồng hot trend, hương thơm tự nhiên lưu lại rất lâu.",
-      "size": "Vừa- 38cm",
+      "size": "Trung",
       "sort": 1,
       "status": "active",
       "subtitle": "Hoa Sáp Thơm Premium",
-      "updatedAt": "2026-09-08T15:28:00.237Z"
+      "updatedAt": "2026-09-08T17:09:34.997Z"
     },
     {
       "_id": "6a9ba761f7e4d9f334e1a137",
