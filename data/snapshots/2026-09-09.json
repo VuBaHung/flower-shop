@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-09T09:30:28.040Z",
+  "takenAt": "2026-09-09T09:43:45.645Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -21,13 +21,13 @@
       ],
       "price": 450000,
       "saleNote": "Giá cuối tuần",
-      "salePrice": 620000,
+      "salePrice": 400000,
       "shortDesc": "Hoa tỉ muội tone hồng hot trend, hương thơm tự nhiên lưu lại rất lâu.",
       "size": "Trung",
       "sort": 1,
       "status": "active",
       "subtitle": "Hoa Sáp Thơm Premium",
-      "updatedAt": "2026-09-08T17:13:24.330Z"
+      "updatedAt": "2026-09-09T09:39:21.334Z"
     },
     {
       "_id": "6a9ba761f7e4d9f334e1a137",
