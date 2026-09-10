@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-10T06:49:26.522Z",
+  "takenAt": "2026-09-10T06:51:18.309Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -225,7 +225,7 @@
     {
       "_id": "6aa03b7840da4ad4bcebd28b",
       "code": "HB-0011",
-      "name": "Bó hoa mix gấu thơm",
+      "name": "Bó hoa mix gấu thơm từ 135k",
       "priceNote": "Từ 135000",
       "occasions": [
         "sinh-nhat",
@@ -243,7 +243,7 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T16:44:40.005Z",
-      "updatedAt": "2026-09-08T16:44:40.005Z"
+      "updatedAt": "2026-09-10T06:50:02.674Z"
     },
     {
       "_id": "6aa03c3e40da4ad4bcebd28c",
@@ -307,7 +307,7 @@
     {
       "_id": "6aa17fe3665ccb11beda737f",
       "code": "HB-0015",
-      "name": "Bó hoa ốc quế",
+      "name": "Bó hoa ốc quế từ 220k",
       "price": 260000,
       "occasions": [
         "sinh-nhat",
@@ -328,7 +328,7 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-09T15:48:51.098Z",
-      "updatedAt": "2026-09-10T06:48:19.749Z",
+      "updatedAt": "2026-09-10T06:50:15.693Z",
       "priceNote": "Từ 220000"
     },
     {
