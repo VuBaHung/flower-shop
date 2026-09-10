@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-09T20:48:30.616Z",
+  "takenAt": "2026-09-10T06:49:26.522Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -328,7 +328,8 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-09T15:48:51.098Z",
-      "updatedAt": "2026-09-09T15:48:51.098Z"
+      "updatedAt": "2026-09-10T06:48:19.749Z",
+      "priceNote": "Từ 220000"
     },
     {
       "_id": "6aa18156665ccb11beda7380",
