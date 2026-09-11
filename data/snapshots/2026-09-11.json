@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-11T16:17:45.759Z",
+  "takenAt": "2026-09-11T16:20:54.979Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -229,7 +229,8 @@
       "priceNote": "Từ 135000",
       "occasions": [
         "sinh-nhat",
-        "tinh-yeu"
+        "tinh-yeu",
+        "hang-ngay"
       ],
       "flowerType": "Hoa sáp mix gấu bông",
       "subtitle": "Hoa Sáp Thơm Premium Kết hợp cùng gấu thơm",
@@ -243,7 +244,7 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T16:44:40.005Z",
-      "updatedAt": "2026-09-10T06:50:02.674Z"
+      "updatedAt": "2026-09-11T16:20:30.254Z"
     },
     {
       "_id": "6aa03c3e40da4ad4bcebd28c",
@@ -272,7 +273,8 @@
       "name": "Hoa sáp mix hiện đại",
       "price": 150000,
       "occasions": [
-        "sinh-nhat"
+        "sinh-nhat",
+        "hang-ngay"
       ],
       "subtitle": "Hoa Sáp Thơm Premium",
       "size": "Nhỏ",
@@ -283,7 +285,7 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T16:53:39.031Z",
-      "updatedAt": "2026-09-08T17:06:52.312Z",
+      "updatedAt": "2026-09-11T16:20:52.679Z",
       "salePrice": 120000
     },
     {
@@ -363,7 +365,8 @@
       "price": 130000,
       "occasions": [
         "tinh-yeu",
-        "sinh-nhat"
+        "sinh-nhat",
+        "hang-ngay"
       ],
       "flowerType": "Hoa sáp cao cấp",
       "subtitle": "Hoa Sáp Thơm Premium",
@@ -378,7 +381,7 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-09T16:12:58.885Z",
-      "updatedAt": "2026-09-09T16:12:58.885Z"
+      "updatedAt": "2026-09-11T16:20:40.734Z"
     },
     {
       "_id": "6aa42786cbab71f97ea82aee",
@@ -449,6 +452,16 @@
       "_id": "6a9ba762f7e4d9f334e1a145",
       "slug": "chia-buon",
       "label": "Chia buồn"
+    },
+    {
+      "_id": "6aa42a23e854ad52ba72a5ab",
+      "slug": "hang-ngay",
+      "image": null,
+      "intro": null,
+      "label": "Hằng ngày",
+      "seoDescription": null,
+      "seoTitle": null,
+      "updatedAt": "2026-09-11T16:19:47.564Z"
     }
   ],
   "campaigns": [
