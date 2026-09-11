@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-11T09:18:18.455Z",
+  "takenAt": "2026-09-11T16:14:10.450Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -379,6 +379,29 @@
       "sort": 999,
       "createdAt": "2026-09-09T16:12:58.885Z",
       "updatedAt": "2026-09-09T16:12:58.885Z"
+    },
+    {
+      "_id": "6aa42786cbab71f97ea82aee",
+      "code": "HB-0020",
+      "name": "Bó hoa tone hồng mix trắng",
+      "price": 150000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "khai-truong"
+      ],
+      "flowerType": "Hoa sáp",
+      "subtitle": "Hoa Sáp Thơm Premium",
+      "shortDesc": "Hoa hồng hồng mix hồng trắng nhẹ nhàng, thanh lịch",
+      "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789142765/flower-shop/wum9q1ibu9phb5bv7the.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-11T16:08:38.214Z",
+      "updatedAt": "2026-09-11T16:08:38.214Z"
     }
   ],
   "occasions": [
