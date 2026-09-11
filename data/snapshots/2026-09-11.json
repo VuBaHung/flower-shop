@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-11T16:14:10.450Z",
+  "takenAt": "2026-09-11T16:17:45.759Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -402,6 +402,31 @@
       "sort": 999,
       "createdAt": "2026-09-11T16:08:38.214Z",
       "updatedAt": "2026-09-11T16:08:38.214Z"
+    },
+    {
+      "_id": "6aa42951cbab71f97ea82aef",
+      "code": "HB-0021",
+      "name": "Bó hoa mini chỉ từ 70k",
+      "priceNote": "Chỉ từ 70k",
+      "occasions": [
+        "tinh-yeu"
+      ],
+      "flowerType": "Hoa sáp",
+      "subtitle": "Hoa Sáp Thơm Premium",
+      "shortDesc": "Bó hoa mini phù hợp nhu cầu nhỏ gọn, hằng ngày",
+      "size": "Nhỏ",
+      "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789143356/flower-shop/eidwteh9qn9ki1nmumt6.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789143360/flower-shop/hzkeafwih4hvw4otzowi.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789143363/flower-shop/oxuvjwcqew32tl8ghdg9.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789143364/flower-shop/avqlmxkatykjqmkcs00g.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-11T16:16:17.066Z",
+      "updatedAt": "2026-09-11T16:16:41.732Z"
     }
   ],
   "occasions": [
