@@ -1,0 +1,543 @@
+{
+  "takenAt": "2026-09-12T20:25:39.678Z",
+  "products": [
+    {
+      "_id": "6a9ba761f7e4d9f334e1a136",
+      "code": "HB-002",
+      "badge": "Hot",
+      "badgeStyle": "hot",
+      "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mềm mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
+      "featured": true,
+      "flowerType": "hoa sáp",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788666548/flower-shop/qvg9akudwb995ysuqbf2.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788887341/flower-shop/ch3mi73xnzcaf0clcjun.jpg"
+      ],
+      "name": "Bó Hoa Sáp Hồng Tỉ Muội Thơm phối ren",
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "khai-truong"
+      ],
+      "price": 500000,
+      "saleNote": "Giá cuối tuần",
+      "salePrice": 450000,
+      "shortDesc": "Hoa tỉ muội tone hồng hot trend, hương thơm tự nhiên lưu lại rất lâu.",
+      "size": "Trung",
+      "sort": 1,
+      "status": "active",
+      "subtitle": "Hoa Sáp Thơm Premium Hồng/xanh/trắng",
+      "updatedAt": "2026-09-12T16:35:47.362Z"
+    },
+    {
+      "_id": "6a9ba761f7e4d9f334e1a137",
+      "code": "HB-003",
+      "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt lụa mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
+      "featured": false,
+      "flowerType": "Hoa sáp",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788667008/flower-shop/ck8izhylxcouta5kqz4w.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788667009/flower-shop/zrnw1bt8vj9ucv8fsulb.jpg"
+      ],
+      "name": "Bó hoa hồng mix",
+      "occasions": [
+        "tinh-yeu",
+        "sinh-nhat",
+        "hang-ngay"
+      ],
+      "price": 320000,
+      "shortDesc": "Phong cách tối giản tinh tế",
+      "size": "Nhỏ",
+      "sort": 3,
+      "status": "active",
+      "subtitle": "Tone hồng hottrend phối vải ren tinh tế",
+      "salePrice": 300000,
+      "updatedAt": "2026-09-12T15:50:56.576Z"
+    },
+    {
+      "_id": "6a9ba761f7e4d9f334e1a138",
+      "code": "HB-004",
+      "badge": "SANG CHẢNH",
+      "badgeStyle": "luxe",
+      "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mềm mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc",
+      "featured": false,
+      "flowerType": "Hoa sáp",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788667701/flower-shop/tlbpbz5e3j3d9wbjkf2s.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788667704/flower-shop/n3r3cf1v0ftuqihis8xj.jpg"
+      ],
+      "name": "Bó hoa hồng mix",
+      "occasions": [
+        "tinh-yeu",
+        "sinh-nhat"
+      ],
+      "price": 390000,
+      "shortDesc": "Phối vải ren ẩn nhẹ nhàng, tinh tế",
+      "size": "Vừa",
+      "sort": 4,
+      "status": "active",
+      "subtitle": "Hoa Sáp Thơm Premium",
+      "salePrice": 370000,
+      "updatedAt": "2026-09-12T15:49:29.701Z"
+    },
+    {
+      "_id": "6aa028d940da4ad4bcebd285",
+      "code": "HB-005",
+      "name": "Bó hoa hồng đỏ sang trọng",
+      "price": 300000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu"
+      ],
+      "flowerType": "Hoa sáp",
+      "badge": "Sang trọng",
+      "badgeStyle": "hot",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788881057/flower-shop/ig3ml8nuy7yn6gty7fx4.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788880796/flower-shop/e1lfwdo7yii5oqyrwdyb.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-08T15:25:13.781Z",
+      "updatedAt": "2026-09-08T15:30:17.431Z",
+      "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mềm mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
+      "shortDesc": "Hoa hồng đỏ tinh tế sang trọng, thường dùng vào các dịp đặc biệt cho người thân yêu (mẹ, vợ, bạn gái,…)",
+      "subtitle": "Hoa Sáp Thơm Premium"
+    },
+    {
+      "_id": "6aa02cd440da4ad4bcebd286",
+      "code": "HB-006",
+      "name": "Bó hoa mix tone hồng",
+      "price": 420000,
+      "salePrice": 400000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "khai-truong"
+      ],
+      "subtitle": "Hoa Sáp Thơm Premium",
+      "shortDesc": "Sự kết hợp ngẫu hứng của nhiều loại hoa, mang đến một tổng thể tự nhiên, độc đáo và có điểm nhấn",
+      "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788882045/flower-shop/mwoxivrragtlnjc3w9vu.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788882125/flower-shop/rxkafpxsblfjcjsi28l7.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-08T15:42:12.287Z",
+      "updatedAt": "2026-09-08T16:28:57.450Z",
+      "flowerType": "Hoa sáp"
+    },
+    {
+      "_id": "6aa0370740da4ad4bcebd287",
+      "code": "HB-007",
+      "name": "Bó cẩm tú cầu size lớn",
+      "price": 350000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "khai-truong"
+      ],
+      "flowerType": "Hoa lụa",
+      "subtitle": "Hoa lụa",
+      "shortDesc": "Bó tú cầu phù hợp cho mọi dịp lễ",
+      "size": "Lớn",
+      "description": "Mẫu hoa lụa nghệ thuật được tạo hình tỉ mỉ, độ bền giữ đến 5 năm. Không cần nước, không cần chăm sóc.",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788884535/flower-shop/ncur97fbbgedhaupelwq.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788884537/flower-shop/hoip7vxlq6s8hgsb9guj.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-08T16:25:43.292Z",
+      "updatedAt": "2026-09-08T16:25:43.292Z"
+    },
+    {
+      "_id": "6aa0374340da4ad4bcebd288",
+      "code": "HB-008",
+      "name": "Bó cẩm tú cầu size trung",
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "khai-truong"
+      ],
+      "subtitle": "Hoa lụa",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788884885/flower-shop/esmroyzc0w7ymgvvnsbt.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788884886/flower-shop/aa8mezcsbyp2l00dinrf.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-08T16:26:43.417Z",
+      "updatedAt": "2026-09-08T16:28:37.262Z",
+      "shortDesc": "Bó tú cầu phù hợp cho mọi dịp lễ",
+      "description": "Mẫu hoa lụa nghệ thuật được tạo hình tỉ mỉ, độ bền giữ đến 5 năm. Không cần nước, không cần chăm sóc.",
+      "flowerType": "Hoa lụa",
+      "price": 250000,
+      "size": "Trung"
+    },
+    {
+      "_id": "6aa0394640da4ad4bcebd289",
+      "code": "HB-009",
+      "name": "Hoa bánh kem",
+      "price": 250000,
+      "occasions": [
+        "sinh-nhat"
+      ],
+      "flowerType": "Hoa lụa",
+      "description": "Mẫu hoa lụa nghệ thuật được tạo hình tỉ mỉ, độ bền giữ đến 5 năm. Không cần nước, không cần chăm sóc.",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788885161/flower-shop/pxjrswqq120fpz3iqzvk.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-08T16:35:18.014Z",
+      "updatedAt": "2026-09-08T16:35:18.014Z"
+    },
+    {
+      "_id": "6aa03a2340da4ad4bcebd28a",
+      "code": "HB-0010",
+      "name": "Bó hoa công chúa 20b cao cấp",
+      "price": 450000,
+      "saleNote": "430000",
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu"
+      ],
+      "flowerType": "Hoa sáp",
+      "subtitle": "Hồng/xanh/đỏ",
+      "shortDesc": "Bó hoa kiểu dáng công chúa hiện đại, hoa có hương thơm tự nhiên lưu lại rất lâu.",
+      "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788885443/flower-shop/qh8pyvpjufrvdbssfy6s.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789222570/flower-shop/nim9b8nkrazsujgqfyqj.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788885445/flower-shop/n8msubuixuok4kwr02r1.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-08T16:38:59.604Z",
+      "updatedAt": "2026-09-12T14:17:57.519Z",
+      "salePrice": 430000
+    },
+    {
+      "_id": "6aa03b7840da4ad4bcebd28b",
+      "code": "HB-0011",
+      "name": "Bó hoa mix gấu thơm từ 135k",
+      "priceNote": "Từ 135000",
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "hang-ngay"
+      ],
+      "flowerType": "Hoa sáp mix gấu bông",
+      "subtitle": "Hoa Sáp Thơm Premium Kết hợp cùng gấu thơm",
+      "shortDesc": "Hoa sáp kết hợp cùng gấu thơm hot trend, hương thơm tự nhiên lưu lại rất lâu.",
+      "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788885689/flower-shop/b8nasjsq5yabekoidbni.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788885690/flower-shop/za7wkkp3pomx7ezotnpb.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-08T16:44:40.005Z",
+      "updatedAt": "2026-09-11T16:20:30.254Z"
+    },
+    {
+      "_id": "6aa03c3e40da4ad4bcebd28c",
+      "code": "HB-0012",
+      "name": "Hoa kem ốc quế",
+      "price": 120000,
+      "occasions": [
+        "sinh-nhat",
+        "hang-ngay"
+      ],
+      "flowerType": "Hoa lụa",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788885966/flower-shop/ieu5fplg2rvlxxcevte4.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788885968/flower-shop/z2r33acbwwffxiruvgpj.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788885970/flower-shop/k7i1shihuzmaizmjbnu6.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788885971/flower-shop/nodtja53fu9on4m2c308.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-08T16:47:58.910Z",
+      "updatedAt": "2026-09-11T16:21:07.770Z"
+    },
+    {
+      "_id": "6aa03d9340da4ad4bcebd28d",
+      "code": "HB-0013",
+      "name": "Hoa sáp mix hiện đại",
+      "price": 150000,
+      "occasions": [
+        "sinh-nhat",
+        "hang-ngay"
+      ],
+      "subtitle": "Hoa Sáp Thơm Premium",
+      "size": "Nhỏ",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788886165/flower-shop/ensdlfuuywegi7mhczpn.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-08T16:53:39.031Z",
+      "updatedAt": "2026-09-11T16:20:52.679Z",
+      "salePrice": 120000
+    },
+    {
+      "_id": "6aa03e0240da4ad4bcebd28e",
+      "code": "HB-0014",
+      "name": "Hoa lụa mix",
+      "price": 190000,
+      "occasions": [
+        "sinh-nhat"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788886468/flower-shop/eublwxaiftowbapdgdms.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-08T16:55:30.807Z",
+      "updatedAt": "2026-09-08T17:06:31.513Z",
+      "salePrice": 170000
+    },
+    {
+      "_id": "6aa17fe3665ccb11beda737f",
+      "code": "HB-0015",
+      "name": "Bó hoa ốc quế từ 220k",
+      "price": 260000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "hang-ngay"
+      ],
+      "flowerType": "Hoa sáp",
+      "subtitle": "Hoa Sáp Thơm Premium",
+      "shortDesc": "Hoa vũ nữ, tỉ muội tone hồng được tạo hình giống ốc quế hot trend, hương thơm tự nhiên lưu lại rất lâu.",
+      "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788968730/flower-shop/yoj9tkh8r28swrxictpw.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788968731/flower-shop/uqbri6kftbi8i3zuodbs.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788968732/flower-shop/wvn896iksdch5fcp6zxc.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788968733/flower-shop/urvkzu96g09zam67scdv.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788968734/flower-shop/v1evk89hmsgqntvrivb2.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-09T15:48:51.098Z",
+      "updatedAt": "2026-09-11T16:20:59.755Z",
+      "priceNote": "Từ 220000"
+    },
+    {
+      "_id": "6aa18156665ccb11beda7380",
+      "code": "HB-0016",
+      "name": "Hoa hồng đỏ mix",
+      "price": 240000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu"
+      ],
+      "flowerType": "Hoa sáp",
+      "subtitle": "Hoa Sáp Thơm Premium",
+      "shortDesc": "Hoa hồng đỏ thể hiện sự tinh tế, sang trọng mix cùng hoa điểm trắng tạo sự trẻ trung, năng động",
+      "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788969108/flower-shop/iqlzvyqgv8gs1if2egck.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788969109/flower-shop/tnaefriudsb8n5iwy1n8.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788969110/flower-shop/tt6xesozeoracb6thzxc.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788969111/flower-shop/zwnco1ap5rhs7tcc5xhn.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-09T15:55:02.110Z",
+      "updatedAt": "2026-09-09T15:55:02.110Z"
+    },
+    {
+      "_id": "6aa1858a56fa70f90fa3b333",
+      "code": "HB-0019",
+      "name": "Bó hồng ecuador hiện đại",
+      "price": 130000,
+      "occasions": [
+        "tinh-yeu",
+        "sinh-nhat",
+        "hang-ngay"
+      ],
+      "flowerType": "Hoa sáp cao cấp",
+      "subtitle": "Hoa Sáp Thơm Premium",
+      "shortDesc": "Thể hiện tình cảm mãnh liệt, sự chân thành và đẳng cấp sang trọng",
+      "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mịn, dày với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788969434/flower-shop/en374ibvmq0bpyjiihse.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788969435/flower-shop/aflhp13hb4qfiyulnuk3.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788969436/flower-shop/wiobh2hfzmgdozzuzg2h.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-09T16:12:58.885Z",
+      "updatedAt": "2026-09-11T16:20:40.734Z"
+    },
+    {
+      "_id": "6aa42786cbab71f97ea82aee",
+      "code": "HB-0020",
+      "name": "Bó hoa tone hồng mix trắng",
+      "price": 150000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "khai-truong"
+      ],
+      "flowerType": "Hoa sáp",
+      "subtitle": "Hoa Sáp Thơm Premium",
+      "shortDesc": "Hoa hồng hồng mix hồng trắng nhẹ nhàng, thanh lịch",
+      "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789142765/flower-shop/wum9q1ibu9phb5bv7the.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-11T16:08:38.214Z",
+      "updatedAt": "2026-09-11T16:08:38.214Z"
+    },
+    {
+      "_id": "6aa42951cbab71f97ea82aef",
+      "code": "HB-0021",
+      "name": "Bó hoa mini chỉ từ 70k",
+      "priceNote": "Chỉ từ 70k",
+      "occasions": [
+        "tinh-yeu",
+        "hang-ngay"
+      ],
+      "flowerType": "Hoa sáp",
+      "subtitle": "Hoa Sáp Thơm Premium",
+      "shortDesc": "Bó hoa mini phù hợp nhu cầu nhỏ gọn, hằng ngày",
+      "size": "Nhỏ",
+      "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789143356/flower-shop/eidwteh9qn9ki1nmumt6.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789143360/flower-shop/hzkeafwih4hvw4otzowi.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789143363/flower-shop/oxuvjwcqew32tl8ghdg9.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789143364/flower-shop/avqlmxkatykjqmkcs00g.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-11T16:16:17.066Z",
+      "updatedAt": "2026-09-11T16:21:21.226Z"
+    },
+    {
+      "_id": "6aa57f53f7e2f362ddb7ea9b",
+      "code": "HB-0022",
+      "name": "Bó hoa sáp tỉ muội thơm không ren",
+      "price": 400000,
+      "salePrice": 380000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "khai-truong"
+      ],
+      "flowerType": "Hoa sáp",
+      "subtitle": "Hoa Sáp Thơm Premium",
+      "shortDesc": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mềm mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789230884/flower-shop/augr2jjslojnabxy3zha.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789230895/flower-shop/lmczqbrwgfy29mlfsvhs.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 2,
+      "createdAt": "2026-09-12T16:35:31.852Z",
+      "updatedAt": "2026-09-12T16:35:31.852Z"
+    }
+  ],
+  "occasions": [
+    {
+      "_id": "6a9ba762f7e4d9f334e1a142",
+      "slug": "sinh-nhat",
+      "label": "Sinh nhật"
+    },
+    {
+      "_id": "6a9ba762f7e4d9f334e1a143",
+      "slug": "tinh-yeu",
+      "label": "Tình yêu & Kỷ niệm"
+    },
+    {
+      "_id": "6a9ba762f7e4d9f334e1a144",
+      "slug": "khai-truong",
+      "label": "Khai trương"
+    },
+    {
+      "_id": "6a9ba762f7e4d9f334e1a145",
+      "slug": "chia-buon",
+      "label": "Chia buồn"
+    },
+    {
+      "_id": "6aa42a23e854ad52ba72a5ab",
+      "slug": "hang-ngay",
+      "image": null,
+      "intro": null,
+      "label": "Hằng ngày",
+      "seoDescription": null,
+      "seoTitle": null,
+      "updatedAt": "2026-09-11T16:19:47.564Z"
+    }
+  ],
+  "campaigns": [
+    {
+      "_id": "6a9e44daf7e4d9f334e1b0bf",
+      "slug": "siêu ưu đãi mở bán",
+      "bannerAlt": "",
+      "bannerDesktop": "https://res.cloudinary.com/dan5lrpon/image/upload/v1788882487/flower-shop/ts1vhb4ymqpc3jsn0hpp.png",
+      "bannerMobile": "https://res.cloudinary.com/dan5lrpon/image/upload/v1788883311/flower-shop/zkxzklvphj6arvtb9wuu.png",
+      "ctaLink": null,
+      "ctaText": null,
+      "endDate": "2026-09-30",
+      "intro": null,
+      "occasionFilter": null,
+      "orderCutoff": null,
+      "priority": 99,
+      "productCodes": [],
+      "seoDescription": null,
+      "seoTitle": null,
+      "startDate": "2026-09-07",
+      "status": "active",
+      "subtitle": null,
+      "title": "Giá ưu đãi",
+      "updatedAt": "2026-09-08T16:21:05.277Z"
+    }
+  ],
+  "settings": [
+    {
+      "_id": "site",
+      "aboutText": "Katty Flower chuyên hoa sáp, hoa lụa thiết kế tại Krông Năng - Đăk Lăk. Mỗi bó hoa được cắm thủ công trong ngày giao. Bạn nhắn mã sản phẩm qua Zalo, chúng tôi xác nhận giá và thời gian giao ngay trong vài phút.",
+      "address": "20 Nguyễn Tất Thành, Krông Năng, Đăk Lăk",
+      "announcementText": "Hoa sáp, hoa lụa cắm trong ngày — freeship bán kính 3km",
+      "heroEyebrow": "Hoa Sáp Thơm nhập khẩu",
+      "heroText": "Hoa sáp, hoa lụa nhập khẩu cắm trong ngày. Chúng tôi chụp ảnh bó hoa thật và gửi để bạn duyệt trước khi giao.",
+      "heroTitle": "Bó hoa cắm tay giao trong 2-4 giờ",
+      "heroTitleAccent": "Katty ưu tiên đặt trước 1-4 ngày",
+      "hours": "8:00 – 20:00, tất cả các ngày",
+      "messengerUrl": "https://www.facebook.com/share/1DC4ksJN95/?mibextid=wwXIfr",
+      "phone": "0395448458",
+      "sameDayCutoff": "Đặt trước 14:00 để giao trong ngày",
+      "shopName": "Katty Flower",
+      "tagline": "Chuyên hoa sáp, hoa lụa cao cấp",
+      "zaloPhone": "0395448458",
+      "announcementLink": "",
+      "updatedAt": "2026-09-09T09:29:19.960Z",
+      "zaloOaId": ""
+    }
+  ]
+}
