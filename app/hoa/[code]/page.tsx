@@ -14,16 +14,70 @@ import PriceDisplay from '@/components/PriceDisplay'
 import CopyCodeButton from '@/components/CopyCodeButton'
 import CutoffCountdown from '@/components/CutoffCountdown'
 import ProductCard from '@/components/ProductCard'
+import JsonLd from '@/components/JsonLd'
+import { absoluteUrl } from '@/lib/site'
+import { breadcrumbJsonLd, clampDescription, productJsonLd } from '@/lib/seo'
+import type { Metadata } from 'next'
 
 /**
  * One static HTML file per product. Products are resolved HERE, at build time — never in
  * an effect, which is the single constraint the whole architecture rests on (PLAN.md §3).
  *
- * Phase 2 adds generateMetadata, OG tags and Product JSON-LD to this file. Note that no
- * AggregateRating may be emitted while ratings are blank or invented (PLAN.md §4.1).
+ * Metadata, OG tags and Product JSON-LD are built below from the same build-time data.
+ * No AggregateRating is emitted while ratings are blank or invented (PLAN.md §4.1) —
+ * lib/seo.ts has no code path that can produce one.
  */
 export async function generateStaticParams() {
   return (await getProducts()).map((p) => ({ code: p.code }))
+}
+
+/**
+ * Per-product <head>. Without this every product page shipped the layout's default
+ * title, so ~40 pages competed as near-duplicates in search results.
+ *
+ * The description prefers the product's own copy and falls back to shortDesc, then to
+ * a composed line — a product missing both still gets something specific rather than
+ * inheriting the site-wide text.
+ */
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ code: string }>
+}): Promise<Metadata> {
+  const { code } = await params
+  const product = await getProduct(code)
+  if (!product) return {}
+
+  const { settings } = await getCatalog()
+  const canonical = `/hoa/${product.code}/`
+  const description = clampDescription(
+    product.description ??
+      product.shortDesc ??
+      `${product.name} — mã ${product.code}. ${settings.tagline} tại TP. Hồ Chí Minh, giao nhanh nội thành.`
+  )
+  const image = product.images[0] ? absoluteUrl(product.images[0]) : undefined
+
+  return {
+    // Code included: customers quote it in Zalo, and it makes each title unique.
+    title: `${product.name} (${product.code})`,
+    description,
+    alternates: { canonical },
+    openGraph: {
+      type: 'website',
+      locale: 'vi_VN',
+      url: canonical,
+      siteName: settings.shopName,
+      title: `${product.name} — ${settings.shopName}`,
+      description,
+      ...(image ? { images: [{ url: image, alt: product.name }] } : {}),
+    },
+    twitter: {
+      card: image ? 'summary_large_image' : 'summary',
+      title: `${product.name} — ${settings.shopName}`,
+      description,
+      ...(image ? { images: [image] } : {}),
+    },
+  }
 }
 
 export default async function ProductPage({
@@ -48,6 +102,10 @@ export default async function ProductPage({
 
   return (
     <div className="mx-auto max-w-container px-4 py-6 sm:px-6 lg:px-8 lg:py-10">
+      {/* Sale price when a campaign is live, list price otherwise — the Offer must
+          state what the customer actually pays today. */}
+      <JsonLd data={productJsonLd(product, settings, { current: price.amount })} />
+      <JsonLd data={breadcrumbJsonLd(product)} />
       <Link
         href="/#mau-hoa"
         className="inline-flex items-center gap-1.5 text-xs font-bold text-ink-muted hover:text-primary"

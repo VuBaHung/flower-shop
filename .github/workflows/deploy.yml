@@ -40,8 +40,10 @@ jobs:
 
       # No actions/configure-pages step: its enablement:true needs a token that can
       # change repo settings, which GITHUB_TOKEN is not granted. Pages source must be
-      # set to "GitHub Actions" once by hand in Settings -> Pages. Nothing else here
-      # needs the action's outputs — basePath is hardcoded below.
+      # set to "GitHub Actions" once by hand in Settings -> Pages.
+      #
+      # public/CNAME is what keeps the custom domain: deploy-pages clears the Pages
+      # custom-domain setting on every deploy unless that file is in the artifact.
 
       - uses: actions/setup-node@v4
         with:
@@ -53,11 +55,16 @@ jobs:
       - run: npm run typecheck
 
       - name: Build static export
-        # Project site is served from /flower-shop — see next.config.mjs.
+        # Served from the custom domain katty-flower.com — see public/CNAME.
         # DATA_SOURCE stays 'fixtures' until the MONGODB_* secrets are added in
         # Settings -> Secrets; the build then switches to live data with no code change.
         env:
-          NEXT_PUBLIC_BASE_PATH: /flower-shop
+          # No NEXT_PUBLIC_BASE_PATH: katty-flower.com serves from the root, not the
+          # /flower-shop subpath a github.io project site used. Re-adding it would
+          # prefix every asset and internal link with a path that does not exist.
+          #
+          # Canonical origin for canonical/OG/sitemap/JSON-LD URLs.
+          NEXT_PUBLIC_SITE_URL: ${{ vars.SITE_URL || 'https://katty-flower.com' }}
           DATA_SOURCE: ${{ vars.DATA_SOURCE || 'fixtures' }}
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
           MONGODB_DB: ${{ secrets.MONGODB_DB }}

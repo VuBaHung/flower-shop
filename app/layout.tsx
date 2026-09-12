@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import { Be_Vietnam_Pro, Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 import { getSettings } from '@/lib/data'
+import { siteUrl } from '@/lib/site'
+import { clampDescription, floristJsonLd } from '@/lib/seo'
+import JsonLd from '@/components/JsonLd'
 import AnnouncementBar from '@/components/AnnouncementBar'
 import SiteHeader from '@/components/SiteHeader'
 import SiteFooter from '@/components/SiteFooter'
@@ -31,10 +34,38 @@ const sans = Plus_Jakarta_Sans({
   display: 'swap',
 })
 
-export const metadata: Metadata = {
-  // Phase 2 owns the real SEO layer (generateMetadata, OG, JSON-LD, sitemap).
-  title: 'Blossom & Vine',
-  description: 'Tiệm hoa tươi thiết kế, giao hỏa tốc 2 giờ nội thành TP. Hồ Chí Minh.',
+/*
+ * Metadata is generated, not hardcoded, so the shop name/tagline/about text stay in one
+ * place (the catalog) and a change in the admin app reaches the <head> on next build.
+ *
+ * title.template gives every child page "<page> — <shop>" without repeating the brand,
+ * and metadataBase makes the relative OG image URLs below absolute — required, since
+ * Facebook and Zalo reject relative og:image.
+ */
+export async function generateMetadata(): Promise<Metadata> {
+  const settings = await getSettings()
+  const url = siteUrl()
+  const description = clampDescription(settings.aboutText)
+
+  return {
+    metadataBase: new URL(url),
+    title: {
+      default: `${settings.shopName} — ${settings.tagline}`,
+      template: `%s — ${settings.shopName}`,
+    },
+    description,
+    alternates: { canonical: '/' },
+    openGraph: {
+      type: 'website',
+      locale: 'vi_VN',
+      url: '/',
+      siteName: settings.shopName,
+      title: `${settings.shopName} — ${settings.tagline}`,
+      description,
+    },
+    twitter: { card: 'summary_large_image' },
+    robots: { index: true, follow: true },
+  }
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
@@ -43,6 +74,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang="vi" className={`${display.variable} ${sans.variable} scroll-smooth`}>
       <body className="flex min-h-screen flex-col overflow-x-hidden">
+        {/* One Florist node for the whole site; product pages reference it by @id. */}
+        <JsonLd data={floristJsonLd(settings)} />
         <AnnouncementBar settings={settings} />
         <SiteHeader settings={settings} />
         {/* pb-16 clears the mobile contact bar; it is hidden from lg up. */}
