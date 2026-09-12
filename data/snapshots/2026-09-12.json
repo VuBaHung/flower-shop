@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-12T12:11:37.763Z",
+  "takenAt": "2026-09-12T14:18:49.671Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -200,7 +200,7 @@
     {
       "_id": "6aa03a2340da4ad4bcebd28a",
       "code": "HB-0010",
-      "name": "Bó hoa công chúa tone hồng",
+      "name": "Bó hoa công chúa 20b cao cấp",
       "price": 450000,
       "saleNote": "430000",
       "occasions": [
@@ -208,18 +208,19 @@
         "tinh-yeu"
       ],
       "flowerType": "Hoa sáp",
-      "subtitle": "Hoa Sáp Thơm Premium",
-      "shortDesc": "Hoa tone hồng hot trend, hương thơm tự nhiên lưu lại rất lâu.",
+      "subtitle": "Hồng/xanh/đỏ",
+      "shortDesc": "Bó hoa kiểu dáng công chúa hiện đại, hoa có hương thơm tự nhiên lưu lại rất lâu.",
       "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
       "images": [
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788885443/flower-shop/qh8pyvpjufrvdbssfy6s.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789222570/flower-shop/nim9b8nkrazsujgqfyqj.jpg",
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788885445/flower-shop/n8msubuixuok4kwr02r1.jpg"
       ],
       "status": "active",
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T16:38:59.604Z",
-      "updatedAt": "2026-09-09T16:33:59.630Z",
+      "updatedAt": "2026-09-12T14:17:57.519Z",
       "salePrice": 430000
     },
     {
