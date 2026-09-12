@@ -16,14 +16,14 @@ import PriceDisplay from '@/components/PriceDisplay'
 const COMMITMENTS = [
   {
     icon: Sprout,
-    title: 'Hoa cắm trong ngày',
-    body: 'Hoa nhập khẩu và hoa Đà Lạt chọn từng cành, cắm đúng ngày giao. Không dùng hoa tồn.',
+    title: 'Thiết kế riêng theo dịp',
+    body: 'Nói với chúng tôi dịp tặng, ngân sách và màu bạn thích — thợ cắm sẽ dựng mẫu riêng cho bạn.',
     tone: 'bg-brand-100 text-brand-700',
   },
   {
     icon: Clock,
-    title: 'Giao hỏa tốc 2 giờ',
-    body: 'Shipper riêng của tiệm giao tận tay trong nội thành, giữ nguyên form bó hoa.',
+    title: 'Đặt hoa 8–20h mỗi ngày',
+    body: 'Nhận đơn cả tuần, kể cả cuối tuần và ngày lễ. Giao nội thành trong 2–4 giờ kể từ khi chốt đơn.',
     tone: 'bg-matcha-100 text-matcha-800',
   },
   {
@@ -128,11 +128,11 @@ export default async function HomePage() {
               </div>
               <div>
                 <dt className="text-2xs font-bold text-ink-subtle">Giao nội thành</dt>
-                <dd className="font-display text-xl font-black text-matcha-700">2 giờ</dd>
+                <dd className="font-display text-xl font-black text-matcha-700">2–4 giờ</dd>
               </div>
               <div>
                 <dt className="text-2xs font-bold text-ink-subtle">Mở cửa mỗi ngày</dt>
-                <dd className="font-display text-xl font-black text-lavender-600">7–21h</dd>
+                <dd className="font-display text-xl font-black text-lavender-600">8–20h</dd>
               </div>
             </dl>
           </div>
