@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-12T15:54:48.066Z",
+  "takenAt": "2026-09-12T16:37:39.913Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -13,7 +13,7 @@
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788666548/flower-shop/qvg9akudwb995ysuqbf2.jpg",
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788887341/flower-shop/ch3mi73xnzcaf0clcjun.jpg"
       ],
-      "name": "Bó Hoa Sáp Hồng Tỉ Muội Thơm",
+      "name": "Bó Hoa Sáp Hồng Tỉ Muội Thơm phối ren",
       "occasions": [
         "sinh-nhat",
         "tinh-yeu",
@@ -27,7 +27,7 @@
       "sort": 1,
       "status": "active",
       "subtitle": "Hoa Sáp Thơm Premium Hồng/xanh/trắng",
-      "updatedAt": "2026-09-12T15:53:37.277Z"
+      "updatedAt": "2026-09-12T16:35:47.362Z"
     },
     {
       "_id": "6a9ba761f7e4d9f334e1a137",
@@ -436,6 +436,30 @@
       "sort": 999,
       "createdAt": "2026-09-11T16:16:17.066Z",
       "updatedAt": "2026-09-11T16:21:21.226Z"
+    },
+    {
+      "_id": "6aa57f53f7e2f362ddb7ea9b",
+      "code": "HB-0022",
+      "name": "Bó hoa sáp tỉ muội thơm không ren",
+      "price": 400000,
+      "salePrice": 380000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "khai-truong"
+      ],
+      "flowerType": "Hoa sáp",
+      "subtitle": "Hoa Sáp Thơm Premium",
+      "shortDesc": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mềm mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789230884/flower-shop/augr2jjslojnabxy3zha.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789230895/flower-shop/lmczqbrwgfy29mlfsvhs.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 2,
+      "createdAt": "2026-09-12T16:35:31.852Z",
+      "updatedAt": "2026-09-12T16:35:31.852Z"
     }
   ],
   "occasions": [
