@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-13T12:12:31.510Z",
+  "takenAt": "2026-09-13T13:19:34.571Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -459,6 +459,27 @@
       "sort": 2,
       "createdAt": "2026-09-12T16:35:31.852Z",
       "updatedAt": "2026-09-12T16:35:31.852Z"
+    },
+    {
+      "_id": "6aa6a2a758654fd43ddc8156",
+      "code": "HB-0023",
+      "name": "Bó hoa trà lụa đỏ mix sợi tơ",
+      "price": 360000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "hang-ngay"
+      ],
+      "flowerType": "Hoa lụa",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789305498/flower-shop/zmkdqiues0kyezz9vnu2.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789305499/flower-shop/ij0xsvk7b2pkyuytgxt2.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-13T13:18:31.861Z",
+      "updatedAt": "2026-09-13T13:18:31.861Z"
     }
   ],
   "occasions": [
