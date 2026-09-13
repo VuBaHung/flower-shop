@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-13T13:19:34.571Z",
+  "takenAt": "2026-09-13T16:34:12.883Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -39,7 +39,7 @@
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788667008/flower-shop/ck8izhylxcouta5kqz4w.jpg",
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788667009/flower-shop/zrnw1bt8vj9ucv8fsulb.jpg"
       ],
-      "name": "Bó hoa hồng mix",
+      "name": "Hồng vũ nữ",
       "occasions": [
         "tinh-yeu",
         "sinh-nhat",
@@ -52,7 +52,7 @@
       "status": "active",
       "subtitle": "Tone hồng hottrend phối vải ren tinh tế",
       "salePrice": 300000,
-      "updatedAt": "2026-09-12T15:50:56.576Z"
+      "updatedAt": "2026-09-13T16:30:37.366Z"
     },
     {
       "_id": "6a9ba761f7e4d9f334e1a138",
@@ -66,7 +66,7 @@
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788667701/flower-shop/tlbpbz5e3j3d9wbjkf2s.jpg",
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788667704/flower-shop/n3r3cf1v0ftuqihis8xj.jpg"
       ],
-      "name": "Bó hoa hồng mix",
+      "name": "Bó hoa hồng mix phăng",
       "occasions": [
         "tinh-yeu",
         "sinh-nhat"
@@ -78,7 +78,7 @@
       "status": "active",
       "subtitle": "Hoa Sáp Thơm Premium",
       "salePrice": 370000,
-      "updatedAt": "2026-09-12T15:49:29.701Z"
+      "updatedAt": "2026-09-13T16:31:00.844Z"
     },
     {
       "_id": "6aa028d940da4ad4bcebd285",
@@ -295,7 +295,7 @@
     {
       "_id": "6aa03e0240da4ad4bcebd28e",
       "code": "HB-0014",
-      "name": "Hoa lụa mix",
+      "name": "Hoa phăng lụa",
       "price": 190000,
       "occasions": [
         "sinh-nhat"
@@ -307,7 +307,7 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T16:55:30.807Z",
-      "updatedAt": "2026-09-08T17:06:31.513Z",
+      "updatedAt": "2026-09-13T16:31:55.915Z",
       "salePrice": 170000
     },
     {
@@ -341,11 +341,12 @@
     {
       "_id": "6aa18156665ccb11beda7380",
       "code": "HB-0016",
-      "name": "Hoa hồng đỏ mix",
+      "name": "Hoa hồng đỏ",
       "price": 240000,
       "occasions": [
         "sinh-nhat",
-        "tinh-yeu"
+        "tinh-yeu",
+        "tone-do"
       ],
       "flowerType": "Hoa sáp",
       "subtitle": "Hoa Sáp Thơm Premium",
@@ -361,7 +362,7 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-09T15:55:02.110Z",
-      "updatedAt": "2026-09-09T15:55:02.110Z"
+      "updatedAt": "2026-09-13T16:34:05.921Z"
     },
     {
       "_id": "6aa1858a56fa70f90fa3b333",
@@ -390,7 +391,7 @@
     {
       "_id": "6aa42786cbab71f97ea82aee",
       "code": "HB-0020",
-      "name": "Bó hoa tone hồng mix trắng",
+      "name": "Hồng 3L",
       "price": 150000,
       "occasions": [
         "sinh-nhat",
@@ -408,7 +409,7 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-11T16:08:38.214Z",
-      "updatedAt": "2026-09-11T16:08:38.214Z"
+      "updatedAt": "2026-09-13T16:31:21.751Z"
     },
     {
       "_id": "6aa42951cbab71f97ea82aef",
@@ -468,7 +469,8 @@
       "occasions": [
         "sinh-nhat",
         "tinh-yeu",
-        "hang-ngay"
+        "hang-ngay",
+        "tone-do"
       ],
       "flowerType": "Hoa lụa",
       "images": [
@@ -479,7 +481,7 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-13T13:18:31.861Z",
-      "updatedAt": "2026-09-13T13:18:31.861Z"
+      "updatedAt": "2026-09-13T16:33:50.409Z"
     }
   ],
   "occasions": [
@@ -512,6 +514,16 @@
       "seoDescription": null,
       "seoTitle": null,
       "updatedAt": "2026-09-11T16:19:47.564Z"
+    },
+    {
+      "_id": "6aa6d038e854ad52ba72a8c0",
+      "slug": "tone-do",
+      "image": null,
+      "intro": null,
+      "label": "Tone đỏ",
+      "seoDescription": null,
+      "seoTitle": null,
+      "updatedAt": "2026-09-13T16:32:56.098Z"
     }
   ],
   "campaigns": [
