@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-13T16:34:12.883Z",
+  "takenAt": "2026-09-13T16:35:20.666Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -87,7 +87,8 @@
       "price": 300000,
       "occasions": [
         "sinh-nhat",
-        "tinh-yeu"
+        "tinh-yeu",
+        "tone-do"
       ],
       "flowerType": "Hoa sáp",
       "badge": "Sang trọng",
@@ -100,7 +101,7 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T15:25:13.781Z",
-      "updatedAt": "2026-09-08T15:30:17.431Z",
+      "updatedAt": "2026-09-13T16:34:20.005Z",
       "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mềm mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
       "shortDesc": "Hoa hồng đỏ tinh tế sang trọng, thường dùng vào các dịp đặc biệt cho người thân yêu (mẹ, vợ, bạn gái,…)",
       "subtitle": "Hoa Sáp Thơm Premium"
