@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-14T21:43:16.317Z",
+  "takenAt": "2026-09-15T08:18:40.916Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -482,7 +482,8 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-13T13:18:31.861Z",
-      "updatedAt": "2026-09-13T16:33:50.409Z"
+      "updatedAt": "2026-09-15T08:17:53.965Z",
+      "salePrice": 345000
     }
   ],
   "occasions": [
