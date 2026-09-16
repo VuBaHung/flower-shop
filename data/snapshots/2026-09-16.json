@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-15T21:07:55.477Z",
+  "takenAt": "2026-09-16T11:33:47.982Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -484,6 +484,31 @@
       "createdAt": "2026-09-13T13:18:31.861Z",
       "updatedAt": "2026-09-15T08:17:53.965Z",
       "salePrice": 345000
+    },
+    {
+      "_id": "6aaa7e5e0dcf78fdabfef450",
+      "code": "HB-0024",
+      "name": "Bó hoa tú cầu công chúa lớn",
+      "price": 650000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "khai-truong",
+        "hang-ngay"
+      ],
+      "flowerType": "Hoa lụa mix sáp cao cấp",
+      "subtitle": "Hoa lụa mix sáp",
+      "shortDesc": "Size XXL",
+      "size": "Lớn",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789558330/flower-shop/rscvbcaeanijibwd0pz8.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789558331/flower-shop/mutqywnxcwl3pjju89ae.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-16T11:32:46.072Z",
+      "updatedAt": "2026-09-16T11:32:46.072Z"
     }
   ],
   "occasions": [
