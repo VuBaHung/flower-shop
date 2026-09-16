@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-16T11:33:47.982Z",
+  "takenAt": "2026-09-16T11:45:42.393Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -506,9 +506,9 @@
       ],
       "status": "active",
       "featured": false,
-      "sort": 999,
+      "sort": 3,
       "createdAt": "2026-09-16T11:32:46.072Z",
-      "updatedAt": "2026-09-16T11:32:46.072Z"
+      "updatedAt": "2026-09-16T11:44:57.558Z"
     }
   ],
   "occasions": [
