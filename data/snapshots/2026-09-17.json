@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-17T05:47:18.575Z",
+  "takenAt": "2026-09-17T05:58:22.855Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -258,7 +258,8 @@
       "price": 120000,
       "occasions": [
         "sinh-nhat",
-        "hang-ngay"
+        "hang-ngay",
+        "hoa-mini"
       ],
       "flowerType": "Hoa lụa",
       "images": [
@@ -271,7 +272,7 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T16:47:58.910Z",
-      "updatedAt": "2026-09-11T16:21:07.770Z"
+      "updatedAt": "2026-09-17T05:47:53.599Z"
     },
     {
       "_id": "6aa03d9340da4ad4bcebd28d",
@@ -420,7 +421,8 @@
       "priceNote": "Chỉ từ 70k",
       "occasions": [
         "tinh-yeu",
-        "hang-ngay"
+        "hang-ngay",
+        "hoa-mini"
       ],
       "flowerType": "Hoa sáp",
       "subtitle": "Hoa Sáp Thơm Premium",
@@ -437,7 +439,7 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-11T16:16:17.066Z",
-      "updatedAt": "2026-09-11T16:21:21.226Z"
+      "updatedAt": "2026-09-17T05:47:40.295Z"
     },
     {
       "_id": "6aa57f53f7e2f362ddb7ea9b",
@@ -541,7 +543,8 @@
       "price": 55000,
       "priceNote": "Từ 55000-70000",
       "occasions": [
-        "hang-ngay"
+        "hang-ngay",
+        "hoa-mini"
       ],
       "flowerType": "Hoa sáp, hoa lụa",
       "subtitle": "Từ 10bó được chiết khấu",
@@ -562,7 +565,30 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-17T05:36:27.132Z",
-      "updatedAt": "2026-09-17T05:36:27.132Z"
+      "updatedAt": "2026-09-17T05:47:32.574Z"
+    },
+    {
+      "_id": "6aab814249c6d29b30ce8e5e",
+      "code": "HB-0027",
+      "name": "2 gấu thơm phối ren",
+      "price": 300000,
+      "occasions": [
+        "hoa-gau",
+        "sinh-nhat",
+        "tinh-yeu",
+        "hang-ngay"
+      ],
+      "subtitle": "Hoa Sáp Thơm Premium",
+      "size": "Nhỏ",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789624336/flower-shop/hglryff8fxmsfsrxlewd.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789624337/flower-shop/fxjavt0yxffpp0uglfd9.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-17T05:57:22.842Z",
+      "updatedAt": "2026-09-17T05:57:22.842Z"
     }
   ],
   "occasions": [
