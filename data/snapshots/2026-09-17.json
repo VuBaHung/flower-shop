@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-16T21:09:14.715Z",
+  "takenAt": "2026-09-17T05:47:18.575Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -229,26 +229,27 @@
     {
       "_id": "6aa03b7840da4ad4bcebd28b",
       "code": "HB-0011",
-      "name": "Bó hoa mix gấu thơm từ 135k",
+      "name": "Bó hoa mix gấu thơm mini",
       "priceNote": "Từ 135000",
       "occasions": [
         "sinh-nhat",
         "tinh-yeu",
-        "hang-ngay"
+        "hang-ngay",
+        "hoa-gau"
       ],
       "flowerType": "Hoa sáp mix gấu bông",
       "subtitle": "Hoa Sáp Thơm Premium Kết hợp cùng gấu thơm",
       "shortDesc": "Hoa sáp kết hợp cùng gấu thơm hot trend, hương thơm tự nhiên lưu lại rất lâu.",
       "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
       "images": [
-        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788885689/flower-shop/b8nasjsq5yabekoidbni.jpg",
-        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788885690/flower-shop/za7wkkp3pomx7ezotnpb.jpg"
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1788885689/flower-shop/b8nasjsq5yabekoidbni.jpg"
       ],
       "status": "active",
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T16:44:40.005Z",
-      "updatedAt": "2026-09-11T16:20:30.254Z"
+      "updatedAt": "2026-09-17T05:46:44.594Z",
+      "price": 135000
     },
     {
       "_id": "6aa03c3e40da4ad4bcebd28c",
@@ -314,8 +315,8 @@
     {
       "_id": "6aa17fe3665ccb11beda737f",
       "code": "HB-0015",
-      "name": "Bó hoa ốc quế từ 220k",
-      "price": 260000,
+      "name": "Bó hoa ốc quế từ 200k",
+      "price": 200000,
       "occasions": [
         "sinh-nhat",
         "tinh-yeu",
@@ -336,8 +337,8 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-09T15:48:51.098Z",
-      "updatedAt": "2026-09-11T16:20:59.755Z",
-      "priceNote": "Từ 220000"
+      "updatedAt": "2026-09-17T05:44:08.576Z",
+      "priceNote": "Từ 200000"
     },
     {
       "_id": "6aa18156665ccb11beda7380",
@@ -509,6 +510,59 @@
       "sort": 3,
       "createdAt": "2026-09-16T11:32:46.072Z",
       "updatedAt": "2026-09-16T11:44:57.558Z"
+    },
+    {
+      "_id": "6aab79d949c6d29b30ce8e5c",
+      "code": "HB-0025",
+      "name": "Bó hoa trà xanh phối vải ren",
+      "price": 370000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "hang-ngay"
+      ],
+      "flowerType": "Hoa lụa",
+      "subtitle": "Hoa lụa",
+      "size": "Trung",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789622712/flower-shop/lsx0a2llwm9ve5jnt6d8.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789622714/flower-shop/t2t61vbonzgw5kxs1ysz.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-17T05:25:45.027Z",
+      "updatedAt": "2026-09-17T05:25:45.027Z"
+    },
+    {
+      "_id": "6aab7c5b49c6d29b30ce8e5d",
+      "code": "HB-0026",
+      "name": "Hoa mini",
+      "price": 55000,
+      "priceNote": "Từ 55000-70000",
+      "occasions": [
+        "hang-ngay"
+      ],
+      "flowerType": "Hoa sáp, hoa lụa",
+      "subtitle": "Từ 10bó được chiết khấu",
+      "size": "Nhỏ",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789622888/flower-shop/tlh4atcopvnrsofak3fk.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789622892/flower-shop/h5fax6uj2e5utyqz61x9.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789622895/flower-shop/vpjomtadesqoaop282pt.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789622897/flower-shop/pfdzhkjs3po9fesxhp1s.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789622899/flower-shop/qjilkeccmeadv6xadg0g.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789622902/flower-shop/h1tqdgfyl3rwgfzoijsi.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789622904/flower-shop/mjindxqorttup0f5cxsq.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789622905/flower-shop/f1eaokjtrc7z1i03hjrj.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789622906/flower-shop/p4foygbygykcusvkusfv.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789622907/flower-shop/ww1gykzhimqv0cx9crnu.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-17T05:36:27.132Z",
+      "updatedAt": "2026-09-17T05:36:27.132Z"
     }
   ],
   "occasions": [
@@ -551,6 +605,26 @@
       "seoDescription": null,
       "seoTitle": null,
       "updatedAt": "2026-09-13T16:32:56.098Z"
+    },
+    {
+      "_id": "6aab7eb2e854ad52ba72f9cb",
+      "slug": "hoa-gau",
+      "image": null,
+      "intro": null,
+      "label": "Hoa gấu",
+      "seoDescription": null,
+      "seoTitle": null,
+      "updatedAt": "2026-09-17T05:46:26.918Z"
+    },
+    {
+      "_id": "6aab7edfe854ad52ba72f9cc",
+      "slug": "hoa-mini",
+      "image": null,
+      "intro": null,
+      "label": "Hoa mini",
+      "seoDescription": null,
+      "seoTitle": null,
+      "updatedAt": "2026-09-17T05:47:11.799Z"
     }
   ],
   "campaigns": [
