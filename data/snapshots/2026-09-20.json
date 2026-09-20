@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-20T04:53:58.099Z",
+  "takenAt": "2026-09-20T14:45:20.152Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -318,7 +318,7 @@
     {
       "_id": "6aa17fe3665ccb11beda737f",
       "code": "HB-0015",
-      "name": "Bó hoa ốc quế từ 200k",
+      "name": "Bó hoa ốc quế từ 180k",
       "price": 200000,
       "occasions": [
         "sinh-nhat",
@@ -340,7 +340,7 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-09T15:48:51.098Z",
-      "updatedAt": "2026-09-17T05:44:08.576Z",
+      "updatedAt": "2026-09-20T14:44:09.519Z",
       "priceNote": "Từ 200000"
     },
     {
