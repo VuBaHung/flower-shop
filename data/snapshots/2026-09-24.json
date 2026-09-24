@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-23T21:22:10.185Z",
+  "takenAt": "2026-09-24T04:14:01.841Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -623,13 +623,13 @@
         "sinh-nhat"
       ],
       "images": [
-        "https://res.cloudinary.com/dan5lrpon/image/upload/v1789879789/flower-shop/bw5q9q14sfeiqezgbm7w.jpg"
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790223192/flower-shop/q2mh50d9oyl5dsedt81h.jpg"
       ],
       "status": "active",
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-20T04:50:53.761Z",
-      "updatedAt": "2026-09-20T04:50:53.761Z"
+      "updatedAt": "2026-09-24T04:13:15.272Z"
     },
     {
       "_id": "6aaf66791c1b52b897f3f3cc",
