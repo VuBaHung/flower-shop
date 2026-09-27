@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-27T16:21:42.101Z",
+  "takenAt": "2026-09-27T16:24:04.692Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -791,7 +791,7 @@
       "_id": "6ab93ffb5166c14f07962775",
       "code": "HB-0038",
       "name": "Mã 38",
-      "price": 450,
+      "price": 450000,
       "occasions": [
         "sinh-nhat",
         "tinh-yeu",
@@ -807,7 +807,7 @@
       "featured": false,
       "sort": 4,
       "createdAt": "2026-09-27T16:10:35.141Z",
-      "updatedAt": "2026-09-27T16:10:35.141Z"
+      "updatedAt": "2026-09-27T16:23:15.476Z"
     }
   ],
   "occasions": [
