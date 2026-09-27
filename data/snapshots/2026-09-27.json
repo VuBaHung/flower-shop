@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-27T16:26:23.593Z",
+  "takenAt": "2026-09-27T16:27:31.037Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -447,8 +447,8 @@
       "_id": "6aa57f53f7e2f362ddb7ea9b",
       "code": "HB-0022",
       "name": "Mã 22",
-      "price": 390000,
-      "salePrice": 380000,
+      "price": 410000,
+      "salePrice": 390000,
       "occasions": [
         "sinh-nhat",
         "tinh-yeu",
@@ -465,7 +465,7 @@
       "featured": false,
       "sort": 2,
       "createdAt": "2026-09-12T16:35:31.852Z",
-      "updatedAt": "2026-09-27T16:25:31.973Z"
+      "updatedAt": "2026-09-27T16:26:29.406Z"
     },
     {
       "_id": "6aa6a2a758654fd43ddc8156",
