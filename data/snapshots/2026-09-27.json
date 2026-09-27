@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-27T15:47:21.852Z",
+  "takenAt": "2026-09-27T16:13:32.039Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -13,7 +13,7 @@
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788666548/flower-shop/qvg9akudwb995ysuqbf2.jpg",
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788887341/flower-shop/ch3mi73xnzcaf0clcjun.jpg"
       ],
-      "name": "Bó Hoa Sáp Hồng Tỉ Muội Thơm phối ren",
+      "name": "Mã 2",
       "occasions": [
         "sinh-nhat",
         "tinh-yeu",
@@ -22,12 +22,12 @@
       "price": 500000,
       "saleNote": "Giá cuối tuần",
       "salePrice": 450000,
-      "shortDesc": "Hoa tỉ muội tone hồng hot trend, hương thơm tự nhiên lưu lại rất lâu.",
+      "shortDesc": "36-38cm",
       "size": "Trung",
       "sort": 1,
       "status": "active",
       "subtitle": "Hoa Sáp Thơm Premium Hồng/xanh/trắng",
-      "updatedAt": "2026-09-12T16:35:47.362Z"
+      "updatedAt": "2026-09-27T15:52:54.590Z"
     },
     {
       "_id": "6a9ba761f7e4d9f334e1a137",
@@ -39,7 +39,7 @@
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788667008/flower-shop/ck8izhylxcouta5kqz4w.jpg",
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788667009/flower-shop/zrnw1bt8vj9ucv8fsulb.jpg"
       ],
-      "name": "Hồng vũ nữ",
+      "name": "Mã 03",
       "occasions": [
         "tinh-yeu",
         "sinh-nhat",
@@ -52,7 +52,7 @@
       "status": "active",
       "subtitle": "Tone hồng hottrend phối vải ren tinh tế",
       "salePrice": 300000,
-      "updatedAt": "2026-09-13T16:30:37.366Z"
+      "updatedAt": "2026-09-27T15:53:15.160Z"
     },
     {
       "_id": "6a9ba761f7e4d9f334e1a138",
@@ -66,7 +66,7 @@
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788667701/flower-shop/tlbpbz5e3j3d9wbjkf2s.jpg",
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788667704/flower-shop/n3r3cf1v0ftuqihis8xj.jpg"
       ],
-      "name": "Bó hoa hồng mix phăng",
+      "name": "Mã 04",
       "occasions": [
         "tinh-yeu",
         "sinh-nhat"
@@ -76,14 +76,14 @@
       "size": "Vừa",
       "sort": 4,
       "status": "active",
-      "subtitle": "Hoa Sáp Thơm Premium",
+      "subtitle": "Mã 04",
       "salePrice": 360000,
-      "updatedAt": "2026-09-18T07:35:22.733Z"
+      "updatedAt": "2026-09-27T15:54:01.362Z"
     },
     {
       "_id": "6aa028d940da4ad4bcebd285",
       "code": "HB-005",
-      "name": "Bó hoa hồng đỏ sang trọng",
+      "name": "Mã 05",
       "price": 300000,
       "occasions": [
         "sinh-nhat",
@@ -103,7 +103,7 @@
       "featured": false,
       "sort": 4,
       "createdAt": "2026-09-08T15:25:13.781Z",
-      "updatedAt": "2026-09-20T04:28:22.921Z",
+      "updatedAt": "2026-09-27T15:53:34.134Z",
       "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mềm mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
       "shortDesc": "Hoa hồng đỏ tinh tế sang trọng, thường dùng vào các dịp đặc biệt cho người thân yêu (mẹ, vợ, bạn gái,…)",
       "subtitle": "Hoa Sáp Thơm Premium"
@@ -111,7 +111,7 @@
     {
       "_id": "6aa02cd440da4ad4bcebd286",
       "code": "HB-006",
-      "name": "Bó hoa mix tone hồng",
+      "name": "Mã 6",
       "price": 420000,
       "salePrice": 400000,
       "occasions": [
@@ -130,13 +130,13 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T15:42:12.287Z",
-      "updatedAt": "2026-09-08T16:28:57.450Z",
+      "updatedAt": "2026-09-27T15:52:44.624Z",
       "flowerType": "Hoa sáp"
     },
     {
       "_id": "6aa0370740da4ad4bcebd287",
       "code": "HB-007",
-      "name": "Bó cẩm tú cầu size lớn",
+      "name": "Mã 7",
       "price": 350000,
       "occasions": [
         "sinh-nhat",
@@ -144,7 +144,7 @@
         "khai-truong"
       ],
       "flowerType": "Hoa lụa",
-      "subtitle": "Hoa lụa",
+      "subtitle": "Size lớn",
       "shortDesc": "Bó tú cầu phù hợp cho mọi dịp lễ",
       "size": "Lớn",
       "description": "Mẫu hoa lụa nghệ thuật được tạo hình tỉ mỉ, độ bền giữ đến 5 năm. Không cần nước, không cần chăm sóc.",
@@ -156,18 +156,18 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T16:25:43.292Z",
-      "updatedAt": "2026-09-08T16:25:43.292Z"
+      "updatedAt": "2026-09-27T15:56:53.375Z"
     },
     {
       "_id": "6aa0374340da4ad4bcebd288",
       "code": "HB-008",
-      "name": "Bó cẩm tú cầu size trung",
+      "name": "Mã 08",
       "occasions": [
         "sinh-nhat",
         "tinh-yeu",
         "khai-truong"
       ],
-      "subtitle": "Hoa lụa",
+      "subtitle": "Size trung",
       "images": [
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788884885/flower-shop/esmroyzc0w7ymgvvnsbt.jpg",
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788884886/flower-shop/aa8mezcsbyp2l00dinrf.jpg"
@@ -176,7 +176,7 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T16:26:43.417Z",
-      "updatedAt": "2026-09-08T16:28:37.262Z",
+      "updatedAt": "2026-09-27T15:57:08.970Z",
       "shortDesc": "Bó tú cầu phù hợp cho mọi dịp lễ",
       "description": "Mẫu hoa lụa nghệ thuật được tạo hình tỉ mỉ, độ bền giữ đến 5 năm. Không cần nước, không cần chăm sóc.",
       "flowerType": "Hoa lụa",
@@ -186,7 +186,7 @@
     {
       "_id": "6aa0394640da4ad4bcebd289",
       "code": "HB-009",
-      "name": "Hoa bánh kem",
+      "name": "Mã 09",
       "price": 250000,
       "occasions": [
         "sinh-nhat"
@@ -200,12 +200,12 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T16:35:18.014Z",
-      "updatedAt": "2026-09-08T16:35:18.014Z"
+      "updatedAt": "2026-09-27T15:58:23.929Z"
     },
     {
       "_id": "6aa03a2340da4ad4bcebd28a",
       "code": "HB-0010",
-      "name": "Bó hoa công chúa 20b cao cấp",
+      "name": "Mã 10",
       "price": 450000,
       "saleNote": "430000",
       "occasions": [
@@ -225,7 +225,7 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T16:38:59.604Z",
-      "updatedAt": "2026-09-12T14:17:57.519Z",
+      "updatedAt": "2026-09-27T15:58:07.028Z",
       "salePrice": 430000
     },
     {
@@ -248,9 +248,9 @@
       ],
       "status": "active",
       "featured": false,
-      "sort": 999,
+      "sort": 10,
       "createdAt": "2026-09-08T16:44:40.005Z",
-      "updatedAt": "2026-09-17T05:46:44.594Z",
+      "updatedAt": "2026-09-27T16:11:50.973Z",
       "price": 135000
     },
     {
@@ -279,7 +279,7 @@
     {
       "_id": "6aa03d9340da4ad4bcebd28d",
       "code": "HB-0013",
-      "name": "Hoa sáp mix hiện đại",
+      "name": "Mã 13",
       "price": 150000,
       "occasions": [
         "sinh-nhat",
@@ -294,13 +294,13 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T16:53:39.031Z",
-      "updatedAt": "2026-09-11T16:20:52.679Z",
+      "updatedAt": "2026-09-27T15:57:50.475Z",
       "salePrice": 120000
     },
     {
       "_id": "6aa03e0240da4ad4bcebd28e",
       "code": "HB-0014",
-      "name": "Hoa phăng lụa",
+      "name": "Mã 14",
       "price": 190000,
       "occasions": [
         "sinh-nhat"
@@ -312,7 +312,7 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T16:55:30.807Z",
-      "updatedAt": "2026-09-13T16:31:55.915Z",
+      "updatedAt": "2026-09-27T15:57:26.040Z",
       "salePrice": 170000
     },
     {
@@ -346,7 +346,7 @@
     {
       "_id": "6aa18156665ccb11beda7380",
       "code": "HB-0016",
-      "name": "Hoa hồng đỏ",
+      "name": "Mã 16",
       "price": 240000,
       "occasions": [
         "sinh-nhat",
@@ -367,12 +367,12 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-09T15:55:02.110Z",
-      "updatedAt": "2026-09-13T16:34:05.921Z"
+      "updatedAt": "2026-09-27T15:57:37.666Z"
     },
     {
       "_id": "6aa1858a56fa70f90fa3b333",
       "code": "HB-0019",
-      "name": "Bó hồng ecuador hiện đại",
+      "name": "Mã 19",
       "price": 160000,
       "occasions": [
         "tinh-yeu",
@@ -391,12 +391,12 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-09T16:12:58.885Z",
-      "updatedAt": "2026-09-13T12:11:38.691Z"
+      "updatedAt": "2026-09-27T15:56:36.211Z"
     },
     {
       "_id": "6aa42786cbab71f97ea82aee",
       "code": "HB-0020",
-      "name": "Hồng 3L",
+      "name": "Mã 20",
       "price": 150000,
       "occasions": [
         "sinh-nhat",
@@ -414,7 +414,7 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-11T16:08:38.214Z",
-      "updatedAt": "2026-09-13T16:31:21.751Z"
+      "updatedAt": "2026-09-27T15:56:24.333Z"
     },
     {
       "_id": "6aa42951cbab71f97ea82aef",
@@ -446,7 +446,7 @@
     {
       "_id": "6aa57f53f7e2f362ddb7ea9b",
       "code": "HB-0022",
-      "name": "Bó hoa sáp tỉ muội thơm không ren",
+      "name": "Mã 22",
       "price": 400000,
       "salePrice": 380000,
       "occasions": [
@@ -456,7 +456,7 @@
       ],
       "flowerType": "Hoa sáp",
       "subtitle": "Hoa Sáp Thơm Premium",
-      "shortDesc": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mềm mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
+      "shortDesc": "36-37cm",
       "images": [
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1789230884/flower-shop/augr2jjslojnabxy3zha.jpg",
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1789230895/flower-shop/lmczqbrwgfy29mlfsvhs.jpg"
@@ -465,12 +465,12 @@
       "featured": false,
       "sort": 2,
       "createdAt": "2026-09-12T16:35:31.852Z",
-      "updatedAt": "2026-09-12T16:35:31.852Z"
+      "updatedAt": "2026-09-27T15:53:06.132Z"
     },
     {
       "_id": "6aa6a2a758654fd43ddc8156",
       "code": "HB-0023",
-      "name": "Bó hoa trà lụa đỏ mix sợi tơ",
+      "name": "Mã 23",
       "price": 360000,
       "occasions": [
         "sinh-nhat",
@@ -487,13 +487,13 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-13T13:18:31.861Z",
-      "updatedAt": "2026-09-15T08:17:53.965Z",
+      "updatedAt": "2026-09-27T15:56:11.145Z",
       "salePrice": 345000
     },
     {
       "_id": "6aaa7e5e0dcf78fdabfef450",
       "code": "HB-0024",
-      "name": "Bó hoa tú cầu công chúa lớn",
+      "name": "Mã 24",
       "price": 650000,
       "occasions": [
         "sinh-nhat",
@@ -513,12 +513,12 @@
       "featured": false,
       "sort": 3,
       "createdAt": "2026-09-16T11:32:46.072Z",
-      "updatedAt": "2026-09-16T11:44:57.558Z"
+      "updatedAt": "2026-09-27T15:53:25.002Z"
     },
     {
       "_id": "6aab79d949c6d29b30ce8e5c",
       "code": "HB-0025",
-      "name": "Bó hoa trà xanh phối vải ren",
+      "name": "Mã 25",
       "price": 370000,
       "occasions": [
         "sinh-nhat",
@@ -536,7 +536,7 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-17T05:25:45.027Z",
-      "updatedAt": "2026-09-17T05:25:45.027Z"
+      "updatedAt": "2026-09-27T15:55:56.248Z"
     },
     {
       "_id": "6aab7c5b49c6d29b30ce8e5d",
@@ -572,7 +572,7 @@
     {
       "_id": "6aab814249c6d29b30ce8e5e",
       "code": "HB-0027",
-      "name": "2 gấu thơm phối ren",
+      "name": "Mã 27",
       "price": 300000,
       "occasions": [
         "hoa-gau",
@@ -588,14 +588,14 @@
       ],
       "status": "active",
       "featured": false,
-      "sort": 999,
+      "sort": 11,
       "createdAt": "2026-09-17T05:57:22.842Z",
-      "updatedAt": "2026-09-17T05:57:22.842Z"
+      "updatedAt": "2026-09-27T16:12:06.408Z"
     },
     {
       "_id": "6aaf61d80504732617e35985",
       "code": "HB-0028",
-      "name": "Hoa tone xanh phối ren",
+      "name": "Mã 28",
       "price": 400000,
       "occasions": [
         "sinh-nhat",
@@ -610,12 +610,12 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-20T04:32:24.218Z",
-      "updatedAt": "2026-09-20T04:32:24.218Z"
+      "updatedAt": "2026-09-27T15:55:18.740Z"
     },
     {
       "_id": "6aaf662d1c1b52b897f3f3cb",
       "code": "HB-0029",
-      "name": "Tone xanh",
+      "name": "Mã 29",
       "price": 250000,
       "occasions": [
         "hang-ngay",
@@ -629,12 +629,12 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-20T04:50:53.761Z",
-      "updatedAt": "2026-09-24T04:14:20.340Z"
+      "updatedAt": "2026-09-27T15:55:28.382Z"
     },
     {
       "_id": "6aaf66791c1b52b897f3f3cc",
       "code": "HB-0030",
-      "name": "Tone hồng",
+      "name": "Mã 30",
       "price": 230000,
       "occasions": [
         "sinh-nhat",
@@ -648,12 +648,12 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-20T04:52:09.931Z",
-      "updatedAt": "2026-09-20T04:52:09.931Z"
+      "updatedAt": "2026-09-27T15:55:07.474Z"
     },
     {
       "_id": "6aaf66ad1c1b52b897f3f3cd",
       "code": "HB-0031",
-      "name": "Tone hồng",
+      "name": "Mã 31",
       "price": 350000,
       "occasions": [
         "sinh-nhat",
@@ -666,12 +666,12 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-20T04:53:01.354Z",
-      "updatedAt": "2026-09-20T04:53:01.354Z"
+      "updatedAt": "2026-09-27T15:54:54.476Z"
     },
     {
       "_id": "6ab91bc598ed455a9536ae43",
       "code": "HB-0032",
-      "name": "Bó tỉ muội size trung",
+      "name": "Mã 32",
       "price": 300000,
       "occasions": [
         "sinh-nhat",
@@ -683,9 +683,131 @@
       ],
       "status": "active",
       "featured": false,
-      "sort": 999,
+      "sort": 7,
       "createdAt": "2026-09-27T13:36:05.333Z",
-      "updatedAt": "2026-09-27T13:36:05.333Z"
+      "updatedAt": "2026-09-27T16:11:12.534Z",
+      "subtitle": "Size trung"
+    },
+    {
+      "_id": "6ab93aa65166c14f07962770",
+      "code": "HB-0033",
+      "name": "Mã 33",
+      "price": 220000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "hang-ngay"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790524027/flower-shop/x8lsli15v1bcylksczep.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 9,
+      "createdAt": "2026-09-27T15:47:50.484Z",
+      "updatedAt": "2026-09-27T16:11:27.759Z",
+      "subtitle": "Size nhỏ"
+    },
+    {
+      "_id": "6ab93bba5166c14f07962771",
+      "code": "HB-0034",
+      "name": "Mã 34",
+      "price": 210000,
+      "occasions": [
+        "sinh-nhat",
+        "hang-ngay",
+        "tinh-yeu"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790524163/flower-shop/osgwagqyiwn2suygxlqg.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-27T15:52:26.653Z",
+      "updatedAt": "2026-09-27T15:52:26.653Z"
+    },
+    {
+      "_id": "6ab93d6a5166c14f07962772",
+      "code": "HB-0035",
+      "name": "Mã 35",
+      "price": 300000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "hang-ngay",
+        "hoa-gau"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790524772/flower-shop/c0rnekxoivdtcj3ib4ti.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 12,
+      "createdAt": "2026-09-27T15:59:38.208Z",
+      "updatedAt": "2026-09-27T16:12:25.901Z"
+    },
+    {
+      "_id": "6ab93ec05166c14f07962773",
+      "code": "HB-0036",
+      "name": "Mã 36",
+      "price": 230000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "hang-ngay"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790524823/flower-shop/kbsa5jaomeammyks9cgl.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790524836/flower-shop/ms7g71vnz80vbsb7vvnr.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-27T16:05:20.492Z",
+      "updatedAt": "2026-09-27T16:05:20.492Z"
+    },
+    {
+      "_id": "6ab93f285166c14f07962774",
+      "code": "HB-0037",
+      "name": "Mã 37",
+      "price": 350000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "hang-ngay",
+        "tone-do"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790525190/flower-shop/z1kmibuxefel2i4fnhlo.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-27T16:07:04.658Z",
+      "updatedAt": "2026-09-27T16:07:04.658Z"
+    },
+    {
+      "_id": "6ab93ffb5166c14f07962775",
+      "code": "HB-0038",
+      "name": "Mã 38",
+      "price": 450,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "hang-ngay",
+        "khai-truong"
+      ],
+      "subtitle": "36-38cm",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790525375/flower-shop/cj6rwyfszmeebk5w9usv.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790525376/flower-shop/phac4gs9vefznwyxrqbx.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 4,
+      "createdAt": "2026-09-27T16:10:35.141Z",
+      "updatedAt": "2026-09-27T16:10:35.141Z"
     }
   ],
   "occasions": [
