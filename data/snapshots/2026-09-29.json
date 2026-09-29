@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-28T23:07:43.149Z",
+  "takenAt": "2026-09-29T12:59:41.665Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -808,6 +808,47 @@
       "sort": 4,
       "createdAt": "2026-09-27T16:10:35.141Z",
       "updatedAt": "2026-09-27T16:23:15.476Z"
+    },
+    {
+      "_id": "6abbb5413ff58ef09faf9ea6",
+      "code": "HB-0039",
+      "name": "Mã 39",
+      "price": 250000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "hang-ngay",
+        "tone-do"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790686504/flower-shop/jfen4lt7puxpsx4cxzb1.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790686509/flower-shop/lieqff0vi0yrvkbhfdpw.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-29T12:55:29.977Z",
+      "updatedAt": "2026-09-29T12:55:29.977Z"
+    },
+    {
+      "_id": "6abbb6043ff58ef09faf9ea7",
+      "code": "HB-0040",
+      "name": "Mã 40",
+      "price": 200000,
+      "salePrice": 190000,
+      "occasions": [
+        "sinh-nhat",
+        "hang-ngay"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790686635/flower-shop/nylyhjzjaojsymxtzx9n.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790686681/flower-shop/hc4yobzw0ry4fainmrl5.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-09-29T12:58:44.518Z",
+      "updatedAt": "2026-09-29T12:58:44.518Z"
     }
   ],
   "occasions": [
