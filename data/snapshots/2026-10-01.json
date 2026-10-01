@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-30T22:06:35.073Z",
+  "takenAt": "2026-10-01T15:36:24.878Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -850,6 +850,27 @@
       "sort": 999,
       "createdAt": "2026-09-29T12:58:44.518Z",
       "updatedAt": "2026-09-29T12:58:44.518Z"
+    },
+    {
+      "_id": "6abe7dadec686d7e23b09581",
+      "code": "HB-0041",
+      "name": "Mã 41",
+      "price": 700000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "hang-ngay"
+      ],
+      "subtitle": "43-45cm",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790868781/flower-shop/vsijku86y6v66vutrfrn.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790868782/flower-shop/p1gyr16dgavesxztbdn3.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-10-01T15:35:09.334Z",
+      "updatedAt": "2026-10-01T15:35:09.334Z"
     }
   ],
   "occasions": [
