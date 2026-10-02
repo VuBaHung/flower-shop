@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-10-01T22:33:43.264Z",
+  "takenAt": "2026-10-02T07:02:39.150Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -871,6 +871,27 @@
       "sort": 999,
       "createdAt": "2026-10-01T15:35:09.334Z",
       "updatedAt": "2026-10-01T15:35:09.334Z"
+    },
+    {
+      "_id": "6abf5443eca05590623e6f87",
+      "code": "HB-0042",
+      "name": "Mã 42",
+      "price": 280000,
+      "occasions": [
+        "hoa-gau",
+        "tinh-yeu",
+        "sinh-nhat",
+        "hang-ngay"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790923503/flower-shop/wsznycneiq9istahtdmo.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790923505/flower-shop/zexysuo2mrmofbk7pnk1.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-10-02T06:50:43.421Z",
+      "updatedAt": "2026-10-02T07:01:13.535Z"
     }
   ],
   "occasions": [
