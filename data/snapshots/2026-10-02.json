@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-10-02T07:04:32.866Z",
+  "takenAt": "2026-10-02T07:09:50.075Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -732,7 +732,7 @@
       "_id": "6ab93d6a5166c14f07962772",
       "code": "HB-0035",
       "name": "Mã 35",
-      "price": 300000,
+      "price": 400000,
       "occasions": [
         "sinh-nhat",
         "tinh-yeu",
@@ -740,13 +740,14 @@
         "hoa-gau"
       ],
       "images": [
-        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790524772/flower-shop/c0rnekxoivdtcj3ib4ti.jpg"
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790924661/flower-shop/apefag3hgy3chfjhrcod.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790924662/flower-shop/r9gtyctle35gkgtnrcgw.jpg"
       ],
       "status": "active",
       "featured": false,
       "sort": 12,
       "createdAt": "2026-09-27T15:59:38.208Z",
-      "updatedAt": "2026-09-27T16:12:25.901Z"
+      "updatedAt": "2026-10-02T07:07:58.426Z"
     },
     {
       "_id": "6ab93ec05166c14f07962773",
@@ -891,7 +892,27 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-10-02T06:50:43.421Z",
-      "updatedAt": "2026-10-02T07:01:13.535Z"
+      "updatedAt": "2026-10-02T07:08:23.032Z"
+    },
+    {
+      "_id": "6abf5841eca05590623e6f88",
+      "code": "HB-0043",
+      "name": "Mã 43",
+      "price": 500000,
+      "occasions": [
+        "sinh-nhat",
+        "hoa-gau",
+        "tinh-yeu"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790924788/flower-shop/pcpnnwuqyybfmlxc1au9.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1790924792/flower-shop/smtvczdqvzy09gnmlyod.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 999,
+      "createdAt": "2026-10-02T07:07:45.722Z",
+      "updatedAt": "2026-10-02T07:08:08.374Z"
     }
   ],
   "occasions": [
