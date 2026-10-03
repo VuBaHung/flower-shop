@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-10-02T22:03:08.433Z",
+  "takenAt": "2026-10-03T15:49:58.220Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -636,7 +636,7 @@
       "_id": "6aaf66791c1b52b897f3f3cc",
       "code": "HB-0030",
       "name": "Mã 30",
-      "price": 230000,
+      "price": 250000,
       "occasions": [
         "sinh-nhat",
         "tinh-yeu",
@@ -649,7 +649,7 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-20T04:52:09.931Z",
-      "updatedAt": "2026-09-27T15:55:07.474Z"
+      "updatedAt": "2026-10-03T15:49:19.640Z"
     },
     {
       "_id": "6aaf66ad1c1b52b897f3f3cd",
@@ -732,7 +732,7 @@
       "_id": "6ab93d6a5166c14f07962772",
       "code": "HB-0035",
       "name": "Mã 35",
-      "price": 400000,
+      "price": 350000,
       "occasions": [
         "sinh-nhat",
         "tinh-yeu",
@@ -747,7 +747,7 @@
       "featured": false,
       "sort": 12,
       "createdAt": "2026-09-27T15:59:38.208Z",
-      "updatedAt": "2026-10-02T07:07:58.426Z"
+      "updatedAt": "2026-10-03T15:47:52.402Z"
     },
     {
       "_id": "6ab93ec05166c14f07962773",
@@ -877,7 +877,7 @@
       "_id": "6abf5443eca05590623e6f87",
       "code": "HB-0042",
       "name": "Mã 42",
-      "price": 280000,
+      "price": 250000,
       "occasions": [
         "hoa-gau",
         "tinh-yeu",
@@ -892,13 +892,13 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-10-02T06:50:43.421Z",
-      "updatedAt": "2026-10-02T07:08:23.032Z"
+      "updatedAt": "2026-10-03T15:48:08.885Z"
     },
     {
       "_id": "6abf5841eca05590623e6f88",
       "code": "HB-0043",
       "name": "Mã 43",
-      "price": 500000,
+      "price": 450000,
       "occasions": [
         "sinh-nhat",
         "hoa-gau",
@@ -912,7 +912,7 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-10-02T07:07:45.722Z",
-      "updatedAt": "2026-10-02T07:08:08.374Z"
+      "updatedAt": "2026-10-03T15:48:30.191Z"
     }
   ],
   "occasions": [
