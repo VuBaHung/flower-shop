@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-10-11T05:12:13.073Z",
+  "takenAt": "2026-10-11T05:14:00.311Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -986,7 +986,7 @@
       "bannerMobile": "https://res.cloudinary.com/dan5lrpon/image/upload/v1788883311/flower-shop/zkxzklvphj6arvtb9wuu.png",
       "ctaLink": null,
       "ctaText": null,
-      "endDate": "2026-09-30",
+      "endDate": "2030-09-30",
       "intro": null,
       "occasionFilter": null,
       "orderCutoff": null,
@@ -998,7 +998,7 @@
       "status": "active",
       "subtitle": null,
       "title": "Giá ưu đãi",
-      "updatedAt": "2026-09-08T16:21:05.277Z"
+      "updatedAt": "2026-10-11T05:13:03.005Z"
     }
   ],
   "settings": [
