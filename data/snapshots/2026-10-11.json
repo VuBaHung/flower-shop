@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-10-10T21:27:27.511Z",
+  "takenAt": "2026-10-11T02:57:25.763Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -27,7 +27,7 @@
       "sort": 1,
       "status": "active",
       "subtitle": "Hoa Sáp Thơm Premium Hồng/xanh/trắng",
-      "updatedAt": "2026-10-02T07:02:58.886Z"
+      "updatedAt": "2026-10-11T02:57:20.641Z"
     },
     {
       "_id": "6a9ba761f7e4d9f334e1a137",
@@ -447,7 +447,7 @@
       "_id": "6aa57f53f7e2f362ddb7ea9b",
       "code": "HB-0022",
       "name": "Mã 22",
-      "price": 410000,
+      "price": 390000,
       "salePrice": 390000,
       "occasions": [
         "sinh-nhat",
@@ -465,7 +465,7 @@
       "featured": false,
       "sort": 2,
       "createdAt": "2026-09-12T16:35:31.852Z",
-      "updatedAt": "2026-10-02T07:03:04.793Z"
+      "updatedAt": "2026-10-11T02:56:10.054Z"
     },
     {
       "_id": "6aa6a2a758654fd43ddc8156",
@@ -494,7 +494,7 @@
       "_id": "6aaa7e5e0dcf78fdabfef450",
       "code": "HB-0024",
       "name": "Mã 24",
-      "price": 700000,
+      "price": 650000,
       "occasions": [
         "sinh-nhat",
         "tinh-yeu",
@@ -513,7 +513,7 @@
       "featured": false,
       "sort": 3,
       "createdAt": "2026-09-16T11:32:46.072Z",
-      "updatedAt": "2026-09-29T18:16:20.699Z",
+      "updatedAt": "2026-10-11T02:56:24.814Z",
       "salePrice": 650000
     },
     {
