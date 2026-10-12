@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-10-11T21:43:55.998Z",
+  "takenAt": "2026-10-12T12:34:23.372Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -544,7 +544,7 @@
       "code": "HB-0026",
       "name": "Hoa mini",
       "price": 55000,
-      "priceNote": "Từ 55000-70000",
+      "priceNote": "Từ 55000-80000",
       "occasions": [
         "hang-ngay",
         "hoa-mini"
@@ -568,7 +568,7 @@
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-17T05:36:27.132Z",
-      "updatedAt": "2026-09-17T05:47:32.574Z"
+      "updatedAt": "2026-10-12T12:33:22.043Z"
     },
     {
       "_id": "6aab814249c6d29b30ce8e5e",
