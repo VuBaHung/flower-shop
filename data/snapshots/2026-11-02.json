@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-11-01T21:55:09.044Z",
+  "takenAt": "2026-11-02T12:22:33.533Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -196,11 +196,11 @@
       "images": [
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788885161/flower-shop/pxjrswqq120fpz3iqzvk.jpg"
       ],
-      "status": "active",
+      "status": "hidden",
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T16:35:18.014Z",
-      "updatedAt": "2026-09-27T15:58:23.929Z"
+      "updatedAt": "2026-11-02T12:19:40.171Z"
     },
     {
       "_id": "6aa03a2340da4ad4bcebd28a",
@@ -221,11 +221,11 @@
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1789222570/flower-shop/nim9b8nkrazsujgqfyqj.jpg",
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788885445/flower-shop/n8msubuixuok4kwr02r1.jpg"
       ],
-      "status": "active",
+      "status": "hidden",
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T16:38:59.604Z",
-      "updatedAt": "2026-09-27T15:58:07.028Z",
+      "updatedAt": "2026-11-02T12:20:33.783Z",
       "salePrice": 430000
     },
     {
@@ -246,11 +246,11 @@
       "images": [
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788885689/flower-shop/b8nasjsq5yabekoidbni.jpg"
       ],
-      "status": "active",
+      "status": "hidden",
       "featured": false,
       "sort": 10,
       "createdAt": "2026-09-08T16:44:40.005Z",
-      "updatedAt": "2026-09-27T16:11:50.973Z",
+      "updatedAt": "2026-11-02T12:19:24.169Z",
       "price": 135000
     },
     {
@@ -270,11 +270,11 @@
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788885970/flower-shop/k7i1shihuzmaizmjbnu6.jpg",
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788885971/flower-shop/nodtja53fu9on4m2c308.jpg"
       ],
-      "status": "active",
+      "status": "hidden",
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T16:47:58.910Z",
-      "updatedAt": "2026-09-17T05:47:53.599Z"
+      "updatedAt": "2026-11-02T12:20:41.009Z"
     },
     {
       "_id": "6aa03d9340da4ad4bcebd28d",
@@ -290,11 +290,11 @@
       "images": [
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788886165/flower-shop/ensdlfuuywegi7mhczpn.jpg"
       ],
-      "status": "active",
+      "status": "hidden",
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T16:53:39.031Z",
-      "updatedAt": "2026-09-27T15:57:50.475Z",
+      "updatedAt": "2026-11-02T12:20:01.785Z",
       "salePrice": 120000
     },
     {
@@ -308,11 +308,11 @@
       "images": [
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1788886468/flower-shop/eublwxaiftowbapdgdms.jpg"
       ],
-      "status": "active",
+      "status": "hidden",
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-08T16:55:30.807Z",
-      "updatedAt": "2026-09-27T15:57:26.040Z",
+      "updatedAt": "2026-11-02T12:20:48.761Z",
       "salePrice": 170000
     },
     {
@@ -387,11 +387,11 @@
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1789300523/flower-shop/xjbclpsmobuttj0oybto.jpg",
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1789300524/flower-shop/a60ngho3uf1circpdffh.jpg"
       ],
-      "status": "active",
+      "status": "hidden",
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-09T16:12:58.885Z",
-      "updatedAt": "2026-09-27T15:56:36.211Z"
+      "updatedAt": "2026-11-02T12:20:26.222Z"
     },
     {
       "_id": "6aa42786cbab71f97ea82aee",
@@ -410,11 +410,11 @@
       "images": [
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1789142765/flower-shop/wum9q1ibu9phb5bv7the.jpg"
       ],
-      "status": "active",
+      "status": "hidden",
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-11T16:08:38.214Z",
-      "updatedAt": "2026-09-27T15:56:24.333Z"
+      "updatedAt": "2026-11-02T12:20:57.958Z"
     },
     {
       "_id": "6aa42951cbab71f97ea82aef",
@@ -437,11 +437,11 @@
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1789143363/flower-shop/oxuvjwcqew32tl8ghdg9.jpg",
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1789143364/flower-shop/avqlmxkatykjqmkcs00g.jpg"
       ],
-      "status": "active",
+      "status": "hidden",
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-11T16:16:17.066Z",
-      "updatedAt": "2026-09-17T05:47:40.295Z"
+      "updatedAt": "2026-11-02T12:20:13.269Z"
     },
     {
       "_id": "6aa57f53f7e2f362ddb7ea9b",
@@ -533,11 +533,11 @@
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1789622712/flower-shop/lsx0a2llwm9ve5jnt6d8.jpg",
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1789622714/flower-shop/t2t61vbonzgw5kxs1ysz.jpg"
       ],
-      "status": "active",
+      "status": "hidden",
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-17T05:25:45.027Z",
-      "updatedAt": "2026-09-27T15:55:56.248Z"
+      "updatedAt": "2026-11-02T12:21:12.038Z"
     },
     {
       "_id": "6aab7c5b49c6d29b30ce8e5d",
@@ -564,11 +564,11 @@
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1789622906/flower-shop/p4foygbygykcusvkusfv.jpg",
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1789622907/flower-shop/ww1gykzhimqv0cx9crnu.jpg"
       ],
-      "status": "active",
+      "status": "hidden",
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-17T05:36:27.132Z",
-      "updatedAt": "2026-10-12T12:33:22.043Z"
+      "updatedAt": "2026-11-02T12:19:56.055Z"
     },
     {
       "_id": "6aab814249c6d29b30ce8e5e",
@@ -783,11 +783,11 @@
       "images": [
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1790525190/flower-shop/z1kmibuxefel2i4fnhlo.jpg"
       ],
-      "status": "active",
+      "status": "hidden",
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-27T16:07:04.658Z",
-      "updatedAt": "2026-09-27T16:07:04.658Z"
+      "updatedAt": "2026-11-02T12:19:48.335Z"
     },
     {
       "_id": "6ab93ffb5166c14f07962775",
@@ -846,11 +846,11 @@
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1790686635/flower-shop/nylyhjzjaojsymxtzx9n.jpg",
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1790686681/flower-shop/hc4yobzw0ry4fainmrl5.jpg"
       ],
-      "status": "active",
+      "status": "hidden",
       "featured": false,
       "sort": 999,
       "createdAt": "2026-09-29T12:58:44.518Z",
-      "updatedAt": "2026-09-29T12:58:44.518Z"
+      "updatedAt": "2026-11-02T12:20:08.302Z"
     },
     {
       "_id": "6abe7dadec686d7e23b09581",
