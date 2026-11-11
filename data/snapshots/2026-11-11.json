@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-11-10T23:04:43.381Z",
+  "takenAt": "2026-11-11T12:06:57.779Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -975,6 +975,16 @@
       "seoDescription": null,
       "seoTitle": null,
       "updatedAt": "2026-09-17T05:47:11.799Z"
+    },
+    {
+      "_id": "6af45a25b25c942961da2bb4",
+      "slug": "2011",
+      "image": null,
+      "intro": null,
+      "label": "20/11",
+      "seoDescription": null,
+      "seoTitle": null,
+      "updatedAt": "2026-11-11T12:05:57.119Z"
     }
   ],
   "campaigns": [
