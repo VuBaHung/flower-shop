@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-11-11T12:23:29.354Z",
+  "takenAt": "2026-11-11T14:24:21.828Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -1040,7 +1040,7 @@
       "_id": "6af45ca658ee3cb648eb6776",
       "code": "HB-0051",
       "name": "Giỏ mây 1",
-      "price": 270000,
+      "price": 300000,
       "occasions": [
         "2011"
       ],
@@ -1053,7 +1053,7 @@
       "featured": false,
       "sort": 11,
       "createdAt": "2026-11-11T12:16:38.713Z",
-      "updatedAt": "2026-11-11T12:16:38.713Z"
+      "updatedAt": "2026-11-11T14:23:33.080Z"
     }
   ],
   "occasions": [
