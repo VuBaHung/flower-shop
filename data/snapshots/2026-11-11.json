@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-11-11T12:17:37.534Z",
+  "takenAt": "2026-11-11T12:21:03.969Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -48,11 +48,11 @@
       "price": 320000,
       "shortDesc": "Phong cách tối giản tinh tế",
       "size": "Nhỏ",
-      "sort": 3,
+      "sort": 16,
       "status": "active",
       "subtitle": "Tone hồng hottrend phối vải ren tinh tế",
       "salePrice": 300000,
-      "updatedAt": "2026-09-27T15:53:15.160Z"
+      "updatedAt": "2026-11-11T12:18:05.621Z"
     },
     {
       "_id": "6a9ba761f7e4d9f334e1a138",
@@ -74,11 +74,11 @@
       "price": 380000,
       "shortDesc": "Phối vải ren ẩn nhẹ nhàng, tinh tế",
       "size": "Vừa",
-      "sort": 4,
+      "sort": 17,
       "status": "active",
       "subtitle": "Mã 04",
       "salePrice": 360000,
-      "updatedAt": "2026-09-27T15:54:01.362Z"
+      "updatedAt": "2026-11-11T12:18:26.992Z"
     },
     {
       "_id": "6aa028d940da4ad4bcebd285",
@@ -101,9 +101,9 @@
       ],
       "status": "active",
       "featured": false,
-      "sort": 4,
+      "sort": 3,
       "createdAt": "2026-09-08T15:25:13.781Z",
-      "updatedAt": "2026-09-27T15:53:34.134Z",
+      "updatedAt": "2026-11-11T12:18:16.782Z",
       "description": "Mẫu hoa sáp thơm nghệ thuật được tạo hình tỉ mỉ, bề mặt mềm mịn với độ bền giữ đến 3 năm. Không cần nước, không cần chăm sóc.",
       "shortDesc": "Hoa hồng đỏ tinh tế sang trọng, thường dùng vào các dịp đặc biệt cho người thân yêu (mẹ, vợ, bạn gái,…)",
       "subtitle": "Hoa Sáp Thơm Premium"
@@ -248,9 +248,9 @@
       ],
       "status": "hidden",
       "featured": false,
-      "sort": 10,
+      "sort": 20,
       "createdAt": "2026-09-08T16:44:40.005Z",
-      "updatedAt": "2026-11-02T12:19:24.169Z",
+      "updatedAt": "2026-11-11T12:20:14.027Z",
       "price": 135000
     },
     {
@@ -463,9 +463,9 @@
       ],
       "status": "active",
       "featured": false,
-      "sort": 2,
+      "sort": 18,
       "createdAt": "2026-09-12T16:35:31.852Z",
-      "updatedAt": "2026-10-11T02:57:31.928Z"
+      "updatedAt": "2026-11-11T12:18:56.572Z"
     },
     {
       "_id": "6aa6a2a758654fd43ddc8156",
@@ -511,9 +511,9 @@
       ],
       "status": "active",
       "featured": false,
-      "sort": 3,
+      "sort": 15,
       "createdAt": "2026-09-16T11:32:46.072Z",
-      "updatedAt": "2026-10-11T02:57:42.811Z",
+      "updatedAt": "2026-11-11T12:17:53.982Z",
       "salePrice": 650000
     },
     {
@@ -684,9 +684,9 @@
       ],
       "status": "active",
       "featured": false,
-      "sort": 7,
+      "sort": 14,
       "createdAt": "2026-09-27T13:36:05.333Z",
-      "updatedAt": "2026-09-27T16:11:12.534Z",
+      "updatedAt": "2026-11-11T12:19:28.181Z",
       "subtitle": "Size trung"
     },
     {
@@ -704,9 +704,9 @@
       ],
       "status": "active",
       "featured": false,
-      "sort": 9,
+      "sort": 19,
       "createdAt": "2026-09-27T15:47:50.484Z",
-      "updatedAt": "2026-09-27T16:11:27.759Z",
+      "updatedAt": "2026-11-11T12:19:08.883Z",
       "subtitle": "Size nhỏ"
     },
     {
@@ -809,7 +809,7 @@
       "featured": false,
       "sort": 4,
       "createdAt": "2026-09-27T16:10:35.141Z",
-      "updatedAt": "2026-09-27T16:23:15.476Z"
+      "updatedAt": "2026-11-11T12:18:38.688Z"
     },
     {
       "_id": "6abbb5413ff58ef09faf9ea6",
