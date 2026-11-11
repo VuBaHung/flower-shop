@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-11-11T12:06:57.779Z",
+  "takenAt": "2026-11-11T12:17:37.534Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -913,6 +913,147 @@
       "sort": 999,
       "createdAt": "2026-10-02T07:07:45.722Z",
       "updatedAt": "2026-10-03T15:48:30.191Z"
+    },
+    {
+      "_id": "6af45a9658ee3cb648eb676f",
+      "code": "HB-0044",
+      "name": "1 bông cốt tròn",
+      "price": 30000,
+      "occasions": [
+        "2011"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1794398832/flower-shop/fh6m7je6izgzo9ckhxkd.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1794398833/flower-shop/yrtfwefx22m7hijyfuln.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 4,
+      "createdAt": "2026-11-11T12:07:50.222Z",
+      "updatedAt": "2026-11-11T12:07:50.222Z"
+    },
+    {
+      "_id": "6af45adc58ee3cb648eb6770",
+      "code": "HB-0045",
+      "name": "Thiệp 1 bông",
+      "price": 25000,
+      "occasions": [
+        "2011"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1794398928/flower-shop/umshupjo5wdkwwzy0ejs.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 5,
+      "createdAt": "2026-11-11T12:09:00.035Z",
+      "updatedAt": "2026-11-11T12:09:00.035Z"
+    },
+    {
+      "_id": "6af45b1758ee3cb648eb6771",
+      "code": "HB-0046",
+      "name": "3 bông hướng dương",
+      "price": 70000,
+      "occasions": [
+        "2011"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1794398994/flower-shop/h3ntqa0soxtnrbtcv37z.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 6,
+      "createdAt": "2026-11-11T12:09:59.953Z",
+      "updatedAt": "2026-11-11T12:09:59.953Z"
+    },
+    {
+      "_id": "6af45b4958ee3cb648eb6772",
+      "code": "HB-0047",
+      "name": "6bông hướng dương",
+      "price": 120000,
+      "occasions": [
+        "2011"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1794399040/flower-shop/f91umidsricrxalthn2j.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 7,
+      "createdAt": "2026-11-11T12:10:49.569Z",
+      "updatedAt": "2026-11-11T12:10:49.569Z"
+    },
+    {
+      "_id": "6af45ba058ee3cb648eb6773",
+      "code": "HB-0048",
+      "name": "Hộp hoa cuộn tiền",
+      "price": 45000,
+      "occasions": [
+        "2011"
+      ],
+      "subtitle": "1 cuộn",
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1794399123/flower-shop/xgeeghrzq0tdfcxeuryq.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 8,
+      "createdAt": "2026-11-11T12:12:16.219Z",
+      "updatedAt": "2026-11-11T12:12:16.219Z"
+    },
+    {
+      "_id": "6af45bcd58ee3cb648eb6774",
+      "code": "HAB-0049",
+      "name": "Tú cầu phối ren",
+      "price": 100000,
+      "occasions": [
+        "2011"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1794399174/flower-shop/hnq34514pz41fg4dokop.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 9,
+      "createdAt": "2026-11-11T12:13:01.736Z",
+      "updatedAt": "2026-11-11T12:13:01.736Z"
+    },
+    {
+      "_id": "6af45c1b58ee3cb648eb6775",
+      "code": "HB-0050",
+      "name": "Giỏ hoa bướm",
+      "price": 160000,
+      "occasions": [
+        "2011"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1794399253/flower-shop/hygzjxoyc0azub5cbvfb.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1794399255/flower-shop/iqhhqcopsjxaevwlbzpm.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 10,
+      "createdAt": "2026-11-11T12:14:19.962Z",
+      "updatedAt": "2026-11-11T12:14:19.962Z"
+    },
+    {
+      "_id": "6af45ca658ee3cb648eb6776",
+      "code": "HB-0051",
+      "name": "Giỏ mây 1",
+      "price": 270000,
+      "occasions": [
+        "2011"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1794399388/flower-shop/wpxpxcpgtjomqgvblb1a.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1794399390/flower-shop/trz7nvo5pmfqbtsly6ct.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1794399392/flower-shop/zdwlgtzzaym01sjgfs2z.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 11,
+      "createdAt": "2026-11-11T12:16:38.713Z",
+      "updatedAt": "2026-11-11T12:16:38.713Z"
     }
   ],
   "occasions": [
