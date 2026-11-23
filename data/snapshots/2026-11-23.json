@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-11-22T23:28:50.713Z",
+  "takenAt": "2026-11-23T04:53:49.730Z",
   "products": [
     {
       "_id": "6a9ba761f7e4d9f334e1a136",
@@ -926,11 +926,11 @@
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1794398832/flower-shop/fh6m7je6izgzo9ckhxkd.jpg",
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1794398833/flower-shop/yrtfwefx22m7hijyfuln.jpg"
       ],
-      "status": "active",
+      "status": "hidden",
       "featured": false,
       "sort": 4,
       "createdAt": "2026-11-11T12:07:50.222Z",
-      "updatedAt": "2026-11-11T12:07:50.222Z"
+      "updatedAt": "2026-11-23T04:37:10.159Z"
     },
     {
       "_id": "6af45adc58ee3cb648eb6770",
@@ -943,11 +943,11 @@
       "images": [
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1794398928/flower-shop/umshupjo5wdkwwzy0ejs.jpg"
       ],
-      "status": "active",
+      "status": "hidden",
       "featured": false,
       "sort": 5,
       "createdAt": "2026-11-11T12:09:00.035Z",
-      "updatedAt": "2026-11-11T12:09:00.035Z"
+      "updatedAt": "2026-11-23T04:37:17.622Z"
     },
     {
       "_id": "6af45b1758ee3cb648eb6771",
@@ -960,11 +960,11 @@
       "images": [
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1794398994/flower-shop/h3ntqa0soxtnrbtcv37z.jpg"
       ],
-      "status": "active",
+      "status": "hidden",
       "featured": false,
       "sort": 6,
       "createdAt": "2026-11-11T12:09:59.953Z",
-      "updatedAt": "2026-11-11T12:09:59.953Z"
+      "updatedAt": "2026-11-23T04:37:22.875Z"
     },
     {
       "_id": "6af45b4958ee3cb648eb6772",
@@ -977,11 +977,11 @@
       "images": [
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1794399040/flower-shop/f91umidsricrxalthn2j.jpg"
       ],
-      "status": "active",
+      "status": "hidden",
       "featured": false,
       "sort": 7,
       "createdAt": "2026-11-11T12:10:49.569Z",
-      "updatedAt": "2026-11-11T12:10:49.569Z"
+      "updatedAt": "2026-11-23T04:37:27.183Z"
     },
     {
       "_id": "6af45ba058ee3cb648eb6773",
@@ -995,11 +995,11 @@
       "images": [
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1794399123/flower-shop/xgeeghrzq0tdfcxeuryq.jpg"
       ],
-      "status": "active",
+      "status": "hidden",
       "featured": false,
       "sort": 8,
       "createdAt": "2026-11-11T12:12:16.219Z",
-      "updatedAt": "2026-11-11T12:12:16.219Z"
+      "updatedAt": "2026-11-23T04:37:33.240Z"
     },
     {
       "_id": "6af45bcd58ee3cb648eb6774",
@@ -1012,17 +1012,17 @@
       "images": [
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1794399174/flower-shop/hnq34514pz41fg4dokop.jpg"
       ],
-      "status": "active",
+      "status": "hidden",
       "featured": false,
       "sort": 9,
       "createdAt": "2026-11-11T12:13:01.736Z",
-      "updatedAt": "2026-11-11T12:13:01.736Z"
+      "updatedAt": "2026-11-23T04:37:38.430Z"
     },
     {
       "_id": "6af45c1b58ee3cb648eb6775",
       "code": "HB-0050",
       "name": "Giỏ hoa bướm",
-      "price": 160000,
+      "price": 130000,
       "occasions": [
         "2011"
       ],
@@ -1030,11 +1030,11 @@
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1794399253/flower-shop/hygzjxoyc0azub5cbvfb.jpg",
         "https://res.cloudinary.com/dan5lrpon/image/upload/v1794399255/flower-shop/iqhhqcopsjxaevwlbzpm.jpg"
       ],
-      "status": "active",
+      "status": "hidden",
       "featured": false,
       "sort": 10,
       "createdAt": "2026-11-11T12:14:19.962Z",
-      "updatedAt": "2026-11-11T12:14:19.962Z"
+      "updatedAt": "2026-11-23T04:37:51.849Z"
     },
     {
       "_id": "6af45ca658ee3cb648eb6776",
@@ -1055,6 +1055,132 @@
       "createdAt": "2026-11-11T12:16:38.713Z",
       "updatedAt": "2026-11-12T15:08:03.092Z",
       "salePrice": 280000
+    },
+    {
+      "_id": "6b03c3a4cb8d4387d290b30b",
+      "code": "HB-0055",
+      "name": "Mã 55",
+      "price": 500000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "hang-ngay",
+        "khai-truong"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1795408746/flower-shop/tdtpf88czjr8ylvtjqpd.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 6,
+      "createdAt": "2026-11-23T04:40:04.843Z",
+      "updatedAt": "2026-11-23T04:40:04.843Z"
+    },
+    {
+      "_id": "6b03c3d5cb8d4387d290b30c",
+      "code": "HB-0056",
+      "name": "Mã 56",
+      "price": 300000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "tone-do",
+        "hang-ngay"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1795408840/flower-shop/aysjzvuoiwcyqk2knqfq.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1795408841/flower-shop/oqvz9y39gef1a9k1bs2z.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 16,
+      "createdAt": "2026-11-23T04:40:53.425Z",
+      "updatedAt": "2026-11-23T04:42:12.452Z"
+    },
+    {
+      "_id": "6b03c40fcb8d4387d290b30d",
+      "code": "HB-0057",
+      "name": "Mã 57",
+      "price": 400000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "khai-truong",
+        "hang-ngay"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1795408902/flower-shop/ys7lhvp3qoswpm0loth5.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1795408904/flower-shop/cvr327zixjhj7lg27vnq.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 15,
+      "createdAt": "2026-11-23T04:41:51.032Z",
+      "updatedAt": "2026-11-23T04:41:51.032Z"
+    },
+    {
+      "_id": "6b03c5a8cb8d4387d290b30e",
+      "code": "HB-0058",
+      "name": "Mã 58",
+      "price": 300000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "hang-ngay"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1795409289/flower-shop/ztc3ovwvgf5ifzw3hsmq.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1795409292/flower-shop/h1ag2oljj6vvvn7szyyw.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 14,
+      "createdAt": "2026-11-23T04:48:40.754Z",
+      "updatedAt": "2026-11-23T04:48:40.754Z"
+    },
+    {
+      "_id": "6b03c62acb8d4387d290b30f",
+      "code": "HB-0059",
+      "name": "Mã 59",
+      "price": 700000,
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "hang-ngay"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1795409432/flower-shop/bxhzfuy0kxanm5xy5ypw.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1795409434/flower-shop/jwd6026msqrudo7bhrhr.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1795409435/flower-shop/pk6eqtqkzwjnoqwr2ce2.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1795409436/flower-shop/nmapvvrlowb1mtkkvz6x.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 6,
+      "createdAt": "2026-11-23T04:50:50.807Z",
+      "updatedAt": "2026-11-23T04:50:50.807Z"
+    },
+    {
+      "_id": "6b03c6a2cb8d4387d290b310",
+      "code": "HB-0060",
+      "name": "Mã 60",
+      "occasions": [
+        "sinh-nhat",
+        "tinh-yeu",
+        "hang-ngay",
+        "khai-truong"
+      ],
+      "images": [
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1795409522/flower-shop/v3qvcdrvweettwcmy7rm.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1795409518/flower-shop/s7hlpc8kh7c60ft4ezka.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1795409521/flower-shop/hh19pwwhanhdtsraeiac.jpg",
+        "https://res.cloudinary.com/dan5lrpon/image/upload/v1795409524/flower-shop/swi5sdm9rlukozi3ybia.jpg"
+      ],
+      "status": "active",
+      "featured": false,
+      "sort": 7,
+      "createdAt": "2026-11-23T04:52:50.649Z",
+      "updatedAt": "2026-11-23T04:52:50.649Z"
     }
   ],
   "occasions": [
